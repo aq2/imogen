@@ -16,7 +16,7 @@ header {
   margin: 0.25rem auto;
   justify-content: space-between;
 }
-.logo {
+header img {
   width: 115px;
   height: 115px;
   border-radius: 1rem;
@@ -74,7 +74,7 @@ p {
   font-size: 1.5rem;
   margin-bottom: 1rem;
 }
-p.p1 {
+p:first-child {
   margin-top: 1rem;
 }
 .panel1 {

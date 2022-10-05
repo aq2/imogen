@@ -3,6 +3,13 @@ $topText = black
 $contentBack = #333333dd
 $contentFore = #eee
 
+// ///todo get these
+// $dru-blue = 
+// $dru-blue-back = 
+// $dru-orange =
+// $dru-orange-back =
+// $dru-orange-new = invert($dru-blah)
+
 /// layout
 *
   margin 0
@@ -21,11 +28,10 @@ header
   text-align center
   margin 0.25rem auto
   justify-content space-between
-
-.logo
-  width 115px
-  height 115px
-  border-radius 1rem
+  & img
+    width 115px
+    height 115px
+    border-radius 1rem
 
 main
   width 98vw
@@ -86,7 +92,7 @@ p
   font-size 1.5rem
   margin-bottom 1rem
 
-p.p1
+p:first-child
   margin-top 1rem
 
 //end typography
