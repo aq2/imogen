@@ -13,15 +13,16 @@ header {
   width: 80vw;
   display: flex;
   text-align: center;
-  margin: 0.5rem auto;
+  margin: 0.25rem auto;
   justify-content: space-between;
 }
 .logo {
   width: 115px;
   height: 115px;
+  border-radius: 1rem;
 }
 .container {
-  width: 90vw;
+  width: 98vw;
   display: flex;
   margin: 0 auto;
 }
@@ -30,6 +31,8 @@ header {
   height: 80vh;
   margin: 1rem;
   cursor: pointer;
+  overflow-y: auto;
+  overflow-x: hidden;
   border-radius: 2rem;
   background-size: cover;
   transition: flex 0.7s ease;
@@ -44,11 +47,11 @@ header {
   transition: opacity 0.3s ease-in 0.4s;
 }
 .content {
-  background: rgba(51,51,51,0.867);
-  color: #eee;
   padding: 1rem;
-  margin: 1rem;
+  margin: 1rem 0.5rem;
   border-radius: 2rem;
+  color: #eee;
+  background: rgba(51,51,51,0.867);
 }
 h1,
 h2 {
@@ -63,7 +66,7 @@ h1 {
   text-align: center;
 }
 h2 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin-bottom: 1rem;
 }
 p {
