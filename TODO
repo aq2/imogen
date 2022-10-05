@@ -1,10 +1,7 @@
 *## Imogen ##*
 
 General:
-  ☐ logos in top heading - left and right
-  ☐ panel headings always show
-  ☐ text comes in and out with open/close
-  ☐ click on heading to change font!
+  ☐ click on heading to change font!?
 
 Imogen:
   ☐ decide fonts
@@ -16,6 +13,9 @@ Imogen:
 #
 
 Archive:
+  ✔ logos in top heading - left and right @done(05-10-22 16:54) @project(General)
+  ✔ panel headings always show @done(05-10-22 16:54) @project(General)
+  ✔ text comes in and out with open/close @done(05-10-22 16:54) @project(General)
   ✔ fonts? @done(05-10-22 14:57) @project(Todo)
   ✔ no icons @done(05-10-22 14:36) @project(Todo) @project(#Archive)
   ✔ split styles into 'modules' - or folds? @done(05-10-22 14:56) @project(Todo) @project(#Archive)

@@ -27,7 +27,7 @@ header
   height 115px
   border-radius 1rem
 
-.container
+main
   width 98vw
   display flex
   margin 0 auto
@@ -48,16 +48,20 @@ header
 .panel.active
     flex 5
 
-.panel.active h3
-    opacity 1
-    transition opacity 0.3s ease-in 0.4s
-
 .content
   padding 1rem
   margin 1rem 0.5rem
   border-radius 2rem
   color $contentFore
   background $contentBack
+
+.blurb
+  display none
+
+.blurb.active
+    display inline
+
+
 
 //end layout
 
@@ -76,26 +80,29 @@ h1
 
 h2
   font-size 2rem
-  margin-bottom 1rem
+  // margin-bottom 1rem
 
 p
   font-size 1.5rem
   margin-bottom 1rem
 
+p.p1
+  margin-top 1rem
+
 //end typography
 
 /// panel images
 
-.p1
+.panel1
   background-image url('../imgs/yoga-class.jpg')
 
-.p2
+.panel2
   background-image url('../imgs/yoga2.jpg')
 
-.p3
+.panel3
   background-image url('../imgs/meditate.jpg')
 
-.p4
+.panel4
   background-image url('../imgs/lotus.jpg')
 
 //end panel images
