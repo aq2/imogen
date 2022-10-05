@@ -8,15 +8,22 @@ head
   link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
   link(href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet")
 
+  <link href="https://fonts.googleapis.com/css2?family=Cardo:wght@700&family=Josefin+Sans&family=Yeseva+One&family=Playfair+Display:wght@500&display=swap" rel="stylesheet"> 
+
   link(rel="stylesheet", href="css/main.css")
   title Imogen Groves
 body
-  h1 Imogen Groves Dru Yoga and Meditation
+  header
+    .dru-logo
+      img.logo(src='imgs/logos/meditation.jpg')
+    .head
+      h1 Imogen Groves ~~ Dru Yoga and Meditation
+    .dru-logo
+      img.logo(src='imgs/logos/yoga.jpg')
+
+
   .container
     .panel.active.p1
-      .icon
-        img(src='imgs/icons/home.png')
-        p Home
       .content
         h2 What is Dru Yoga?
         p Dru yoga is a graceful and potent form of yoga, based on flowing movements, directed breathing and visualisation.
@@ -24,22 +31,17 @@ body
         p Designed to be practised by people of all abilities, all fitness levels and all age groups, Dru is a style of yoga that can be quickly dipped into or learnt in more depth over a lifetime.
     
     .panel.p2
-      .icon
-        img(src='imgs/icons/yoga.png')
-        p Yoga Classes
       .content
         h2 Yoga Classes
         p details of different classes
     
     .panel.p3
-      .icon
-        img(src='imgs/icons/meditation.png')
-        p Meditation
-    
+      .content
+        h2 Meditation
+
     .panel.p4
-      .icon
-        img(src='imgs/icons/envelope.png')
-        p Contact
+      .content
+        h2 Contact
 
 
   script(src='js/scripts.prod.js')

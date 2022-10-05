@@ -1,3 +1,9 @@
+$background = #eee
+$topText = black
+$contentBack = #333333dd
+$contentFore = #eee
+
+/// layout
 *
   margin 0
   padding 0
@@ -6,13 +12,19 @@
 body
   height 100vh
   overflow hidden
-  background #eee
+  background $background
   font-family 'Josefin Sans', sans-serif
 
-h1 
-  margin-top 1rem
-  font-size 3.5rem
+header
+  width 80vw
+  display flex
   text-align center
+  margin 0.5rem auto
+  justify-content space-between
+
+.logo
+  width 115px
+  height 115px
 
 .container
   width 90vw
@@ -20,27 +32,15 @@ h1
   margin 0 auto
 
 .panel
+  flex 1
+  height 80vh
+  margin 1rem
+  cursor pointer
+  border-radius 2rem
   background-size cover
+  transition flex 0.7s ease
   background-position center
   background-repeat no-repeat
-  height 85vh
-  border-radius 2rem
-  cursor pointer
-  flex 1
-  margin 1rem
-  position relative
-  transition flex 0.7s ease
-
-
-.icon
-  left 1rem
-  bottom 0rem
-  position absolute
-  & p
-    color #111
-    font-size 1.5rem
-    background #aaa
-    // opacity 0.3
 
 .panel.active
     flex 5
@@ -49,6 +49,39 @@ h1
     opacity 1
     transition opacity 0.3s ease-in 0.4s
 
+.content
+  background $contentBack
+  color $contentFore
+  padding 1rem
+  margin 1rem
+  border-radius 2rem
+
+//end layout
+
+/// typography
+
+h1, h2
+  font-family 'Cardo', serif
+  font-family 'Yeseva One', serif
+  font-family 'Playfair Display', serif
+
+h1 
+  color $topText
+  font-size 3.5rem
+  margin-top 1.5rem
+  text-align center
+
+h2
+  font-size 2.5rem
+  margin-bottom 1rem
+
+p
+  font-size 1.5rem
+  margin-bottom 1rem
+
+//end typography
+
+/// panel images
 
 .p1
   background-image url('../imgs/yoga-class.jpg')
@@ -62,27 +95,9 @@ h1
 .p4
   background-image url('../imgs/lotus.jpg')
 
+//end panel images
 
-.content
-  background #333
-  color #eee
-  opacity 0.8
-  padding 1rem
-  margin 1rem
-  border-radius 2rem
-  & h2
-    font-size 2.5rem
-    margin-bottom 1rem
-  & p
-    font-size 1.5rem
-    margin-bottom 1rem
-
-
-
-
-
-
-
+/// meeja qs
 
 @media(max-width: 480px) 
   .container
@@ -90,3 +105,5 @@ h1
   
   .panel:nth-of-type(4)
     display none
+
+//end meeja
