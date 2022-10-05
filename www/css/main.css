@@ -1,0 +1,65 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  font-family: 'Josefin Sans', sans-serif;
+}
+.container {
+  display: flex;
+  width: 90vw;
+}
+.panel {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh;
+  border-radius: 4rem;
+  color: #fff;
+  cursor: pointer;
+  flex: 0.5;
+  margin: 1rem;
+  position: relative;
+  transition: flex 0.7s ease;
+}
+.panel h3 {
+  font-size: 1.5rem;
+  position: absolute;
+  bottom: 1rem;
+  left: 20px;
+  margin: 0;
+  opacity: 0;
+}
+.panel.active {
+  flex: 5;
+}
+.panel.active h3 {
+  opacity: 1;
+  transition: opacity 0.3s ease-in 0.4s;
+}
+.p1 {
+  background-image: url("../imgs/yoga-class.jpg");
+}
+.p2 {
+  background-image: url("../imgs/yoga2.jpg");
+}
+.p3 {
+  background-image: url("../imgs/meditate.jpg");
+}
+.p4 {
+  background-image: url("../imgs/lotus.jpg");
+}
+@media (max-width: 480px) {
+  .container {
+    width: 100vw;
+  }
+  .panel:nth-of-type(4) {
+    display: none;
+  }
+}

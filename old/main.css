@@ -1,0 +1,130 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 22px;
+  box-sizing: border-box;
+}
+
+h1, h2 {
+  font-family: 'Amotic SC', cursive;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1 {
+  font-size: 68px;
+}
+
+h2 {
+  font-size: 48px;
+}
+
+#container {
+  width: 1000px;
+  margin: 0.5em auto;
+  border-radius: 0.5em;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  /* margin-bottom: 0.66em; */
+}
+
+.dru-logo {
+  width: 150px;
+}
+
+#navbar ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+#navbar li {
+  cursor: pointer;
+  line-height: 2.5em;
+  text-align: center;
+  flex: 1;
+  font-size: 1.33em;
+  font-weight: bold;
+}
+
+.tab:last-child {
+  border-right: 0;
+}
+
+#content {
+  padding: 1em;
+  border-radius: 0 0 0.5em 0.5em;
+}
+
+.tab_content {
+  display: none;
+}
+
+.accordion_heading {
+  display: none;
+}
+
+.testimonial blockquote {
+  position: relative;
+ border: none;
+  border-radius: 8px;
+  padding: 1.5em 1em;
+  font-style: italic;
+}
+
+.testimonial blockquote:before,
+.testimonial blockquote:after {
+  position: absolute;
+  font-size: 4em;
+  line-height: 1;
+  /* color: #fff; */
+  font-style: normal;
+}
+
+.testimonial blockquote:before {
+  content: "\201C";
+  top: 0.1em;
+  left: 5px;
+}
+
+.testimonial blockquote:after {
+  content: "\201D";
+  right: 10px;
+  bottom: -.5em;
+}
+
+/* bottom triangle */
+.testimonial div {
+  width: 0;
+  height: 0;
+  border-left: 0 solid transparent;
+  border-right: 20px solid transparent;
+  margin: -22px 0 0 860px;
+}
+
+/* name of quoter */
+.testimonial p {
+  margin: 8px 20px 0 840px;
+}
+
+
+input, textarea {
+  width: 90%;
+  padding: 0.5em 0.75em;
+  margin: 0.25em 0;
+  box-sizing: border-box;
+  resize: none;
+  border-radius: 0.5em;
+  font-size: 0.75em;
+}
+
+input[type=submit] {
+  border: 2px solid transparent;
+}

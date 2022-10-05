@@ -1,0 +1,1 @@
+"use strict";var panels=document.querySelectorAll(".panel");function removeActiveClasses(){panels.forEach(function(e){e.classList.remove("active")})}panels.forEach(function(e){e.addEventListener("click",function(){removeActiveClasses(),e.classList.add("active")})});

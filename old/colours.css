@@ -1,0 +1,42 @@
+body {
+  /* background: #f5caa9; */
+  /* background: #fbece0; */
+  /* background: var(--wallpaper); */
+  background: white;
+  color: #2b1f2b;
+}
+
+.tab {
+  background: #fbece0;
+  border-right: 2px solid #795778;
+}
+
+.tab.active {
+  background: #bda4bd;
+}
+
+.tab:hover {
+  background: #bda4bd;
+  color: white;
+}
+
+#content {
+  background: #bda4bd;
+}
+
+.testimonial blockquote {
+  background: #6cadc9;
+}
+
+.testimonial div {
+  border-top: 20px solid #6cadc9;
+}
+
+input[type=submit] {
+  background: #6cadc9;
+}
+
+input[type=submit]:hover {
+  background: #9bc7da;
+  border: 2px solid #6cadc9;
+}
