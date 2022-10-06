@@ -29,7 +29,7 @@ header
   width 80vw
   display flex
   text-align center
-  margin 0.25rem auto
+  margin 0.5rem auto
   justify-content space-between
   & img
     width 115px
@@ -43,7 +43,7 @@ main
 
 .panel
   flex 1
-  height 80vh
+  height 82vh
   margin 1rem
   cursor pointer
   overflow-y auto
@@ -116,6 +116,44 @@ p:first-child
   margin-top 1rem
 
 //end typography
+
+/// testimonial
+
+.testimonial-container
+  background $dru-orange
+  // padding 1rem 1rem 0 1rem
+  padding 1rem
+  border-radius 1rem
+  // margin 1rem
+  width 80%
+  margin 1rem auto 1.5rem auto
+
+.quote
+  font-size 2rem
+
+.testimonial
+  // font-size 1.33rem
+  font-style italic
+  // margin-bottom -0.5rem
+
+.punter
+  text-align right
+  padding-right 1rem
+
+.progress-bar
+  background #eee
+  height 4px
+  width 100%
+  animation grow 10s linear infinite
+  // margin-bottom 8px
+  transform-origin left
+
+@keyframes grow
+  0%
+    transform scaleX(0)
+
+
+//end testimonial
 
 /// panel images
 

@@ -1,12 +1,9 @@
 *## Imogen ##*
 
 General:
-  ☐ click on heading to change font!?
-  ☐ use colours from logos somehow
   ☐ nice to have 'genuine' photos
-  ✔ add click for more in inactive panels @done(06-10-22 17:15)
   ☐ brad wave form
-  ☐ brad testimonials
+  ☐ style testimonials with quotes, and move progressbar?
 
 Imogen:
   ☐ decide fonts
@@ -18,6 +15,10 @@ Imogen:
 #
 
 Archive:
+  ✔ click on heading to change font!? @done(06-10-22 18:39) @project(General)
+  ✔ use colours from logos somehow @done(06-10-22 18:39) @project(General)
+  ✔ add click for more in inactive panels @done(06-10-22 17:15) @project(General)
+  ✔ brad testimonials @done(06-10-22 19:32) @project(General)
   ✔ logos in top heading - left and right @done(05-10-22 16:54) @project(General)
   ✔ panel headings always show @done(05-10-22 16:54) @project(General)
   ✔ text comes in and out with open/close @done(05-10-22 16:54) @project(General)

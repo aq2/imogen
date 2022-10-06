@@ -12,25 +12,32 @@ head
 
   link(rel='stylesheet', href='css/main.css')
   title Imogen Groves, Dru Yoga and Meditation
+
 body
   header
     img(src='imgs/meditation-logo.jpg')
     //- might need to split into two for narrow sreens
-    h1 Imogen Groves ~~ Dru Yoga and Meditation
+    h1#title Imogen Groves ~~ Dru Yoga and Meditation
     img(src='imgs/yoga-logo.jpg')
 
   main
     .panel.active.panel1
       .content
         h2 What is Dru Yoga?
-        p.i1.inst (click for more)
-        .blurb.b1.active
+        p.inst (click for more)
+        .blurb.active
           p Dru yoga is a graceful and potent form of yoga, based on flowing movements, directed breathing and visualisation.
           p With its foundation set firmly in ancient yogic tradition, Dru works on body, mind and spirit - improving strength and flexibility, creating core stability, building a heightened feeling of positivity and is deeply relaxing whilst rejuvenating your whole being.
           p Designed to be practised by people of all abilities, all fitness levels and all age groups, Dru is a style of yoga that can be quickly dipped into or learnt in more depth over a lifetime.
           
-          h2 Testimonials
-          p ## blah...
+          .testimonial-container
+            p.testimonial
+              span.quote "
+              span Classes are enjoyable and gently challenging. I always come away with a strong sense of achievement and renewed calm.
+              span.quote "
+            p.punter S.H
+            .progress-bar
+
 
           h2 About Me
           p ## blah...
@@ -38,24 +45,24 @@ body
     .panel.panel2
       .content
         h2 Yoga Classes
-        p.i2.inst.shown (click for more)
-        .blurb.b2
+        p.inst.shown (click for more)
+        .blurb
           p ## details of different classes
           p ## dates, times, locations, costs etc
     
     .panel.panel3
       .content
         h2 Meditation
-        p.i3.inst.shown (click for more)
-        .blurb.b3
+        p.inst.shown (click for more)
+        .blurb
           p We are all rivers flowing into the same lake.
           p ## details
 
     .panel.panel4
       .content
         h2 Contact
-        p.i4.inst.shown (click for more)
-        .blurb.b4
+        p.inst.shown (click for more)
+        .blurb
           p ## details
 
 
