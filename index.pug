@@ -63,7 +63,17 @@ body
         h2 Contact
         p.inst.shown (click for more)
         .blurb
-          p ## details
+          p You can send me a message by using the form below.
+          p I'll reply as soon as I can.
+          .form-container
+            form
+              .form-control
+                input(type='text' required)
+                label Email address
+              .form-control
+                input(type='' required)
+                label Email address
+
 
 
   script(src='js/scripts.prod.js')
