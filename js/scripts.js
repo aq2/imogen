@@ -10,14 +10,12 @@ panels.forEach(panel => {
     panel.classList.add('active')
     let blurb = blurbs[panelID - 1]
     let active = blurb.classList.contains('active')
-    // remove hidden from inst
     let inst = insts[panelID - 1]
     addHiddenInsts()
     inst.classList.remove('shown')
     if (!active) {
       removeActiveBlurbs()
       blurb.classList.add('active')
-      // add hidden to inst?
     }
   })
 })

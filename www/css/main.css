@@ -58,8 +58,6 @@ main {
 h1,
 h2 {
   font-family: 'Cardo', serif;
-  font-family: 'Yeseva One', serif;
-  font-family: 'Playfair Display', serif;
   text-align: center;
 }
 h1 {
@@ -75,7 +73,7 @@ h2 {
   text-align: left;
 }
 p {
-  font-size: 1.75rem;
+  font-size: 1.7rem;
   margin-bottom: 1rem;
 }
 p.inst {
