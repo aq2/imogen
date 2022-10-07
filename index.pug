@@ -15,10 +15,14 @@ head
 
 body
   header
-    img(src='imgs/meditation-logo.jpg')
+    .logoo
+      img(src='imgs/meditation-logo.jpg')
     //- might need to split into two for narrow sreens
-    h1#title Imogen Groves ~~ Dru Yoga and Meditation
-    img(src='imgs/yoga-logo.jpg')
+    .title
+      h2 Imogen Groves 
+      h1 Dru Yoga and Meditation
+    .logoo  
+      img(src='imgs/yoga-logo.jpg')
 
   main
     .panel.active.panel1
@@ -32,15 +36,16 @@ body
           
           .testimonial-container
             p.testimonial
-              span.quote "
               span Classes are enjoyable and gently challenging. I always come away with a strong sense of achievement and renewed calm.
-              span.quote "
             p.punter S.H
             .progress-bar
+            //- could do more animation here - fade in/out etc
 
 
           h2 About Me
-          p ## blah...
+          p blah blah
+          p trumpet blowing
+          p blah...
     
     .panel.panel2
       .content

@@ -20,31 +20,34 @@ $background = #6cadc952
   box-sizing border-box
 
 body
-  height 100vh
-  overflow hidden
+  // height 100vh
+  // overflow hidden
   background $background
   font-family 'Josefin Sans', sans-serif
+  padding 0.5rem
 
 header
-  width 80vw
+  // width 80vw
   display flex
-  text-align center
-  margin 0.5rem auto
-  justify-content space-between
+  // text-align center
+  // margin-bottom 0.5rem auto
+  // margin-top 0.5rem
+  justify-content center
   & img
     width 115px
     height 115px
+    margin 0 1rem
     border-radius 1rem
 
 main
-  width 98vw
+  // width 98vw
   display flex
   margin 0 auto
 
 .panel
   flex 1
-  height 82vh
-  margin 1rem
+  height 82vh // change in meeja?
+  margin 0.5rem
   cursor pointer
   overflow-y auto
   overflow-x hidden
@@ -53,23 +56,29 @@ main
   transition flex 0.7s ease
   background-position center
   background-repeat no-repeat
+  // display flex
+  // flex-direction column
 
 .panel.active
     flex 5
 
 .content
   padding 1rem
-  margin 1rem 0.5rem
+  margin 1.5rem 1rem
   border-radius 2rem
   color $contentFore
   background $contentBack
+  display flex
+  flex-direction column
+  align-items center
 
 .blurb
   display none
 
-.blurb.active
-    display inline
 
+.blurb.active
+  display inline
+  // margin 1rem
 
 
 //end layout
@@ -80,21 +89,38 @@ h1, h2
   font-family 'Cardo', serif
   // font-family 'Yeseva One', serif
   // font-family 'Playfair Display', serif
-  text-align center
+  // text-align center
 
 h1 
-  color $topText
+  // color $topText
   font-size 3.5rem
-  margin-top 1.5rem
+  // padding-bottom 1.5rem
+  // margin-bottom 2rem
   // text-shadow 1px 0px 3px #11111166
 
 
 h2
   font-size 2rem
-  margin-top -0.5rem
-  
+  // margin -0.5rem auto
+  // text-align center
+
+.content h2
+  color blue
+  // text-align center
+  // margin 0 1rem
+  // padding 1rem
+
 .active h2
-  text-align left
+  text-align left !important
+  color orange
+
+.title
+  color $dru-orange-back
+  & h2
+    color $dru-blue-back
+    margin-top .5rem
+    font-size 2.5rem
+    margin-bottom -1rem
 
 p
   font-size 1.7rem
@@ -113,7 +139,8 @@ p.inst
 
 
 p:first-child
-  margin-top 1rem
+  margin-top 0.5rem
+
 
 //end typography
 
@@ -122,31 +149,33 @@ p:first-child
 .testimonial-container
   background $dru-orange
   // padding 1rem 1rem 0 1rem
-  padding 1rem
+  padding 0.5rem 1rem
   border-radius 1rem
   // margin 1rem
   width 80%
   margin 1rem auto 1.5rem auto
-
-.quote
-  font-size 2rem
+  // TODO think about this, quick fadin/out before changing
+  // transition opacity 0.4s ease-in
+  // opacity 1
 
 .testimonial
-  // font-size 1.33rem
+  font-size 1.5rem
   font-style italic
   // margin-bottom -0.5rem
 
 .punter
   text-align right
   padding-right 1rem
+  font-size 1.25rem
 
 .progress-bar
-  background #eee
+  background $dru-orange-back
   height 4px
   width 100%
   animation grow 10s linear infinite
   // margin-bottom 8px
   transform-origin left
+
 
 @keyframes grow
   0%
@@ -172,6 +201,16 @@ p:first-child
 //end panel images
 
 /// meeja qs
+
+@media(max-width: 1650px)
+  .content h2
+    font-size 1.75rem
+    // only the top ones need to change for inactives!!
+    // how deep does the rabbit hole go?
+
+
+
+
 
 @media(max-width: 480px) 
   .container

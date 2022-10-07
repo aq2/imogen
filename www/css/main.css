@@ -4,32 +4,28 @@
   box-sizing: border-box;
 }
 body {
-  height: 100vh;
-  overflow: hidden;
   background: rgba(108,173,201,0.322);
   font-family: 'Josefin Sans', sans-serif;
+  padding: 0.5rem;
 }
 header {
-  width: 80vw;
   display: flex;
-  text-align: center;
-  margin: 0.5rem auto;
-  justify-content: space-between;
+  justify-content: center;
 }
 header img {
   width: 115px;
   height: 115px;
+  margin: 0 1rem;
   border-radius: 1rem;
 }
 main {
-  width: 98vw;
   display: flex;
   margin: 0 auto;
 }
 .panel {
   flex: 1;
   height: 82vh;
-  margin: 1rem;
+  margin: 0.5rem;
   cursor: pointer;
   overflow-y: auto;
   overflow-x: hidden;
@@ -44,10 +40,13 @@ main {
 }
 .content {
   padding: 1rem;
-  margin: 1rem 0.5rem;
+  margin: 1.5rem 1rem;
   border-radius: 2rem;
   color: #000;
   background: rgba(121,87,120,0.8);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .blurb {
   display: none;
@@ -58,19 +57,28 @@ main {
 h1,
 h2 {
   font-family: 'Cardo', serif;
-  text-align: center;
 }
 h1 {
-  color: #000;
   font-size: 3.5rem;
-  margin-top: 1.5rem;
 }
 h2 {
   font-size: 2rem;
-  margin-top: -0.5rem;
+}
+.content h2 {
+  color: #00f;
 }
 .active h2 {
-  text-align: left;
+  text-align: left !important;
+  color: #ffa500;
+}
+.title {
+  color: #a62923;
+}
+.title h2 {
+  color: #795778;
+  margin-top: 0.5rem;
+  font-size: 2.5rem;
+  margin-bottom: -1rem;
 }
 p {
   font-size: 1.7rem;
@@ -87,27 +95,26 @@ p.inst.shown {
   text-align: center;
 }
 p:first-child {
-  margin-top: 1rem;
+  margin-top: 0.5rem;
 }
 .testimonial-container {
   background: #d69c19;
-  padding: 1rem;
+  padding: 0.5rem 1rem;
   border-radius: 1rem;
   width: 80%;
   margin: 1rem auto 1.5rem auto;
 }
-.quote {
-  font-size: 2rem;
-}
 .testimonial {
+  font-size: 1.5rem;
   font-style: italic;
 }
 .punter {
   text-align: right;
   padding-right: 1rem;
+  font-size: 1.25rem;
 }
 .progress-bar {
-  background: #eee;
+  background: #a62923;
   height: 4px;
   width: 100%;
   animation: grow 10s linear infinite;
@@ -124,6 +131,11 @@ p:first-child {
 }
 .panel4 {
   background-image: url("../imgs/lotus.jpg");
+}
+@media (max-width: 1650px) {
+  .content h2 {
+    font-size: 1.75rem;
+  }
 }
 @media (max-width: 480px) {
   .container {

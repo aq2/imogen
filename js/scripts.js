@@ -41,27 +41,27 @@ function addHiddenInsts() {
 
 ///font switcher
 
-const header = document.getElementsByTagName('header')[0]
-const title = document.getElementById('title')
-const h2s = document.querySelectorAll('h2')
+// const header = document.getElementsByTagName('header')[0]
+// const title = document.getElementById('title')
+// const h2s = document.querySelectorAll('h2')
 
-const fonts = [
-  'Cardo', 'Yeseva One', 'Playfair Display'
-]
+// const fonts = [
+//   'Cardo', 'Yeseva One', 'Playfair Display'
+// ]
 
-let currentFont = 0
+// let currentFont = 0
 
-header.addEventListener('click', () => {
-  currentFont++
-  if (currentFont > fonts.length - 1) {
-    currentFont = 0
-  }
-  title.style.fontFamily = fonts[currentFont]
-  h2s.forEach(head => {
-    head.style.fontFamily = fonts[currentFont]
-  })
-  alert('font is now ' + fonts[currentFont])
-})
+// header.addEventListener('click', () => {
+//   currentFont++
+//   if (currentFont > fonts.length - 1) {
+//     currentFont = 0
+//   }
+//   title.style.fontFamily = fonts[currentFont]
+//   h2s.forEach(head => {
+//     head.style.fontFamily = fonts[currentFont]
+//   })
+//   alert('font is now ' + fonts[currentFont])
+// })
 
 //end font switcher
 
@@ -99,12 +99,10 @@ let idx = 1
 
 function updateTestimonial() {
   const { name, text } = testimonials[idx]
-
-  testimonial.innerHTML = text
+  testimonial.innerHTML = '"' + text + '"'
   punter.innerHTML = name
 
   idx++
-
   if (idx > testimonials.length - 1) {
     idx = 0
   }
