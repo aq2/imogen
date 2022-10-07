@@ -64,12 +64,8 @@ h1 {
 h2 {
   font-size: 2rem;
 }
-.content h2 {
-  color: #00f;
-}
 .active h2 {
   text-align: left !important;
-  color: #ffa500;
 }
 .title {
   color: #a62923;
