@@ -2,12 +2,11 @@
 
 General:
   ☐ nice to have 'genuine' photos
-  ☐ brad wave form
   ☐ style testimonials with quotes, and move progressbar?
   ☐ disperse testimonials into panels
   ☐ fancify testimonials, fad in/out etc?
   ☐ meeja q's
-  ✔ change header - two lines @done(07-10-22 13:25)
+  ☐ tooltips for 'click to expand?'
 
 Imogen:
   ☐ decide fonts
@@ -19,6 +18,8 @@ Imogen:
 #
 
 Archive:
+  ✔ brad wave form @done(09-10-22 16:01) @project(General)
+  ✔ change header - two lines @done(07-10-22 13:25) @project(General)
   ✔ click on heading to change font!? @done(06-10-22 18:39) @project(General)
   ✔ use colours from logos somehow @done(06-10-22 18:39) @project(General)
   ✔ add click for more in inactive panels @done(06-10-22 17:15) @project(General)

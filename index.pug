@@ -1,6 +1,7 @@
 doctype html
 html(lang='en')
 head
+  /// head
   meta(charset='UTF-8')
   meta(http-equiv='X-UA-Compatible', content='IE=edge')
   meta(name='viewport', content='width=device-width, initial-scale=1.0')
@@ -12,8 +13,10 @@ head
 
   link(rel='stylesheet', href='css/main.css')
   title Imogen Groves, Dru Yoga and Meditation
+  //end head
 
 body
+  /// header
   header
     .logoo
       img(src='imgs/meditation-logo.jpg')
@@ -23,13 +26,17 @@ body
       h1 Dru Yoga and Meditation
     .logoo  
       img(src='imgs/yoga-logo.jpg')
+  //end header
 
   main
-    .panel.active.panel1
+    /// what is?
+    //- .panel.active.panel1
+    .panel.panel1
       .content
         h2 What is Dru Yoga?
         p.inst (click for more)
-        .blurb.active
+        //- .blurb.active
+        .blurb
           p Dru yoga is a graceful and potent form of yoga, based on flowing movements, directed breathing and visualisation.
           p With its foundation set firmly in ancient yogic tradition, Dru works on body, mind and spirit - improving strength and flexibility, creating core stability, building a heightened feeling of positivity and is deeply relaxing whilst rejuvenating your whole being.
           p Designed to be practised by people of all abilities, all fitness levels and all age groups, Dru is a style of yoga that can be quickly dipped into or learnt in more depth over a lifetime.
@@ -46,7 +53,9 @@ body
           p blah blah
           p trumpet blowing
           p blah...
-    
+    //end what is  
+
+    /// yoga classes
     .panel.panel2
       .content
         h2 Yoga Classes
@@ -56,6 +65,9 @@ body
           p ## details of different classes
           p ## dates, times, locations, costs etc
     
+    //end yoga
+
+    /// meditate
     .panel.panel3
       .content
         h2 Meditation
@@ -65,24 +77,28 @@ body
           p Breathe, and know that you are breathing.
           p ## details
 
-    .panel.panel4
+    //end meditate
+
+    /// contact
+    .panel.panel4.active
       .content
         h2 Contact
-        p.inst.shown (click for more)
-        .blurb
+        p.inst.shown (click to expand)
+        .blurb.active
           p You can send me a message by using the form below.
           p I'll reply as soon as I can.
           .form-container
             form
               .form-control
                 input(type='text' required)
-                label Email address
+                label your email address
               .form-control
-                input(type='' required)
-                label Email address
+                textarea(rows=6 cols=50 name='message' required)
+                label please enter your message
+              button.btn Send
 
+    //end contact
 
 
   script(src='js/scripts.prod.js')
-  
-    
+      

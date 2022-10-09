@@ -204,13 +204,81 @@ p:first-child
 
 //end panel images
 
+/// form
+
+.form-container
+  background $dru-orange-back
+  padding 1rem
+  border-radius 2rem
+  
+.form-control
+  position relative
+  margin 2rem auto
+  width 600px
+
+.form-control input, textarea
+  width 80%
+  // margin 0 auto
+  background transparent
+  background $contentBack
+  border 0
+  border-bottom 2px $contentFore solid
+  display block
+  padding 1rem 0
+  font-size 1.5rem
+  border-radius 1rem 1rem 0 0
+
+.form-control input:focus,
+.form-control input:valid,
+.form-control textarea:focus,
+.form-control textarea:valid
+  outline 0
+  border-bottom-color red
+
+.form-control label
+  position absolute
+  top 0.5rem
+  left 0.5rem
+
+.form-control label span
+  display inline-block
+  font-size 1.25rem
+  min-width 5px
+
+.form-control input:focus + label span,
+.form-control input:valid + label span,
+.form-control textarea:focus + label span,
+.form-control textarea:valid + label span
+  color lightblue
+  transform translateY(-2rem)
+  transition 0.3s ease-in
+  transition 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55)
+
+
+.btn
+  cursor pointer
+  display inline-block
+  width 80%
+  background $dru-blue
+  padding 1rem
+  font-family inherit
+  font-size 1.5rem
+  border 0
+  border-radius 1rem
+  &:hover
+    background $dru-blue-back
+  &:active
+    transform scale(0.98)
+
+//end form
+
 /// meeja qs
 
 @media(max-width: 1650px)
   .content h2
     font-size 1.75rem
-    // only the top ones need to change for inactives!!
-    // how deep does the rabbit hole go?
+      // only the top ones need to change for inactives!!
+      // how deep does the rabbit hole go?
 
 
 
