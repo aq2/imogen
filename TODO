@@ -1,12 +1,12 @@
 *## Imogen ##*
 
 General:
-  ☐ nice to have 'genuine' photos
   ☐ style testimonials with quotes, and move progressbar?
-  ✔ disperse testimonials into panels @done(09-10-22 16:51)
-  ☐ meeja q's => use font-size vw?
-  ☐ tooltips for 'click to expand?'
+  ☐ style testimonials into blockquotes
   ☐ panel border-radius for edge scrollbars
+  ☐ nice to have 'genuine' photos
+  ☐ tooltips for 'click to expand?'
+  ☐ meeja q's => use font-size vw?
 
 Imogen:
   ☐ words
@@ -17,6 +17,7 @@ Imogen:
 #
 
 Archive:
+  ✔ disperse testimonials into panels @done(09-10-22 16:51) @project(General)
   ✘ fancify testimonials, fade in/out etc? @cancelled(09-10-22 16:45) @project(General)
   ✘ decide fonts @cancelled(09-10-22 16:06) @project(Imogen)
   ✔ brad wave form @done(09-10-22 16:01) @project(General)

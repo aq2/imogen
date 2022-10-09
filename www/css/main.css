@@ -106,6 +106,12 @@ p.inst.shown {
 p:first-child {
   margin-top: 0.5rem;
 }
+span.quote {
+  font-size: 3rem;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  display: inline-block;
+}
 .testimonial-container {
   background: #d69c19;
   padding: 0.5rem 1rem;
