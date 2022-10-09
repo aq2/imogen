@@ -30,13 +30,11 @@ body
 
   main
     /// what is?
-    //- .panel.active.panel1
-    .panel.panel1
+    .panel.active.panel1
       .content
         h2 What is Dru Yoga?
-        p.inst (click for more)
-        //- .blurb.active
-        .blurb
+        p.inst (click to expand)
+        .blurb.active
           p Dru yoga is a graceful and potent form of yoga, based on flowing movements, directed breathing and visualisation.
           p With its foundation set firmly in ancient yogic tradition, Dru works on body, mind and spirit - improving strength and flexibility, creating core stability, building a heightened feeling of positivity and is deeply relaxing whilst rejuvenating your whole being.
           p Designed to be practised by people of all abilities, all fitness levels and all age groups, Dru is a style of yoga that can be quickly dipped into or learnt in more depth over a lifetime.
@@ -45,7 +43,7 @@ body
             p.testimonial
               span Classes are enjoyable and gently challenging. I always come away with a strong sense of achievement and renewed calm.
             p.punter S.H
-            .progress-bar
+            //- .progress-bar
             //- could do more animation here - fade in/out etc
 
 
@@ -53,17 +51,26 @@ body
           p blah blah
           p trumpet blowing
           p blah...
+          .testimonial-container
+            p.testimonial
+              span Dru is a very gentle way of connecting to your body stretching and balancing. Classes are fun and engaging.
+            p.punter C.F
+
     //end what is  
 
     /// yoga classes
     .panel.panel2
       .content
         h2 Yoga Classes
-        p.inst.shown (click for more)
+        p.inst.shown (click to expand)
         .blurb
           p We are all rivers flowing into the same lake.
           p ## details of different classes
           p ## dates, times, locations, costs etc
+          .testimonial-container
+            p.testimonial
+              span After attending many yoga classes over nearly 40 years, these are the best classes I have ever been to. Apart from the improved flexibility and the increased vitality and clarity of mind that the classes give, there is a sense of pure joy in taking part.
+            p.punter G.M
     
     //end yoga
 
@@ -71,20 +78,24 @@ body
     .panel.panel3
       .content
         h2 Meditation
-        p.inst.shown (click for more)
+        p.inst.shown (click to expand)
         .blurb
           p Sit, and know that you are sitting.
           p Breathe, and know that you are breathing.
+          .testimonial-container
+            p.testimonial
+              span It's been great online too. Imogen is such a lovely, patient, fun and professional teacher. Highly recommended.
+            p.punter N.C.
           p ## details
 
     //end meditate
 
     /// contact
-    .panel.panel4.active
+    .panel.panel4
       .content
         h2 Contact
         p.inst.shown (click to expand)
-        .blurb.active
+        .blurb
           p You can send me a message by using the form below.
           p I'll reply as soon as I can.
           .form-container

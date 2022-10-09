@@ -2,6 +2,19 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scrollbar-width: thin;
+  scrollbar-color: #6cadc9 #795778;
+}
+*::-webkit-scrollbar {
+  width: 12px;
+}
+*::-webkit-scrollbar-track {
+  background: #d69c19;
+}
+*::-webkit-scrollbar-thumb {
+  background: #6cadc9;
+  border-radius: 20px;
+  border: 3px solid #00f;
 }
 body {
   background: rgba(108,173,201,0.322);
