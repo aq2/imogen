@@ -2,7 +2,7 @@
 
 General:
   ☐ style testimonials with quotes, and move progressbar?
-  ☐ style testimonials into blockquotes
+  ☐ space out header
   ☐ panel border-radius for edge scrollbars
   ☐ nice to have 'genuine' photos
   ☐ tooltips for 'click to expand?'
@@ -17,6 +17,7 @@ Imogen:
 #
 
 Archive:
+  ✔ style testimonials into blockquotes @done(09-10-22 18:50) @project(General)
   ✔ disperse testimonials into panels @done(09-10-22 16:51) @project(General)
   ✘ fancify testimonials, fade in/out etc? @cancelled(09-10-22 16:45) @project(General)
   ✘ decide fonts @cancelled(09-10-22 16:06) @project(Imogen)

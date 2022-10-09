@@ -1,9 +1,8 @@
-// $background = #eee
 $topText = black
 $contentBack = #333333dd
 $contentBack = #795778cc
 $contentFore = #eee
-$contentFore = black
+$contentFore = #111
 
 $dru-blue = #6cadc9
 $dru-blue-back = #795778 
@@ -35,18 +34,12 @@ $background = #6cadc952
 
 
 body
-  // height 100vh
-  // overflow hidden
+  padding 0.5rem
   background $background
   font-family 'Josefin Sans', sans-serif
-  padding 0.5rem
 
 header
-  // width 80vw
   display flex
-  // text-align center
-  // margin-bottom 0.5rem auto
-  // margin-top 0.5rem
   justify-content center
   & img
     width 115px
@@ -55,10 +48,8 @@ header
     border-radius 1rem
 
 main
-  // width 98vw
   display flex
   margin 0 auto
-  // flex-wrap wrap
 
 .panel
   flex 1
@@ -72,14 +63,8 @@ main
   transition flex 0.7s ease
   background-position center
   background-repeat no-repeat
-  // display flex
-  // flex-direction column
-  // min-width 200px
-
-
-.panel.active
-  // min-width 400px
-  flex 5
+  &.active
+    flex 5
 
 .content
   padding 1rem
@@ -93,11 +78,8 @@ main
 
 .blurb
   display none
-
-
-.blurb.active
-  display inline
-  // margin 1rem
+  &.active
+    display inline
 
 
 //end layout
@@ -160,53 +142,37 @@ p.inst
 p:first-child
   margin-top 0.5rem
 
-span.quote
-  // content '\201C'
-  font-size 3rem
-  margin-bottom 0
-  padding-bottom 0
-  display inline-block
 
 
 //end typography
 
 /// testimonial
 
-.testimonial-container
-  background $dru-orange
-  // padding 1rem 1rem 0 1rem
-  padding 0.5rem 1rem
-  border-radius 1rem
-  // margin 1rem
+blockquote
   width 80%
-  margin 1rem auto 1.5rem auto
-  // TODO think about this, quick fadin/out before changing
-  // transition opacity 0.4s ease-in
-  // opacity 1
+  position relative
+  border-radius 1rem
+  padding 0.25rem 1rem
+  margin 0 auto 1.5rem auto
+  background alpha($dru-orange, 0.6)
+
+span.quote
+  left 1rem
+  top -0.5rem
+  font-size 7rem
+  position absolute
+  font-family sans-serif
 
 .testimonial
   font-size 1.5rem
   font-style italic
-  // margin-bottom -0.5rem
+  margin-top 3.5rem
 
 .punter
   text-align right
-  padding-right 1rem
   font-size 1.25rem
-
-.progress-bar
-  background $dru-orange-back
-  height 4px
-  width 100%
-  animation grow 10s linear infinite
-  // margin-bottom 8px
-  transform-origin left
-
-
-@keyframes grow
-  0%
-    transform scaleX(0)
-
+  padding-right 1rem
+  margin-top -1.5rem
 
 //end testimonial
 
@@ -229,17 +195,18 @@ span.quote
 /// form
 
 .form-container
-  background $dru-orange-back
+  background alpha($dru-orange-back, 0.6)
+  // background alpha($dru-orange, 0.6)
   padding 1rem
   border-radius 2rem
   
 .form-control
   position relative
   margin 2rem auto
-  width 600px
+  // width 600px
 
 .form-control input, textarea
-  width 80%
+  width 90%
   // margin 0 auto
   background transparent
   background $contentBack
@@ -249,6 +216,7 @@ span.quote
   padding 1rem 0
   font-size 1.5rem
   border-radius 1rem 1rem 0 0
+  // margin 0 auto
 
 .form-control input:focus,
 .form-control input:valid,
@@ -280,7 +248,7 @@ span.quote
 .btn
   cursor pointer
   display inline-block
-  width 80%
+  width 90%
   background $dru-blue
   padding 1rem
   font-family inherit
@@ -301,10 +269,6 @@ span.quote
     font-size 1.75rem
       // only the top ones need to change for inactives!!
       // how deep does the rabbit hole go?
-
-
-
-
 
 @media(max-width: 480px) 
   .container
