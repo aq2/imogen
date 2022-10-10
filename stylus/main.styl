@@ -8,7 +8,6 @@ $dru-blue = #6cadc9
 $dru-blue-back = #795778 
 $dru-orange = #d69c19
 $dru-orange-back = #a62923
-// $dru-orange-new = invert($dru-blah)
 
 $background = #6cadc952
 
@@ -58,24 +57,24 @@ main
   cursor pointer
   overflow-y auto
   overflow-x hidden
+  position relative
   border-radius 2rem
   background-size cover
   transition flex 0.7s ease
   background-position center
   background-repeat no-repeat
-  position relative
   &.active
     flex 5
 
 .content
+  display flex
   padding 1rem
+  color $contentFore
   margin 1.5rem 1rem
   border-radius 2rem
-  color $contentFore
-  background $contentBack
-  display flex
-  flex-direction column
   align-items center
+  flex-direction column
+  background $contentBack
 
 .blurb
   display none
@@ -89,22 +88,12 @@ main
 
 h1, h2
   font-family 'Cardo', serif
-  // font-family 'Yeseva One', serif
-  // font-family 'Playfair Display', serif
-  // text-align center
-
+  
 h1 
-  // color $topText
   font-size 3.5rem
-  // padding-bottom 1.5rem
-  // margin-bottom 2rem
-  // text-shadow 1px 0px 3px #11111166
-
 
 h2
   font-size 2rem
-  // margin -0.5rem auto
-  // text-align center
 
 .content h2
   // color blue
@@ -114,36 +103,30 @@ h2
 
 .active h2
   text-align left !important
-  // color orange
 
 .title
   color $dru-orange-back
   & h2
-    color $dru-blue-back
-    margin-top .5rem
     font-size 2.5rem
+    margin-top .5rem
     margin-bottom -1rem
+    color $dru-blue-back
 
 p
   font-size 1.7rem
   margin-bottom 1rem
-  // text-shadow 1px 0px 3px #eeeeee66
   
 p.inst
   display none
   &.shown
+    display block
+    font-size 1rem
     margin-top 1rem
     margin-bottom 0
-    font-size 1rem
-    display block
     text-align center
-    // margin 1rem auto 0 auto
-
 
 p:first-child
   margin-top 0.5rem
-
-
 
 //end typography
 
@@ -168,12 +151,12 @@ span.quote
   font-size 1.5rem
   font-style italic
   margin-top 3.5rem
-
+  
 .punter
   text-align right
   font-size 1.25rem
-  padding-right 1rem
   margin-top -1.5rem
+  padding-right 1rem
 
 //end testimonial
 
@@ -265,58 +248,17 @@ span.quote
 
 /// tooltips
 
-// .tooltip
-//   position relative
-//   display inline-block
-//   border-bottom 1px dotted black
-
-// .tooltip .tooltiptext
-//   visibility hidden
-//   width 120px
-//   background black
-//   color white
-//   text-align center
-//   padding 0.5rem 0
-//   border-radius 0.5rem
-//   position absolute
-//   z-index 1
-//   opacity 0
-//   transition opacity 0.5s
-
-// .tooltip:hover .tooltiptext
-//   visibility visible
-//   opacity 1
-
 #tooltip
-  position absolute
-  background $dru-blue-back
-  text-align center
-  padding 0.5rem
   opacity 0
+  padding 0.5rem
+  position absolute
+  text-align center
   transition opacity 0.5s
-
-
-
-#tooltip.shown
-  // display inline-block
-  opacity 1
-  // transition opacity 0.5s
-  z-index 1
-  border-radius 0.5rem
-
-// #tooltip
-//   text-decoration none
-//   position relative
-
-// #tooltip-span
-//   display none
-
-// #tooltip:hover
-//   display block
-//   position fixed
-//   overflow hidden
-
-
+  background $dru-blue-back
+  &.shown
+    opacity 1
+    z-index 1
+    border-radius 0.5rem
 
 //end tooltip
 

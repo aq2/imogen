@@ -42,25 +42,25 @@ main {
   cursor: pointer;
   overflow-y: auto;
   overflow-x: hidden;
+  position: relative;
   border-radius: 2rem;
   background-size: cover;
   transition: flex 0.7s ease;
   background-position: center;
   background-repeat: no-repeat;
-  position: relative;
 }
 .panel.active {
   flex: 5;
 }
 .content {
+  display: flex;
   padding: 1rem;
+  color: #111;
   margin: 1.5rem 1rem;
   border-radius: 2rem;
-  color: #111;
-  background: rgba(121,87,120,0.8);
-  display: flex;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
+  background: rgba(121,87,120,0.8);
 }
 .blurb {
   display: none;
@@ -85,10 +85,10 @@ h2 {
   color: #a62923;
 }
 .title h2 {
-  color: #795778;
-  margin-top: 0.5rem;
   font-size: 2.5rem;
+  margin-top: 0.5rem;
   margin-bottom: -1rem;
+  color: #795778;
 }
 p {
   font-size: 1.7rem;
@@ -98,10 +98,10 @@ p.inst {
   display: none;
 }
 p.inst.shown {
+  display: block;
+  font-size: 1rem;
   margin-top: 1rem;
   margin-bottom: 0;
-  font-size: 1rem;
-  display: block;
   text-align: center;
 }
 p:first-child {
@@ -130,8 +130,8 @@ span.quote {
 .punter {
   text-align: right;
   font-size: 1.25rem;
-  padding-right: 1rem;
   margin-top: -1.5rem;
+  padding-right: 1rem;
 }
 .panel1 {
   background-image: url("imgs/yoga-class.jpg");
@@ -210,12 +210,12 @@ textarea {
   transform: scale(0.98);
 }
 #tooltip {
-  position: absolute;
-  background: #795778;
-  text-align: center;
-  padding: 0.5rem;
   opacity: 0;
+  padding: 0.5rem;
+  position: absolute;
+  text-align: center;
   transition: opacity 0.5s;
+  background: #795778;
 }
 #tooltip.shown {
   opacity: 1;
