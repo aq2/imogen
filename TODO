@@ -11,8 +11,7 @@ General:
 tooltip:
   ☐ limit tooltip to screen
   ☐ OR embed tooltip in panel => touchscreen no mouseover!
-  ☐ only show tooltip once/twice?
-  ☐ hide js tooltip after hidden?
+  ☐ tidy tooltip code - or get rid!
 
 Imogen:
   ☐ words
@@ -23,6 +22,8 @@ Imogen:
 #
 
 Archive:
+  ✔ only show tooltip once/twice? @done(10-10-22 19:52) @project(tooltip)
+  ✔ hide js tooltip after hidden? @done(10-10-22 19:53) @project(tooltip)
   ✔ no cursor pointer for active panel @done(10-10-22 15:50) @project(General)
   ✔ change tooltip class, rather than .style @done(10-10-22 15:12) @project(General)
   ✔ tooltips for 'click to expand?' @done(10-10-22 14:46) @project(General)

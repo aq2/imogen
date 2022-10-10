@@ -77,7 +77,8 @@ panels.forEach(panel => {
     if (tooltipShown == 5) {
       console.log('gone')
       tooltip.classList.add('hide')
-
+      tooltip.style.left = '-1000005px'
+      
     }
   })
 })
