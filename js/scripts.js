@@ -1,5 +1,5 @@
 /// panels
-
+alert('hi')
 const panels = document.querySelectorAll('.panel')
 const blurbs = document.querySelectorAll('.blurb')
 const insts = document.querySelectorAll('.inst')
@@ -53,6 +53,8 @@ labels.forEach(label => {
       .map((letter, idx) => `<span style='transition-delay:${idx*20}ms'>${letter}</span>`)
       .join('')
     })
+
+
 
 //end form
 

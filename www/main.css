@@ -133,16 +133,16 @@ span.quote {
   margin-top: -1.5rem;
 }
 .panel1 {
-  background-image: url("../imgs/yoga-class.jpg");
+  background-image: url("imgs/yoga-class.jpg");
 }
 .panel2 {
-  background-image: url("../imgs/yoga2.jpg");
+  background-image: url("imgs/yoga2.jpg");
 }
 .panel3 {
-  background-image: url("../imgs/meditate.jpg");
+  background-image: url("imgs/meditate.jpg");
 }
 .panel4 {
-  background-image: url("../imgs/lotus.jpg");
+  background-image: url("imgs/lotus.jpg");
 }
 .form-container {
   background: rgba(166,41,35,0.6);
