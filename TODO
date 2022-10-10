@@ -5,8 +5,10 @@ General:
   ☐ space out header
   ☐ panel border-radius for edge scrollbars
   ☐ nice to have 'genuine' photos
-  ☐ tooltips for 'click to expand?'
   ☐ meeja q's => use font-size vw?
+  ☐ no cursor pointer for active panel
+  ☐ limit tooltip to screen OR embed tooltip in panel
+  ☐ only show tooltip once/twice?
 
 Imogen:
   ☐ words
@@ -17,6 +19,8 @@ Imogen:
 #
 
 Archive:
+  ✔ change tooltip class, rather than .style @done(10-10-22 15:12) @project(General)
+  ✔ tooltips for 'click to expand?' @done(10-10-22 14:46) @project(General)
   ✔ style testimonials into blockquotes @done(09-10-22 18:50) @project(General)
   ✔ disperse testimonials into panels @done(09-10-22 16:51) @project(General)
   ✘ fancify testimonials, fade in/out etc? @cancelled(09-10-22 16:45) @project(General)

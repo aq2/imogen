@@ -265,35 +265,44 @@ span.quote
 
 /// tooltips
 
-.tooltip
-  position relative
-  display inline-block
-  border-bottom 1px dotted black
+// .tooltip
+//   position relative
+//   display inline-block
+//   border-bottom 1px dotted black
 
-.tooltip .tooltiptext
-  visibility hidden
-  width 120px
-  background black
-  color white
-  text-align center
-  padding 0.5rem 0
-  border-radius 0.5rem
+// .tooltip .tooltiptext
+//   visibility hidden
+//   width 120px
+//   background black
+//   color white
+//   text-align center
+//   padding 0.5rem 0
+//   border-radius 0.5rem
+//   position absolute
+//   z-index 1
+//   opacity 0
+//   transition opacity 0.5s
+
+// .tooltip:hover .tooltiptext
+//   visibility visible
+//   opacity 1
+
+#tooltip
   position absolute
-  z-index 1
+  background $dru-blue-back
+  text-align center
+  padding 0.5rem
   opacity 0
   transition opacity 0.5s
 
-.tooltip:hover .tooltiptext
-  visibility visible
-  opacity 1
 
-#tooltip
-  color blue
-  position absolute
-  visibility hidden
-  background black
-  text-align center
-  padding 0.5rem
+
+#tooltip.shown
+  // display inline-block
+  opacity 1
+  // transition opacity 0.5s
+  z-index 1
+  border-radius 0.5rem
 
 // #tooltip
 //   text-decoration none

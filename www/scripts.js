@@ -61,46 +61,22 @@ labels.forEach(label => {
 
 /// tooltip
 
-// var tooltipSpan = document.getElementById('tooltip-span')
-
-// window.onmousemove = function(e) {
-//   var x = e.clientX
-//   var y = e.clientY
-//   tooltipSpan.style.top = (y + 20) + 'px'
-//   tooltipSpan.style.left = (x + 20) + 'px'
-// }
-
-/*
-
-get all (panels)
-add event Listener for mouseover/mousemove
-if inactive, show tooltip text
-
-*/
+let tooltipShown = 0
 
 panels.forEach(panel => {
   panel.addEventListener('mouseover', (e) => {
-    if (!panel.classList.contains('active')) {
+    if (!panel.classList.contains('active') && (tooltipShown < 5)) {
       let x = e.clientX
       let y = e.clientY
       let tooltip = document.getElementById('tooltip')
       tooltip.style.left = x + 5 + 'px'
-      tooltip.style.top = y + 5 + 'px'
-      tooltip.style.color = 'red'
-      tooltip.style.visibility = 'visible'
+      tooltip.style.top = y + 10 + 'px'
+      tooltip.classList.add('shown')
+      tooltipShown++
     } else {
-      tooltip.style.color = 'blue'
-      tooltip.style.visibility = 'hidden'
+      tooltip.classList.remove('shown')
     }
   })
-
-  panel.addEventListener('mouseout', (e) => {
-    tooltip.style.color = 'blue'
-    tooltip.style.visibility = 'hidden'
-  })
 })
-
-
-
 
 //end tooltip
