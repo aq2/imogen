@@ -7,8 +7,12 @@ General:
   ☐ nice to have 'genuine' photos
   ☐ meeja q's => use font-size vw?
   ☐ no cursor pointer for active panel
-  ☐ limit tooltip to screen OR embed tooltip in panel
+  
+tooltip:
+  ☐ limit tooltip to screen
+  ☐ OR embed tooltip in panel => touchscreen no mouseover!
   ☐ only show tooltip once/twice?
+
 
 Imogen:
   ☐ words

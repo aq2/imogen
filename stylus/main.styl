@@ -11,6 +11,22 @@ $dru-orange-back = #a62923
 
 $background = #6cadc952
 
+/// panel images
+
+.panel1
+  background-image url('imgs/yoga-class.jpg')
+
+.panel2
+  background-image url('imgs/yoga2.jpg')
+
+.panel3
+  background-image url('imgs/meditate.jpg')
+
+.panel4
+  background-image url('imgs/lotus.jpg')
+
+//end panel images
+
 /// layout
 *
   margin 0
@@ -65,6 +81,7 @@ main
   background-repeat no-repeat
   &.active
     flex 5
+    cursor default
 
 .content
   display flex
@@ -160,22 +177,6 @@ span.quote
 
 //end testimonial
 
-/// panel images
-
-.panel1
-  background-image url('imgs/yoga-class.jpg')
-
-.panel2
-  background-image url('imgs/yoga2.jpg')
-
-.panel3
-  background-image url('imgs/meditate.jpg')
-
-.panel4
-  background-image url('imgs/lotus.jpg')
-
-//end panel images
-
 /// form
 
 .form-container
@@ -250,6 +251,7 @@ span.quote
 
 #tooltip
   opacity 0
+  left -100000px  // get rid of it - not needed if embedded!
   padding 0.5rem
   position absolute
   text-align center
@@ -261,7 +263,6 @@ span.quote
     border-radius 0.5rem
 
 //end tooltip
-
 
 /// meeja qs
 

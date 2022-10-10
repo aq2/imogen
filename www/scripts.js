@@ -52,12 +52,11 @@ labels.forEach(label => {
       .split('')
       .map((letter, idx) => `<span style='transition-delay:${idx*20}ms'>${letter}</span>`)
       .join('')
-    })
+})
 
 
 
 //end form
-
 
 /// tooltip
 
