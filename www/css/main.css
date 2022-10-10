@@ -208,6 +208,28 @@ textarea {
 .btn:active {
   transform: scale(0.98);
 }
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted #000;
+}
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 0.5rem 0;
+  border-radius: 0.5rem;
+  position: absolute;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
 @media (max-width: 480px) {
   .container {
     width: 100vw;

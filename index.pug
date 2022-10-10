@@ -60,6 +60,7 @@ body
     .panel.panel2
       .content
         h2 Yoga Classes
+        .tooltiptext click to expand
         p.inst.shown (click to expand)
         .blurb
           p We are all rivers flowing into the same lake.
@@ -73,8 +74,9 @@ body
     //end yoga
 
     /// meditate
-    .panel.panel3
+    .panel.panel3#tooltip
       .content
+        span#tooltip-span clicky
         h2 Meditation
         p.inst.shown (click to expand)
         .blurb

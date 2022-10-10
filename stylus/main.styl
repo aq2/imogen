@@ -262,6 +262,48 @@ span.quote
 
 //end form
 
+/// tooltips
+
+.tooltip
+  position relative
+  display inline-block
+  border-bottom 1px dotted black
+
+.tooltip .tooltiptext
+  visibility hidden
+  width 120px
+  background black
+  color white
+  text-align center
+  padding 0.5rem 0
+  border-radius 0.5rem
+  position absolute
+  z-index 1
+  opacity 0
+  transition opacity 0.5s
+
+.tooltip:hover .tooltiptext
+  visibility visible
+  opacity 1
+
+
+// #tooltip
+//   text-decoration none
+//   position relative
+
+// #tooltip-span
+//   display none
+
+// #tooltip:hover
+//   display block
+//   position fixed
+//   overflow hidden
+
+
+
+//end tooltip
+
+
 /// meeja qs
 
 @media(max-width: 1650px)
