@@ -47,6 +47,7 @@ main {
   transition: flex 0.7s ease;
   background-position: center;
   background-repeat: no-repeat;
+  position: relative;
 }
 .panel.active {
   flex: 5;
@@ -229,6 +230,14 @@ textarea {
 .tooltip:hover .tooltiptext {
   visibility: visible;
   opacity: 1;
+}
+#tooltip {
+  color: #00f;
+  position: absolute;
+  visibility: hidden;
+  background: #000;
+  text-align: center;
+  padding: 0.5rem;
 }
 @media (max-width: 480px) {
   .container {

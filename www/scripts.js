@@ -70,4 +70,37 @@ labels.forEach(label => {
 //   tooltipSpan.style.left = (x + 20) + 'px'
 // }
 
+/*
+
+get all (panels)
+add event Listener for mouseover/mousemove
+if inactive, show tooltip text
+
+*/
+
+panels.forEach(panel => {
+  panel.addEventListener('mouseover', (e) => {
+    if (!panel.classList.contains('active')) {
+      let x = e.clientX
+      let y = e.clientY
+      let tooltip = document.getElementById('tooltip')
+      tooltip.style.left = x + 5 + 'px'
+      tooltip.style.top = y + 5 + 'px'
+      tooltip.style.color = 'red'
+      tooltip.style.visibility = 'visible'
+    } else {
+      tooltip.style.color = 'blue'
+      tooltip.style.visibility = 'hidden'
+    }
+  })
+
+  panel.addEventListener('mouseout', (e) => {
+    tooltip.style.color = 'blue'
+    tooltip.style.visibility = 'hidden'
+  })
+})
+
+
+
+
 //end tooltip
