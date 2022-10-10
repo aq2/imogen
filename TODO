@@ -6,13 +6,13 @@ General:
   ☐ panel border-radius for edge scrollbars
   ☐ nice to have 'genuine' photos
   ☐ meeja q's => use font-size vw?
-  ☐ no cursor pointer for active panel
+  ☐ blurb is undefined console error?
   
 tooltip:
   ☐ limit tooltip to screen
   ☐ OR embed tooltip in panel => touchscreen no mouseover!
   ☐ only show tooltip once/twice?
-
+  ☐ hide js tooltip after hidden?
 
 Imogen:
   ☐ words
@@ -23,6 +23,7 @@ Imogen:
 #
 
 Archive:
+  ✔ no cursor pointer for active panel @done(10-10-22 15:50) @project(General)
   ✔ change tooltip class, rather than .style @done(10-10-22 15:12) @project(General)
   ✔ tooltips for 'click to expand?' @done(10-10-22 14:46) @project(General)
   ✔ style testimonials into blockquotes @done(09-10-22 18:50) @project(General)

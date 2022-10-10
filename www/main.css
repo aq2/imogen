@@ -212,7 +212,6 @@ textarea {
 }
 #tooltip {
   opacity: 0;
-  left: -100000px;
   padding: 0.5rem;
   position: absolute;
   text-align: center;
@@ -223,6 +222,11 @@ textarea {
   opacity: 1;
   z-index: 1;
   border-radius: 0.5rem;
+}
+#tooltip.hide {
+  position: absolute;
+  left: -100000px;
+  display: none;
 }
 @media (max-width: 480px) {
   .container {
