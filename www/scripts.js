@@ -1,5 +1,5 @@
 /// panels
-alert('hi')
+
 const panels = document.querySelectorAll('.panel')
 const blurbs = document.querySelectorAll('.blurb')
 const insts = document.querySelectorAll('.inst')
