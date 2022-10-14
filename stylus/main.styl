@@ -54,6 +54,8 @@ body
   padding 0.5rem
   background $background
   font-family 'Josefin Sans', sans-serif
+  overflow-y hidden
+
 
 header
   display flex
@@ -141,11 +143,12 @@ h2
   //   text-align left
   //   color yellow
 
-.panel h2:first-child  // eg what is dru
-  color $contentFore
+.title  // eg what is dru
+  top 0
+  position sticky
   text-align center
+  color $contentFore
   background $dru-blue
-  // display inline
 
 
 .headtitle

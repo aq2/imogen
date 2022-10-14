@@ -6,8 +6,7 @@ General:
   ☐ nice to have 'genuine' photos
   ☐ meeja q's => use font-size vw?
   ☐ blurb is undefined console error?
-  ☐ mottos in inactive panels
-  ☐ content/panel padding margins!
+  ☐ mottos in inactive panels padding/border
   ☐ position background images better
 
 tooltip:
@@ -24,6 +23,8 @@ Imogen:
 #
 
 Archive:
+  ✘ content/panel padding margins! @cancelled(14-10-22 16:24) @project(General)
+  ✔ panel titles sticky? @done(14-10-22 16:24) @project(General)
   ✔ style testimonials with quotes @done(14-10-22 16:18) @project(General)
   ✔ center inactive headings, but left-align @done(14-10-22 16:10) @project(General)
   ✔ only show tooltip once/twice? @done(10-10-22 19:52) @project(tooltip)
