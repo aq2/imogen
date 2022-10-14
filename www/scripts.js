@@ -56,36 +56,3 @@ labels.forEach(label => {
 
 //end form
 
-/// tooltip
-
-// let tooltipShown = 0
-// let tooltip = document.getElementById('tooltip')
-
-// panels.forEach(panel => {
-//   panel.addEventListener('mouseover', (e) => {
-//     if (!panel.classList.contains('active') && (tooltipShown < 5)) {
-//       let x = e.clientX
-//       let y = e.clientY
-//       tooltip.style.left = x + 5 + 'px'
-//       tooltip.style.top = y + 10 + 'px'
-//       tooltip.classList.add('shown')
-//       tooltipShown++
-//     } else {
-//       tooltip.classList.remove('shown')      
-//     }
-//     console.log(tooltipShown)
-//     if (tooltipShown == 5) {
-//       console.log('gone')
-//       tooltip.classList.add('hide')
-//       tooltip.style.left = '-1000005px'
-      
-//     }
-//   })
-// })
-
-// if (tooltipShown >= 5) {
-//   tooltip.classList.add('hide')
-//   tooltip.style.left = '-1000005px'
-//   console.log('hide')
-// }
-//end tooltip

@@ -3,18 +3,18 @@
 General:
   ☐ space out header
   ☐ panel border-radius for edge scrollbars
-  ☐ nice to have 'genuine' photos
-  ☐ meeja q's => use font-size vw?
   ☐ blurb is undefined console error?
   ☐ mottos in inactive panels padding/border
   ☐ position background images better
+  
+meeja q's:
+  ☐ use font-size vw?
+  ☐ clamp??
+  ☐ or traditional
 
-tooltip:
-  ☐ limit tooltip to screen
-  ☐ OR embed tooltip in panel => touchscreen no mouseover!
-  ☐ tidy tooltip code - or get rid!
-
+      
 Imogen:
+  ☐ nice to have 'genuine' photos
   ☐ words
   ☐ pictures
 

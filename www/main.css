@@ -72,9 +72,9 @@ main {
   cursor: default;
 }
 .content {
-  padding: 0.5rem 1rem;
-  color: #111;
+  padding: 1.5rem 1rem;
   margin: 1rem 1rem;
+  color: #111;
   border-radius: 2rem;
   background: rgba(121,87,120,0.8);
 }
@@ -114,13 +114,14 @@ p {
   font-size: 1.7rem;
   margin-bottom: 1rem;
 }
-div.motto {
+.motto {
   display: none;
 }
-div.motto.shown {
+.motto.shown {
   display: block;
+  margin: -0.25rem;
 }
-div.motto p {
+.motto p {
   font-size: 1.25rem;
   text-align: center;
   margin: 0 0 0 -0.5rem;
@@ -213,24 +214,6 @@ textarea {
 }
 .btn:active {
   transform: scale(0.98);
-}
-#tooltip {
-  opacity: 0;
-  padding: 0.5rem;
-  position: absolute;
-  text-align: center;
-  transition: opacity 0.5s;
-  background: #795778;
-}
-#tooltip.shown {
-  opacity: 1;
-  z-index: 1;
-  border-radius: 0.5rem;
-}
-#tooltip.hide {
-  position: absolute;
-  left: -100000px;
-  display: none;
 }
 @media (max-width: 480px) {
   .container {

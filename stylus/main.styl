@@ -56,7 +56,6 @@ body
   font-family 'Josefin Sans', sans-serif
   overflow-y hidden
 
-
 header
   display flex
   justify-content center
@@ -94,20 +93,16 @@ main
     cursor default
 
 .content
-  // display flex
-  padding 0.5rem 1rem
-  color $contentFore
+  padding 1.5rem 1rem
   margin 1rem 1rem
+  color $contentFore
   border-radius 2rem
-  // align-items center
-  // flex-direction column
   background $contentBack
 
 .blurb
   display none
   &.active
     display inline
-
 
 //end layout
 
@@ -119,29 +114,9 @@ h1, h2
 h1 
   font-size 3.5rem
   font-size clamp(2rem, 10vw, 3.5rem) // tweak numbers???
-  // bottom-margin 0
-  // font-size: calc(45px + 0.390625vw)
-  // font-size: calc(35px + 0.990625vw)
-  // font-size: min(max(1rem, 15vw), 3.5rem)
-
+  
 h2
   font-size 2rem
-
-.content
-  // text-align center
-
-// .content h2
-//   color blue
-//   text-align center
-//   // text-align left
-//   // display inline-block
-//   border 1px solid red
-//   // margin 0 auto
-//   // margin 0 1rem
-  // padding 1rem
-  // &.ctitle
-  //   text-align left
-  //   color yellow
 
 .title  // eg what is dru
   top 0
@@ -155,35 +130,23 @@ h2
   color $dru-orange-back
   & h2
     font-size 2.5rem
-    // margin-top .5rem
-    // margin-top -1rem
-    // margin-bottom -1rem
     color $dru-blue-back
 
 p
   font-size 1.7rem
   margin-bottom 1rem
   
-div.motto
+.motto
   display none
   &.shown
     display block
-    // margin 0
-    // padding 0
-    // font-size 0.51rem
-    // margin-top 1rem
-    // margin-bottom 0
+    margin -0.25rem
 
-div.motto p
+.motto p
   font-size 1.25rem
   text-align center
-  // margin-left -0.5rem
-  // margin-bottom 0
   margin 0 0 0 -0.5rem
-  // padding 0
 
-p:first-child
-  // margin-top 0.5rem
 
 //end typography
 
@@ -213,7 +176,6 @@ span.quote
   text-align right
   font-size 1.25rem
   margin-top -1rem
-  // padding-right 1rem
 
 //end testimonial
 
@@ -286,27 +248,6 @@ span.quote
     transform scale(0.98)
 
 //end form
-
-/// tooltips
-
-#tooltip
-  opacity 0
-  padding 0.5rem
-  position absolute
-  text-align center
-  transition opacity 0.5s
-  background $dru-blue-back
-  &.shown
-    opacity 1
-    z-index 1
-    border-radius 0.5rem
-
-#tooltip.hide
-  position absolute
-  left -100000px  // get rid of it - not needed if embedded!
-  display none
-
-//end tooltip
 
 /// meeja qs
 
