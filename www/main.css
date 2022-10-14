@@ -71,13 +71,10 @@ main {
   cursor: default;
 }
 .content {
-  display: flex;
-  padding: 1rem;
+  padding: 0.5rem 1rem;
   color: #111;
-  margin: 1.5rem 1rem;
+  margin: 1rem 1rem;
   border-radius: 2rem;
-  align-items: center;
-  flex-direction: column;
   background: rgba(121,87,120,0.8);
 }
 .blurb {
@@ -91,13 +88,16 @@ h2 {
   font-family: 'Cardo', serif;
 }
 h1 {
-  font-size: clamp(2rem, 3vw, 3.5rem);
+  font-size: 3.5rem;
+  font-size: clamp(2rem, 10vw, 3.5rem);
 }
 h2 {
   font-size: 2rem;
 }
-.active h2 {
-  text-align: left !important;
+.panel h2:first-child {
+  color: #111;
+  text-align: center;
+  background: #6cadc9;
 }
 .title {
   color: #a62923;
@@ -110,18 +110,16 @@ p {
   font-size: 1.7rem;
   margin-bottom: 1rem;
 }
-p.inst {
+div.motto {
   display: none;
 }
-p.inst.shown {
+div.motto.shown {
   display: block;
-  font-size: 1rem;
-  margin-top: 1rem;
-  margin-bottom: 0;
-  text-align: center;
 }
-p:first-child {
-  margin-top: 0.5rem;
+div.motto p {
+  font-size: 1.25rem;
+  text-align: center;
+  margin: 0 0 0 -0.5rem;
 }
 blockquote {
   width: 80%;

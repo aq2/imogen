@@ -2,7 +2,7 @@
 
 const panels = document.querySelectorAll('.panel')
 const blurbs = document.querySelectorAll('.blurb')
-const insts = document.querySelectorAll('.inst')
+const mottos = document.querySelectorAll('.motto')
 
 panels.forEach(panel => {
   panel.addEventListener('click', () => {
@@ -12,9 +12,9 @@ panels.forEach(panel => {
     panel.classList.add('active')
     let blurb = blurbs[panelID - 1]
     let active = blurb.classList.contains('active')
-    let inst = insts[panelID - 1]
-    addHiddenInsts()
-    inst.classList.remove('shown')
+    let motto = mottos[panelID - 1]
+    addHiddenMottos()
+    motto.classList.remove('shown')
     if (!active) {
       removeActiveBlurbs()
       blurb.classList.add('active')
@@ -34,9 +34,9 @@ function removeActiveBlurbs() {
   })
 }
 
-function addHiddenInsts() {
-  insts.forEach(inst => {
-    inst.classList.add('shown')
+function addHiddenMottos() {
+  mottos.forEach(motto => {
+    motto.classList.add('shown')
   })
 }
 
@@ -58,34 +58,34 @@ labels.forEach(label => {
 
 /// tooltip
 
-let tooltipShown = 0
-let tooltip = document.getElementById('tooltip')
+// let tooltipShown = 0
+// let tooltip = document.getElementById('tooltip')
 
-panels.forEach(panel => {
-  panel.addEventListener('mouseover', (e) => {
-    if (!panel.classList.contains('active') && (tooltipShown < 5)) {
-      let x = e.clientX
-      let y = e.clientY
-      tooltip.style.left = x + 5 + 'px'
-      tooltip.style.top = y + 10 + 'px'
-      tooltip.classList.add('shown')
-      tooltipShown++
-    } else {
-      tooltip.classList.remove('shown')      
-    }
-    console.log(tooltipShown)
-    if (tooltipShown == 5) {
-      console.log('gone')
-      tooltip.classList.add('hide')
-      tooltip.style.left = '-1000005px'
+// panels.forEach(panel => {
+//   panel.addEventListener('mouseover', (e) => {
+//     if (!panel.classList.contains('active') && (tooltipShown < 5)) {
+//       let x = e.clientX
+//       let y = e.clientY
+//       tooltip.style.left = x + 5 + 'px'
+//       tooltip.style.top = y + 10 + 'px'
+//       tooltip.classList.add('shown')
+//       tooltipShown++
+//     } else {
+//       tooltip.classList.remove('shown')      
+//     }
+//     console.log(tooltipShown)
+//     if (tooltipShown == 5) {
+//       console.log('gone')
+//       tooltip.classList.add('hide')
+//       tooltip.style.left = '-1000005px'
       
-    }
-  })
-})
+//     }
+//   })
+// })
 
-if (tooltipShown >= 5) {
-  tooltip.classList.add('hide')
-  tooltip.style.left = '-1000005px'
-  console.log('hide')
-}
+// if (tooltipShown >= 5) {
+//   tooltip.classList.add('hide')
+//   tooltip.style.left = '-1000005px'
+//   console.log('hide')
+// }
 //end tooltip

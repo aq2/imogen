@@ -1,13 +1,16 @@
 *## Imogen ##*
 
 General:
-  ☐ style testimonials with quotes, and move progressbar?
+  ☐ style testimonials with quotes
+  ☐ center inactive headings, but left-align
   ☐ space out header
   ☐ panel border-radius for edge scrollbars
   ☐ nice to have 'genuine' photos
   ☐ meeja q's => use font-size vw?
   ☐ blurb is undefined console error?
-  
+  ☐ mottos in inactive panels
+  ☐ content/panel padding margins!
+
 tooltip:
   ☐ limit tooltip to screen
   ☐ OR embed tooltip in panel => touchscreen no mouseover!
