@@ -43,7 +43,7 @@ header img {
   margin: 0 1rem;
   border-radius: 1rem;
 }
-.title {
+.headtitle {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -99,10 +99,10 @@ h2 {
   text-align: center;
   background: #6cadc9;
 }
-.title {
+.headtitle {
   color: #a62923;
 }
-.title h2 {
+.headtitle h2 {
   font-size: 2.5rem;
   color: #795778;
 }
@@ -122,7 +122,7 @@ div.motto p {
   margin: 0 0 0 -0.5rem;
 }
 blockquote {
-  width: 80%;
+  width: 90%;
   position: relative;
   border-radius: 1rem;
   padding: 0.25rem 1rem;
@@ -139,13 +139,12 @@ span.quote {
 .testimonial {
   font-size: 1.5rem;
   font-style: italic;
-  margin-top: 3.5rem;
+  margin-top: 3rem;
 }
 .punter {
   text-align: right;
   font-size: 1.25rem;
-  margin-top: -1.5rem;
-  padding-right: 1rem;
+  margin-top: -1rem;
 }
 .form-container {
   background: rgba(166,41,35,0.6);
