@@ -66,6 +66,11 @@ header
     margin 0 1rem
     border-radius 1rem
 
+.title 
+  display flex
+  flex-direction column
+  justify-content space-between
+
 main
   display flex
   margin 0 auto
@@ -111,7 +116,9 @@ h1, h2
   font-family 'Cardo', serif
   
 h1 
-  font-size 3.5rem
+  // font-size 3.5rem
+  font-size clamp(2rem, 3vw, 3.5rem)
+  // bottom-margin 0
 
 h2
   font-size 2rem
@@ -129,8 +136,9 @@ h2
   color $dru-orange-back
   & h2
     font-size 2.5rem
-    margin-top .5rem
-    margin-bottom -1rem
+    // margin-top .5rem
+    // margin-top -1rem
+    // margin-bottom -1rem
     color $dru-blue-back
 
 p
