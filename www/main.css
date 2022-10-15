@@ -69,7 +69,6 @@ main {
   transition: flex 0.7s ease;
   background-position: center;
   background-repeat: no-repeat;
-  min-width: 100px;
 }
 .panel.active {
   flex: 5;
@@ -108,9 +107,6 @@ h1 {
   font-size: 3.5rem;
   color: #a62923;
 }
-h2 {
-  font-size: 2rem;
-}
 .title {
   top: 0;
   position: -webkit-sticky;
@@ -124,6 +120,7 @@ header h2 {
   color: #795778;
 }
 .content h2 {
+  font-size: 2rem;
   margin-bottom: 1rem;
 }
 p {
@@ -142,18 +139,21 @@ p {
   text-align: center;
 }
 a {
+  padding: 1rem;
+  cursor: pointer;
   font-size: 2rem;
   margin-top: 4rem;
-  text-decoration: none;
-  display: inline-block;
-  padding: 1rem;
-  background: #795778;
-  cursor: pointer;
   color: #d69c19;
+  display: inline-block;
+  text-decoration: none;
+  background: #795778;
 }
 a:hover {
   background: #6cadc9;
   border: 1px solid #795778;
+}
+a:active {
+  transform: scale(0.98);
 }
 blockquote {
   width: 90%;
@@ -171,19 +171,19 @@ span.quote {
   font-family: sans-serif;
 }
 .testimonial {
+  margin-top: 3rem;
   font-size: 1.5rem;
   font-style: italic;
-  margin-top: 3rem;
 }
 .punter {
   text-align: right;
-  font-size: 1.25rem;
   margin-top: -1rem;
+  font-size: 1.25rem;
 }
 .form-container {
-  background: rgba(166,41,35,0.6);
   padding: 1rem;
   border-radius: 2rem;
+  background: rgba(166,41,35,0.6);
 }
 .form-control {
   position: relative;
@@ -191,15 +191,15 @@ span.quote {
 }
 .form-control input,
 textarea {
+  border: 0;
   width: 90%;
+  padding: 1rem;
+  display: block;
+  font-size: 1.5rem;
   background: transparent;
   background: rgba(121,87,120,0.8);
-  border: 0;
-  border-bottom: 2px #111 solid;
-  display: block;
-  padding: 1rem;
-  font-size: 1.5rem;
   border-radius: 1rem 1rem 0 0;
+  border-bottom: 2px #111 solid;
 }
 .form-control input:focus,
 .form-control input:valid,
@@ -209,34 +209,34 @@ textarea {
   border-bottom-color: #f00;
 }
 .form-control label {
-  position: absolute;
   top: 0.5rem;
   left: 0.5rem;
+  position: absolute;
 }
 .form-control label span {
-  display: inline-block;
-  font-size: 1.25rem;
   min-width: 5px;
+  font-size: 1.25rem;
+  display: inline-block;
 }
 .form-control input:focus + label span,
 .form-control input:valid + label span,
 .form-control textarea:focus + label span,
 .form-control textarea:valid + label span {
   color: #add8e6;
-  transform: translateY(-2rem);
   transition: 0.3s ease-in;
+  transform: translateY(-2rem);
   transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 .btn {
-  cursor: pointer;
-  display: inline-block;
-  width: 90%;
-  background: #6cadc9;
-  padding: 1rem;
-  font-family: inherit;
-  font-size: 1.5rem;
   border: 0;
+  width: 90%;
+  padding: 1rem;
+  cursor: pointer;
+  font-size: 1.5rem;
   border-radius: 1rem;
+  font-family: inherit;
+  display: inline-block;
+  background: #6cadc9;
 }
 .btn:hover {
   background: #795778;

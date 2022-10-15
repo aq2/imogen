@@ -4,23 +4,27 @@ General:
   ☐ panel border-radius for edge scrollbars
   ☐ blurb is undefined console error?
   ☐ position background images better
-  ☐ form processing for netlify
-  ☐ success.html for after form
   
 meeja q's:
   ☐ header - images on one row if poss for small screens
   ☐ improve break points!
+  ☐ all panels auto expand for portrait screens
 
 Imogen:
   ☐ nice to have 'genuine' photos
   ☐ words
   ☐ pictures
+  ☐ need to link with namecheap
+  when active:
+    ☐ test form  
 
 #  
 ##############################################################  
 #
 
 Archive:
+  ✔ form processing for netlify @done(15-10-22 14:17) @project(General)
+  ✔ success.html for after form @done(15-10-22 14:17) @project(General)
   ✔ space out header @done(15-10-22 13:26) @project(General)
   ✔ mottos in inactive panels padding/border @done(15-10-22 13:26) @project(General)
   ✘ use font-size vw? @cancelled(15-10-22 13:26) @project(meeja q's)
