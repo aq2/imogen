@@ -4,9 +4,12 @@ General:
   ☐ panel border-radius for edge scrollbars
   ☐ blurb is undefined console error?
   ☐ position background images better
+  ☐ form processing for netlify
+  ☐ success.html for after form
   
 meeja q's:
   ☐ header - images on one row if poss for small screens
+  ☐ improve break points!
 
 Imogen:
   ☐ nice to have 'genuine' photos

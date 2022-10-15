@@ -74,6 +74,10 @@ header
 main
   display flex
   margin 0 auto
+  
+.success
+  text-align center
+  margin-top 2rem
 
 .panel
   flex 1
@@ -163,6 +167,21 @@ p
   text-align center
   // margin 0 0 0 -0.5rem
 
+a
+  font-size 2rem
+  margin-top 4rem
+  // padding-top 4rem
+  text-decoration none
+  display inline-block
+  padding 1rem
+  background $dru-blue-back
+  cursor pointer
+  color $dru-orange
+
+a:hover
+  background $dru-blue
+  border 1px solid $dru-blue-back
+
 
 //end typography
 
@@ -216,7 +235,7 @@ span.quote
   border 0
   border-bottom 2px $contentFore solid
   display block
-  padding 1rem 0
+  padding 1rem
   font-size 1.5rem
   border-radius 1rem 1rem 0 0
   // margin 0 auto

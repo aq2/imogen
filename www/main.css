@@ -52,6 +52,10 @@ main {
   display: flex;
   margin: 0 auto;
 }
+.success {
+  text-align: center;
+  margin-top: 2rem;
+}
 .panel {
   flex: 1;
   height: 82vh;
@@ -137,6 +141,20 @@ p {
   font-size: 1.25rem;
   text-align: center;
 }
+a {
+  font-size: 2rem;
+  margin-top: 4rem;
+  text-decoration: none;
+  display: inline-block;
+  padding: 1rem;
+  background: #795778;
+  cursor: pointer;
+  color: #d69c19;
+}
+a:hover {
+  background: #6cadc9;
+  border: 1px solid #795778;
+}
 blockquote {
   width: 90%;
   position: relative;
@@ -179,7 +197,7 @@ textarea {
   border: 0;
   border-bottom: 2px #111 solid;
   display: block;
-  padding: 1rem 0;
+  padding: 1rem;
   font-size: 1.5rem;
   border-radius: 1rem 1rem 0 0;
 }

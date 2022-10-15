@@ -55,7 +55,7 @@ body
             img(src='imgs/melon.jpg')
             .spiel
               p blah blah...
-              p need a nicer picture of imogen too (if one exists 😉)
+              p need a nicer picture of imogen (if one exists 😉)
           blockquote
             span.quote &ldquo;
             .testimonial
@@ -111,14 +111,15 @@ body
           p You can send me a message by using the form below.
           p I'll reply as soon as I can.
           .form-container
-            form
+            form(name='contact' method='POST' 
+                 data-netlify='true' action='/success')
               .form-control
                 input(type='text' required)
                 label your email address
               .form-control
                 textarea(rows=6 cols=50 name='message' required)
                 label please enter your message
-              button.btn Send
+              button(type='submit').btn Send
 
     //end contact
 
