@@ -26,6 +26,7 @@ body
     .headtitle
       h2 Imogen Groves 
       h1 Dru Yoga and Meditation
+
   //end header
 
   main
@@ -43,18 +44,23 @@ body
           
           blockquote
             span.quote &ldquo;
-            p.testimonial.
+            .testimonial.
               Classes are enjoyable and gently challenging. I always come away with a strong sense of achievement and renewed calm.
-            p.punter S.H.  
+            .punter S.H.  
+
+          //- hr
 
           h2 About Me
-          p blah blah...
-          p possibly a nice picture of imogen too
+          .about
+            img(src='imgs/melon.jpg')
+            .spiel
+              p blah blah...
+              p need a nicer picture of imogen too (if one exists 😉)
           blockquote
             span.quote &ldquo;
-            p.testimonial
+            .testimonial
               span Dru is a very gentle way of connecting to your body stretching and balancing. Classes are fun and engaging.
-            p.punter C.F.
+            .punter C.F.
 
     //end what is  
 
@@ -63,16 +69,16 @@ body
       h2.title Yoga
       .content
         .motto.shown
-          p Yoga is not a work-out, it's a work-in
+          p Yoga is not a work-out, it's a work-in.
           p (click to expand)
         .blurb
           p ## details of different classes
           p ## dates, times, locations, costs etc
           blockquote
             span.quote &ldquo;
-            p.testimonial
+            .testimonial
               span After attending many yoga classes over nearly 40 years, these are the best classes I have ever been to. Apart from the improved flexibility and the increased vitality and clarity of mind that the classes give, there is a sense of pure joy in taking part.
-            p.punter G.M.
+            .punter G.M.
     
     //end yoga
 
@@ -87,9 +93,9 @@ body
           p Breathe, and know that you are breathing.
           blockquote
             span.quote &ldquo;
-            p.testimonial
+            .testimonial
               span It's been great online too. Imogen is such a lovely, patient, fun and professional teacher. Highly recommended.
-            p.punter N.C.
+            .punter N.C.
           p ## details
 
     //end meditate
@@ -116,10 +122,4 @@ body
 
     //end contact
 
-  /// tooltip
-  p#tooltip click to expand
-
-  //end tooltip
-
   script(src='scripts.js')
-

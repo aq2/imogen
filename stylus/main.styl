@@ -54,7 +54,7 @@ body
   padding 0.5rem
   background $background
   font-family 'Josefin Sans', sans-serif
-  overflow-y hidden
+  // overflow-y hidden
 
 header
   display flex
@@ -69,6 +69,7 @@ header
   display flex
   flex-direction column
   justify-content space-between
+  // justify-content space-evenly
 
 main
   display flex
@@ -87,6 +88,7 @@ main
   transition flex 0.7s ease
   background-position center
   background-repeat no-repeat
+  min-width 100px
   // padding 1rem
   &.active
     flex 5
@@ -104,6 +106,18 @@ main
   &.active
     display inline
 
+hr
+  width 68%
+
+.about
+  display flex
+  margin-bottom 2rem
+
+.about img
+  width 200px
+  margin-right 2rem
+  border-radius 2rem
+
 //end layout
 
 /// typography
@@ -113,7 +127,8 @@ h1, h2
   
 h1 
   font-size 3.5rem
-  font-size clamp(2rem, 10vw, 3.5rem) // tweak numbers???
+  // font-size clamp(2rem, 10vw, 3.5rem) // tweak numbers???
+  color $dru-orange-back
   
 h2
   font-size 2rem
@@ -125,27 +140,28 @@ h2
   color $contentFore
   background $dru-blue
 
+header h2
+  font-size 2.75rem
+  color $dru-blue-back
 
-.headtitle
-  color $dru-orange-back
-  & h2
-    font-size 2.5rem
-    color $dru-blue-back
+
+.content h2
+  margin-bottom 1rem
 
 p
-  font-size 1.7rem
+  font-size 1.75rem
   margin-bottom 1rem
   
 .motto
   display none
   &.shown
     display block
-    margin -0.25rem
+    margin -1rem 0 -2rem 0
 
 .motto p
   font-size 1.25rem
   text-align center
-  margin 0 0 0 -0.5rem
+  // margin 0 0 0 -0.5rem
 
 
 //end typography
@@ -251,17 +267,37 @@ span.quote
 
 /// meeja qs
 
-@media(max-width: 1650px)
-  .content h2
-    font-size 1.75rem
-      // only the top ones need to change for inactives!!
-      // how deep does the rabbit hole go?
+@media(max-width: 1500px)
+  h2.title
+    font-size 1.5rem
 
-@media(max-width: 480px) 
-  .container
-    width 100vw
+@media(max-width: 1200px)
+  h1
+    font-size 2.5rem
+  h2.title
+    font-size 1.25rem
+  .motto p
+    font-size 1rem
+  // images should go top
+  header
+    flex-direction column
+
+@media(max-width: 980px)
+  h2.title
+    font-size 1rem
+  .motto p
+    font-size 1rem
+    margin 0.5rem 0
+  main
+    flex-direction column
+
+
+
+// @media(max-width: 480px) 
+//   .container
+//     width 100vw
   
-  .panel:nth-of-type(4)
-    display none
+//   .panel:nth-of-type(4)
+//     display none
 
 //end meeja

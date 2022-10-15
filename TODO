@@ -1,18 +1,13 @@
 *## Imogen ##*
 
 General:
-  ☐ space out header
   ☐ panel border-radius for edge scrollbars
   ☐ blurb is undefined console error?
-  ☐ mottos in inactive panels padding/border
   ☐ position background images better
   
 meeja q's:
-  ☐ use font-size vw?
-  ☐ clamp??
-  ☐ or traditional
+  ☐ header - images on one row if poss for small screens
 
-      
 Imogen:
   ☐ nice to have 'genuine' photos
   ☐ words
@@ -23,6 +18,11 @@ Imogen:
 #
 
 Archive:
+  ✔ space out header @done(15-10-22 13:26) @project(General)
+  ✔ mottos in inactive panels padding/border @done(15-10-22 13:26) @project(General)
+  ✘ use font-size vw? @cancelled(15-10-22 13:26) @project(meeja q's)
+  ✘ clamp?? @cancelled(15-10-22 13:26) @project(meeja q's)
+  ✔ or traditional @done(15-10-22 13:26) @project(meeja q's)
   ✘ content/panel padding margins! @cancelled(14-10-22 16:24) @project(General)
   ✔ panel titles sticky? @done(14-10-22 16:24) @project(General)
   ✔ style testimonials with quotes @done(14-10-22 16:18) @project(General)

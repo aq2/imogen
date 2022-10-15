@@ -32,7 +32,6 @@ body {
   padding: 0.5rem;
   background: rgba(108,173,201,0.322);
   font-family: 'Josefin Sans', sans-serif;
-  overflow-y: hidden;
 }
 header {
   display: flex;
@@ -66,6 +65,7 @@ main {
   transition: flex 0.7s ease;
   background-position: center;
   background-repeat: no-repeat;
+  min-width: 100px;
 }
 .panel.active {
   flex: 5;
@@ -84,13 +84,25 @@ main {
 .blurb.active {
   display: inline;
 }
+hr {
+  width: 68%;
+}
+.about {
+  display: flex;
+  margin-bottom: 2rem;
+}
+.about img {
+  width: 200px;
+  margin-right: 2rem;
+  border-radius: 2rem;
+}
 h1,
 h2 {
   font-family: 'Cardo', serif;
 }
 h1 {
   font-size: 3.5rem;
-  font-size: clamp(2rem, 10vw, 3.5rem);
+  color: #a62923;
 }
 h2 {
   font-size: 2rem;
@@ -103,15 +115,15 @@ h2 {
   color: #111;
   background: #6cadc9;
 }
-.headtitle {
-  color: #a62923;
-}
-.headtitle h2 {
-  font-size: 2.5rem;
+header h2 {
+  font-size: 2.75rem;
   color: #795778;
 }
+.content h2 {
+  margin-bottom: 1rem;
+}
 p {
-  font-size: 1.7rem;
+  font-size: 1.75rem;
   margin-bottom: 1rem;
 }
 .motto {
@@ -119,12 +131,11 @@ p {
 }
 .motto.shown {
   display: block;
-  margin: -0.25rem;
+  margin: -1rem 0 -2rem 0;
 }
 .motto p {
   font-size: 1.25rem;
   text-align: center;
-  margin: 0 0 0 -0.5rem;
 }
 blockquote {
   width: 90%;
@@ -215,11 +226,34 @@ textarea {
 .btn:active {
   transform: scale(0.98);
 }
-@media (max-width: 480px) {
-  .container {
-    width: 100vw;
+@media (max-width: 1500px) {
+  h2.title {
+    font-size: 1.5rem;
   }
-  .panel:nth-of-type(4) {
-    display: none;
+}
+@media (max-width: 1200px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  h2.title {
+    font-size: 1.25rem;
+  }
+  .motto p {
+    font-size: 1rem;
+  }
+  header {
+    flex-direction: column;
+  }
+}
+@media (max-width: 980px) {
+  h2.title {
+    font-size: 1rem;
+  }
+  .motto p {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+  }
+  main {
+    flex-direction: column;
   }
 }
