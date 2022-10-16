@@ -130,14 +130,20 @@ h1
   font-size 3.5rem
   color $dru-orange-back
   
-.title  // eg what is dru
+.title
+
+.title // eg what is dru
   top 0
   position sticky
-  min-height 2rem
-  text-align center
+  min-height 2.5rem
+  // text-align center
   color $contentFore
-  padding-top 0.25rem
+  // padding-top 0.2rem
   background $dru-blue
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align center
 
 header h2
   font-size 2.75rem
@@ -265,11 +271,12 @@ span.quote
   cursor pointer
   font-size 1.5rem
   border-radius 1rem
-  font-family inherit
-  display inline-block
+  // font-family inherit
+  // display inline-block
   background $dru-blue
   &:hover
     background $dru-blue-back
+    background $dru-orange
   &:active
     transform scale(0.98)
 
@@ -286,7 +293,7 @@ span.quote
     overflow-y auto
   h1
     font-size 2.5rem
-  h2.title
+  .title h2
     font-size 1.25rem
   .motto p
     font-size 1rem
@@ -295,8 +302,6 @@ span.quote
     flex-direction column
 
 @media(max-width: 980px)
-  h2.title
-    font-size 1rem
   .motto p
     font-size 1rem
     margin 0.5rem 0

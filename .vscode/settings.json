@@ -1,3 +1,4 @@
 {
-  "livePugCompiler.savePath": "/www"
+  "livePugCompiler.savePath": "/www",
+  "stylusCompile.settings.showOutputWindow": false
 }

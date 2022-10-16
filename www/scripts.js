@@ -8,6 +8,7 @@ panels.forEach(panel => {
   panel.addEventListener('click', () => {
     // get last char
     let panelID = panel.className.slice(-1)
+    console.log(panelID)
     removeActiveClasses()
     panel.classList.add('active')
     let blurb = blurbs[panelID - 1]

@@ -112,11 +112,13 @@ h1 {
   top: 0;
   position: -webkit-sticky;
   position: sticky;
-  min-height: 2rem;
-  text-align: center;
+  min-height: 2.5rem;
   color: #111;
-  padding-top: 0.25rem;
   background: #6cadc9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 header h2 {
   font-size: 2.75rem;
@@ -237,12 +239,11 @@ textarea {
   cursor: pointer;
   font-size: 1.5rem;
   border-radius: 1rem;
-  font-family: inherit;
-  display: inline-block;
   background: #6cadc9;
 }
 .btn:hover {
   background: #795778;
+  background: #d69c19;
 }
 .btn:active {
   transform: scale(0.98);
@@ -259,7 +260,7 @@ textarea {
   h1 {
     font-size: 2.5rem;
   }
-  h2.title {
+  .title h2 {
     font-size: 1.25rem;
   }
   .motto p {
@@ -270,9 +271,6 @@ textarea {
   }
 }
 @media (max-width: 980px) {
-  h2.title {
-    font-size: 1rem;
-  }
   .motto p {
     font-size: 1rem;
     margin: 0.5rem 0;
