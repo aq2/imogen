@@ -4,13 +4,19 @@ General:
   ☐ panel border-radius for edge scrollbars
   ☐ blurb is undefined console error?
   ☐ position background images better
+  ✔ make panel title box taller -> text can move down a touch -> not affected so much by panel round borders @done(16-10-22 22:51)
+  ✘ verticl align panel heading? rather than padding @cancelled(16-10-22 22:51)
   
 meeja q's:
   ☐ header - images on one row if poss for small screens
+    ☐ maybe everythining in header on one row?
   ☐ improve break points!
+  ✔ overflow-y hidden - no up/down scolling on wide screen @done(16-10-22 22:56)
   ☐ all panels auto expand for portrait screens
+  ☐ make 'what is dru?' wrap -> 'Dru? goes on next line
 
 Imogen:
+  ☐ get namecheap and netlify passwoids
   ☐ nice to have 'genuine' photos
   ☐ words
   ☐ pictures

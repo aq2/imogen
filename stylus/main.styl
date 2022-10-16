@@ -54,7 +54,7 @@ body
   padding 0.5rem
   background $background
   font-family 'Josefin Sans', sans-serif
-  // overflow-y hidden
+  overflow-y hidden
 
 header
   display flex
@@ -96,10 +96,10 @@ main
     cursor default
 
 .content
-  padding 1.5rem 1rem
   margin 1rem 1rem
   color $contentFore
   border-radius 2rem
+  padding 1.5rem 1rem
   background $contentBack
 
 .blurb
@@ -133,8 +133,10 @@ h1
 .title  // eg what is dru
   top 0
   position sticky
+  min-height 2rem
   text-align center
   color $contentFore
+  padding-top 0.25rem
   background $dru-blue
 
 header h2
@@ -280,6 +282,8 @@ span.quote
     font-size 1.5rem
 
 @media(max-width: 1200px)
+  body
+    overflow-y auto
   h1
     font-size 2.5rem
   h2.title
@@ -298,5 +302,8 @@ span.quote
     margin 0.5rem 0
   main
     flex-direction column
+  .panel
+    flex 5
+    // TODO nedd to make all panel active? with JS? 
 
 //end meeja

@@ -32,6 +32,7 @@ body {
   padding: 0.5rem;
   background: rgba(108,173,201,0.322);
   font-family: 'Josefin Sans', sans-serif;
+  overflow-y: hidden;
 }
 header {
   display: flex;
@@ -75,10 +76,10 @@ main {
   cursor: default;
 }
 .content {
-  padding: 1.5rem 1rem;
   margin: 1rem 1rem;
   color: #111;
   border-radius: 2rem;
+  padding: 1.5rem 1rem;
   background: rgba(121,87,120,0.8);
 }
 .blurb {
@@ -111,8 +112,10 @@ h1 {
   top: 0;
   position: -webkit-sticky;
   position: sticky;
+  min-height: 2rem;
   text-align: center;
   color: #111;
+  padding-top: 0.25rem;
   background: #6cadc9;
 }
 header h2 {
@@ -250,6 +253,9 @@ textarea {
   }
 }
 @media (max-width: 1200px) {
+  body {
+    overflow-y: auto;
+  }
   h1 {
     font-size: 2.5rem;
   }
@@ -273,5 +279,8 @@ textarea {
   }
   main {
     flex-direction: column;
+  }
+  .panel {
+    flex: 5;
   }
 }
