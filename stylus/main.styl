@@ -59,16 +59,19 @@ body
 header
   display flex
   justify-content center
+  align-items flex-end
   & img
     width 115px
     height 115px
     margin 0 1rem
     border-radius 1rem
+    // border 1px solid red
 
 .headtitle 
   display flex
   flex-direction column
   justify-content space-between
+  // border 1px solid blue
 
 main
   display flex
@@ -127,14 +130,14 @@ h1
   font-size 3.5rem
   color $dru-orange-back
   
-h2
-  font-size 1.75rem
+// h2
+  // font-size 1.75rem
 
 .title
   top 0
   display flex
   position sticky
-  min-height 2.5rem
+  min-height 3rem
   align-items center
   color $contentFore
   background $dru-blue
@@ -143,16 +146,13 @@ h2
 .title.dru
   display flex
   flex-wrap wrap
-  justify-content center
-  align-items center
   text-align center
+  align-items center
+  justify-content center
 
 .title.dru h2
-  // margin-left 0.5rem
-  // border 1px solid blue
-  display inline-block
-  // min-width 6rem
   text-align left
+  display inline-block
 
 header h2
   font-size 2.75rem
@@ -293,21 +293,28 @@ span.quote
 // reduce blurb/motto paddings/margins somwhere
 
 // 'what is dru'
-@media(max-width: 1760px) 
+@media(max-width: 1760px)
   .title.dru
     flex-direction column
   .panel.shown .title.dru
     flex-direction row
+    //todo could change title heights..
+  .title
+    // height 3.5rem // fucks what is dru spacing!
 
 // reduce size of 'meditate'
 @media(max-width: 1500px)
+  .content
+    margin 0.5rem
   .title h2
     font-size 1.5rem
+  .motto.shown p
+    margin -1rem -0.5rem 1rem -0.5rem
 
 // reduce size of 'meditate' again
 @media(max-width: 1200px)
   .title h2
-    font-size 1.25rem
+    font-size 1.35rem
 
 // portrait setting
 @media(max-width: 980px)
@@ -315,7 +322,6 @@ span.quote
     overflow-y auto
   main
     flex-direction column
-  
   header h1
     font-size 3rem
 
@@ -336,17 +342,75 @@ span.quote
   .c2e
     display none
 
+// ..and beyond, for baby screens
 @media(max-width: 880px)
+  main
+    padding 0
+  header
+    align-items flex-end
   header h1
     font-size 2.75rem
+  header h2
+    font-size 2.5rem
   header img
     width 100px
     height 100px
+    margin 0 0.5rem
+  .panel
+    margin 0
   
 @media(max-width: 806px)
   header h1
     font-size 2.5rem
+  header h2
+    font-size 2rem
   header img
     width 80px
     height 80px
+
+@media(max-width: 686px)
+  header h1
+    font-size 2rem
+  header h2
+    font-size 1.75rem
+  header img
+    width 70px
+    height 70px
+    margin 0 0.25rem
+
+@media(max-width: 560px)
+  header h1
+    font-size 1.5rem
+  
+@media(max-width: 460px)
+  header h1
+    font-size 1.25rem
+  header h2
+    font-size 1.25rem
+  header img
+    width 60px
+    height 60px
+    margin 0 0.15rem
+  // todo about me flex widths...
+
+@media(max-width: 386px)
+  header h1
+    font-size 1.2rem
+  header h2
+    font-size 1.5rem
+  header img
+    width 50px
+    height 50px
+    margin 0 0.05rem
+
+@media(max-width: 359px)
+  header h1
+    font-size 1rem
+  header h2
+    font-size 1rem
+  header img
+    width 50px
+    height 50px
+    margin 0 0.05rem
+
 //end meeja

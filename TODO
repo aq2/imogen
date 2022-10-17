@@ -13,14 +13,17 @@ General:
   ✔ what is dru title @done(17-10-22 18:55)
   
 meeja q's:
-  ☐ header - images on one row if poss for small screens
-    ☐ maybe everythining in header on one row?
-  ☐ align imgs bottom!
-  ☐ improve break points!  
+  ✔ header - images on one row if poss for small screens @done(17-10-22 20:21)
+    ✔ maybe everythining in header on one row? @done(17-10-22 20:21)
+  ✔ align imgs bottom! @done(17-10-22 20:21)
+  ✔ change header h1 h2 sizes at appropriate points @done(17-10-22 20:21)
+  ✔ improve break points! @done(17-10-22 20:21)
   ✔ make 'what is dru?' wrap -> 'Dru? goes on next line @done(17-10-22 18:55)
   ✔ motto click problems in small screens.. @done(17-10-22 18:55)
   ✔ don't need 'click to expand' 😄 @done(17-10-22 16:05)
-  ☐ how deep does rabbit hole go? min-width?
+  ✔ how deep does rabbit hole go? min-width? @done(17-10-22 20:21)
+  ☐ if what is dru wrapped, change all title heights? -> and back again...
+  ✔ titles vertically? @done(17-10-22 19:45)
 
 active panels when small, else normal 🥫:
   ✔ all panels auto expand for portrait screens @done(17-10-22 13:58)
