@@ -5,6 +5,7 @@ const panels = document.querySelectorAll('.panel')
 const blurbs = document.querySelectorAll('.blurb')
 const mottos = document.querySelectorAll('.motto')
 
+// or just addListener on non-active panels??
 
 panels.forEach(panel => {
   panel.addEventListener('click', (e) => {
@@ -12,12 +13,12 @@ panels.forEach(panel => {
     
     if (!activeNow) {
       let panelID = parseInt(panel.dataset.idx)
+   
 
-      // switchPanels(activePanel, panelID)
+      // switchPanels(activePanelID)
       let panelOld = panels[activePanel-1]
       panelOld.classList.remove('active')
-      let panelNew = panels[panelID - 1]
-      panelNew.classList.add('active')
+      panel.classList.add('active')
 
       let blurbOld = blurbs[activePanel - 1]
       blurbOld.classList.remove('active')
@@ -33,7 +34,6 @@ panels.forEach(panel => {
     }
   })
 })
-
 
 //end panels
 

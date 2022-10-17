@@ -2,10 +2,9 @@
 
 General:
   ☐ panel border-radius for edge scrollbars
-  ☐ blurb is undefined console error - when clicking in active panel
+  ✔ blurb is undefined console error - when clicking in active panel @done(17-10-22 11:56)
+    ✔ data attributes on panels @done(17-10-22 11:55)
   ☐ position background images better
-  ✔ make panel title box taller -> move text down a touch -> not affected so much by panel round borders @done(16-10-22 22:51)
-  ✔ vertical align panel heading? rather than padding @done(16-10-22 23:18)
   ☐ add email address to contact page
   ☐ form error handling??
   
@@ -13,10 +12,14 @@ meeja q's:
   ☐ header - images on one row if poss for small screens
     ☐ maybe everythining in header on one row?
   ☐ improve break points!
-  ✔ overflow-y hidden - no up/down scolling on wide screen @done(16-10-22 22:56)
   ☐ all panels auto expand for portrait screens
+    ☐ but they should go back to normal when screen biggens
+    ✔ js ready :) @done(17-10-22 11:55)
+    ✔ mottos get overlaid :( @done(17-10-22 12:38)
   ☐ make 'what is dru?' wrap -> 'Dru? goes on next line
-  ✘ bigger title panels for wrapped @cancelled(16-10-22 23:22)
+
+
+
 
 Imogen:
   ☐ words
@@ -31,6 +34,10 @@ Imogen:
 #
 
 Archive:
+  ✔ overflow-y hidden - no up/down scolling on wide screen @done(16-10-22 22:56) @project(meeja q's)
+  ✘ bigger title panels for wrapped @cancelled(16-10-22 23:22) @project(meeja q's)
+  ✔ make panel title box taller -> move text down a touch -> not affected so much by panel round borders @done(16-10-22 22:51) @project(General)
+  ✔ vertical align panel heading? rather than padding @done(16-10-22 23:18) @project(General)
   ✔ form processing for netlify @done(15-10-22 14:17) @project(General)
   ✔ success.html for after form @done(15-10-22 14:17) @project(General)
   ✔ space out header @done(15-10-22 13:26) @project(General)
