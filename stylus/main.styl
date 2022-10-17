@@ -158,6 +158,7 @@ p
   margin-bottom 1rem
   
 .motto
+  text-align center
   display none
   &&.shown
     display block
@@ -165,7 +166,7 @@ p
 
 .motto p
   font-size 1.25rem
-  text-align center
+  // text-align center
 
 a
   padding 0.85rem
@@ -179,10 +180,7 @@ a
   border-radius 2rem
 
 a:hover
-  background $dru-blue-back
-  background $dru-blue-back
   background $dru-orange
-  // border 1px solid $dru-blue-back
 
 a:active
   transform scale(0.98)
@@ -291,9 +289,6 @@ span.quote
   h2.title
     font-size 1.5rem
 
-  .blurb.shown
-    color white
-
 @media(max-width: 1200px)
   body
     overflow-y auto
@@ -315,18 +310,32 @@ span.quote
   // need to show all blurbs and mottos
   .blurb
     display inline-block
-  .blurb.shown
-    color blue
-  .panel
-    flex 5
+  
+  // .panel
+  //   flex 5
+
+  .motto
+    // margin 5rem
+    display inline-block
+    // margin 2rem
+    // border 1px solid red
+    text-align center
+    color red
+
+  .motto.shown
+    margin 3rem
+    padding-bottom 2rem
 
   .motto p
+    // margin 2rem
     font-size 1rem
-    margin 0.5rem 0
+    text-align center
+
+  
+  .c2e
+    display none
+
   main
     flex-direction column
-  .panel
-    flex-grow 5
-    // TODO nedd to make all panel active? with JS? 
 
 //end meeja

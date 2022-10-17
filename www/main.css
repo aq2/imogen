@@ -133,6 +133,7 @@ p {
   margin-bottom: 1rem;
 }
 .motto {
+  text-align: center;
   display: none;
 }
 .motto.motto.shown {
@@ -141,7 +142,6 @@ p {
 }
 .motto p {
   font-size: 1.25rem;
-  text-align: center;
 }
 a {
   padding: 0.85rem;
@@ -154,8 +154,6 @@ a {
   border-radius: 2rem;
 }
 a:hover {
-  background: #795778;
-  background: #795778;
   background: #d69c19;
 }
 a:active {
@@ -253,9 +251,6 @@ textarea {
   h2.title {
     font-size: 1.5rem;
   }
-  .blurb.shown {
-    color: #fff;
-  }
 }
 @media (max-width: 1200px) {
   body {
@@ -278,20 +273,23 @@ textarea {
   .blurb {
     display: inline-block;
   }
-  .blurb.shown {
-    color: #00f;
+  .motto {
+    display: inline-block;
+    text-align: center;
+    color: #f00;
   }
-  .panel {
-    flex: 5;
+  .motto.shown {
+    margin: 3rem;
+    padding-bottom: 2rem;
   }
   .motto p {
     font-size: 1rem;
-    margin: 0.5rem 0;
+    text-align: center;
+  }
+  .c2e {
+    display: none;
   }
   main {
     flex-direction: column;
-  }
-  .panel {
-    flex-grow: 5;
   }
 }

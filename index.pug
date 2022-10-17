@@ -37,7 +37,7 @@ body
       .content
         .motto
           p Peace begins with the individual.
-          p (click to expand)
+          p.c2e (click to expand)
         .blurb.shown
           p Dru yoga is a graceful and potent form of yoga, based on flowing movements, directed breathing and visualisation.
           p With its foundation set firmly in ancient yogic tradition, Dru works on body, mind and spirit - improving strength and flexibility, creating core stability, building a heightened feeling of positivity and is deeply relaxing whilst rejuvenating your whole being.
@@ -72,7 +72,7 @@ body
       .content
         .motto.shown
           p Yoga is not a work-out, it's a work-in.
-          p (click to expand)
+          p.c2e (click to expand)
         .blurb
           p ## details of different classes
           p ## dates, times, locations, costs etc
@@ -91,7 +91,7 @@ body
       .content
         .motto.shown
           p Sit, and know that you are sitting.
-          p (click to expand)
+          p.c2e (click to expand)
         .blurb
           p Breathe, and know that you are breathing.
           blockquote
@@ -110,10 +110,13 @@ body
       .content
         .motto.shown
           p We are all rivers flowing into the same lake.
-          p (click to expand)
+          p.c2e (click to expand)
         .blurb
-          p You can send me a message by using the form below.
+          p You can simply 
+            a(href='mailto:imogengroves@gmail.com') send me an email
+          p Or, use the form below to send me a message.
           p I'll reply as soon as I can.
+          
           .form-container
             form(name='contact' method='POST' 
                  data-netlify='true' action='/success')
@@ -124,8 +127,6 @@ body
                 textarea(rows=6 cols=50 name='message' required)
                 label please enter your message
               button(type='submit').btn send message
-          p Or, you can simply 
-            a(href='mailto:imogengroves@gmail.com') send me an email
 
     //end contact
 

@@ -5,8 +5,9 @@
 General:
   ✔ blurb is undefined console error - when clicking in active panel @done(17-10-22 11:56)
     ✔ data attributes on panels @done(17-10-22 11:55)
-  ☐ add email address to contact page
-  ☐ form error handling??
+  ✔ add email address to contact page @done(17-10-22 15:56)
+  ✔ form error handling?? @done(17-10-22 15:56)
+  ☐ mottos in small active panel not centre aligned grr
   
 meeja q's:
   ☐ header - images on one row if poss for small screens
@@ -19,7 +20,7 @@ meeja q's:
 active panels when small, else normal 🥫:
   ✔ all panels auto expand for portrait screens @done(17-10-22 13:58)
   ✔ but they should go back to normal when screen biggens @done(17-10-22 14:51)
-  ☐ mottos problem - need margin or something!
+  ✔ mottos problem - need margin or something! @done(17-10-22 15:56)
   ✔ on upbiggen, change elements display property instead? @done(17-10-22 15:16)
   ✔ still waaay too complicated 💩 -> use meeja and classes? @done(17-10-22 15:16)
 
