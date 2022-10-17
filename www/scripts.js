@@ -29,9 +29,6 @@ function switchActives(elements, oldID, newID, status='shown') {
   elementNew.classList.add(status)
 }
 
-
-
-
 //end panels
 
 /// form
@@ -47,61 +44,3 @@ labels.forEach(label => {
 })
 
 //end form
-
-/// meeja
-
-// let oldWidth = window.innerWidth
-
-// if (window.innerWidth < 960) {
-//   activateAll()
-// }
-
-// todo suspect much easier changing classes in media queries
-// onresize = () => {
-//   let newWidth = window.innerWidth
-
-//   if ((oldWidth > 960) && (newWidth < 960)) {
-//     activateAll()
-//   } 
-  
-//   if ((oldWidth < 960) && (newWidth > 960)) {
-//     removeShowns(panels)
-//     removeShowns(blurbs)
-//     switchActives(panels, newPanel, newPanel)
-//     switchActives(blurbs, newPanel, newPanel)
-//     mottos[newPanel - 1].classList.remove('shown')
-//   }
-//   oldWidth = newWidth
-// }
-
-
-// function removeShowns(elements) {
-//   elements.forEach(element => {
-//     element.classList.remove('shown')
-//   })
-//   console.log('removed')
-// }
-
-// function activateAll() {
-//   panels.forEach(panel => {
-//     panel.classList.add('shown')
-//   })
-//   blurbs.forEach(blurb => {
-//     blurb.classList.add('shown')
-//   })
-//   mottos.forEach(motto => {
-//     motto.classList.add('shown')
-//   })
-// }
-
-// // or do we just toggle them all???
-// if (w < 960) {
-//   panels.forEach(panel => {
-//     panel.classList.add('active')
-//   })
-//   blurbs.forEach(blurb => {
-//     blurb.classList.add('active')
-//   })
-// }
-
-      //end meeja

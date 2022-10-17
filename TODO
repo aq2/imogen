@@ -8,6 +8,9 @@ General:
   ✔ add email address to contact page @done(17-10-22 15:56)
   ✔ form error handling?? @done(17-10-22 15:56)
   ☐ mottos in small active panel not centre aligned grr
+  ✘ wobbly contact motto??? -> temp glitch @cancelled(17-10-22 16:04)
+  ☐ learn moar flexbox!
+  ☐ what is dru title
   
 meeja q's:
   ☐ header - images on one row if poss for small screens
@@ -15,7 +18,7 @@ meeja q's:
   ☐ improve break points!  
   ☐ make 'what is dru?' wrap -> 'Dru? goes on next line
   ☐ motto click problems in small screens..
-  ☐ don't need 'click to expand' 😄
+  ✔ don't need 'click to expand' 😄 @done(17-10-22 16:05)
 
 active panels when small, else normal 🥫:
   ✔ all panels auto expand for portrait screens @done(17-10-22 13:58)
