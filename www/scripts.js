@@ -27,19 +27,9 @@ function switchActives(elements, oldID, newID, status='shown') {
   elementOld.classList.remove(status)
   let elementNew = elements[newID - 1]
   elementNew.classList.add(status)
-  // console.log(elements.toString())
-  // console.log(elements + ' switched')
 }
 
-function removeShowns(elements) {
-  elements.forEach(element => {
-    console.log('was ' + element.classList)
-    element.classList.remove('shown')
-    console.log('now ' + element.classList)
 
-  })
-  console.log('removed')
-}
 
 
 //end panels
@@ -60,55 +50,49 @@ labels.forEach(label => {
 
 /// meeja
 
-// activateAll()
+// let oldWidth = window.innerWidth
 
-if (window.innerWidth < 960) {
-  activateAll()
-}
+// if (window.innerWidth < 960) {
+//   activateAll()
+// }
 
-onresize = () => {
-  if (window.innerWidth < 960) {
-    activateAll()
-    // console.log('under')
-  } else {
-    // window has been resized up!
-    // should now restore status quo
-      // restore all showns
-        // remove all shown panels and blurbs
-        // show current panel and blurb
-        // un-show current motto
-        // can o' worms for freaky corner case 🥫
+// todo suspect much easier changing classes in media queries
+// onresize = () => {
+//   let newWidth = window.innerWidth
 
-    // console.log('over')
-    removeShowns(panels)
-    removeShowns(blurbs)
-    // panels[newPanel - 1].classList.add('shown')
-    // console.log('old ' + oldPanel + ', new ' + newPanel)
-    switchActives(panels, newPanel, newPanel)
-    switchActives(blurbs, newPanel, newPanel)
-    
-
-    removeShowns(mottos)
-    // show mottos for inactive panels - sigh
-    // must be a better way of doing this!
-    // the content either shows a blurb or a motto!
-    switchActives(mottos, oldPanel, oldPanel)
+//   if ((oldWidth > 960) && (newWidth < 960)) {
+//     activateAll()
+//   } 
   
-  
-  
-  }
-  // else restore status quo
-  // deactivate all, reactive current activeNow
-}
+//   if ((oldWidth < 960) && (newWidth > 960)) {
+//     removeShowns(panels)
+//     removeShowns(blurbs)
+//     switchActives(panels, newPanel, newPanel)
+//     switchActives(blurbs, newPanel, newPanel)
+//     mottos[newPanel - 1].classList.remove('shown')
+//   }
+//   oldWidth = newWidth
+// }
 
-function activateAll() {
-  panels.forEach(panel => {
-    panel.classList.add('shown')
-  })
-  blurbs.forEach(blurb => {
-    blurb.classList.add('shown')
-  })
-}
+
+// function removeShowns(elements) {
+//   elements.forEach(element => {
+//     element.classList.remove('shown')
+//   })
+//   console.log('removed')
+// }
+
+// function activateAll() {
+//   panels.forEach(panel => {
+//     panel.classList.add('shown')
+//   })
+//   blurbs.forEach(blurb => {
+//     blurb.classList.add('shown')
+//   })
+//   mottos.forEach(motto => {
+//     motto.classList.add('shown')
+//   })
+// }
 
 // // or do we just toggle them all???
 // if (w < 960) {

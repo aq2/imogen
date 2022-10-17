@@ -1,10 +1,10 @@
 *## Imogen ##*
 
+* it's so easy to make things complicated... *
+
 General:
-  ☐ panel border-radius for edge scrollbars
   ✔ blurb is undefined console error - when clicking in active panel @done(17-10-22 11:56)
     ✔ data attributes on panels @done(17-10-22 11:55)
-  ☐ position background images better
   ☐ add email address to contact page
   ☐ form error handling??
   
@@ -13,12 +13,19 @@ meeja q's:
     ☐ maybe everythining in header on one row?
   ☐ improve break points!  
   ☐ make 'what is dru?' wrap -> 'Dru? goes on next line
+  ☐ motto click problems in small screens..
+  ☐ don't need 'click to expand' 😄
 
 active panels when small, else normal 🥫:
   ✔ all panels auto expand for portrait screens @done(17-10-22 13:58)
-  ☐ but they should go back to normal when screen biggens
-  ☐ mottos problem!
-  ☐ on upbiggen, change elements display property instead?
+  ✔ but they should go back to normal when screen biggens @done(17-10-22 14:51)
+  ☐ mottos problem - need margin or something!
+  ✔ on upbiggen, change elements display property instead? @done(17-10-22 15:16)
+  ✔ still waaay too complicated 💩 -> use meeja and classes? @done(17-10-22 15:16)
+
+l8rs:
+  ☐ panel border-radius for edge scrollbars
+  ☐ position background images better
 
 
 Imogen:

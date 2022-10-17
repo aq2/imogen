@@ -168,18 +168,21 @@ p
   text-align center
 
 a
-  padding 1rem
+  padding 0.85rem
   cursor pointer
   font-size 2rem
-  margin-top 4rem
-  color $dru-orange
+  // margin-top 4rem
+  color black
   display inline-block
   text-decoration none
-  background $dru-blue-back
+  background $dru-blue
+  border-radius 2rem
 
 a:hover
-  background $dru-blue
-  border 1px solid $dru-blue-back
+  background $dru-blue-back
+  background $dru-blue-back
+  background $dru-orange
+  // border 1px solid $dru-blue-back
 
 a:active
   transform scale(0.98)
@@ -222,6 +225,7 @@ span.quote
   border-radius 2rem
   // background alpha($dru-orange, 0.6)
   background alpha($dru-orange-back, 0.6)
+  margin-bottom 2rem
   
 .form-control
   position relative
@@ -275,7 +279,6 @@ span.quote
   // display inline-block
   background $dru-blue
   &:hover
-    background $dru-blue-back
     background $dru-orange
   &:active
     transform scale(0.98)
@@ -288,27 +291,42 @@ span.quote
   h2.title
     font-size 1.5rem
 
+  .blurb.shown
+    color white
+
 @media(max-width: 1200px)
   body
     overflow-y auto
+  
   h1
     font-size 2.5rem
+  
   .title h2
     font-size 1.25rem
+  
   .motto p
     font-size 1rem
+  
   // images should go top
   header
     flex-direction column
 
 @media(max-width: 980px)
+  // need to show all blurbs and mottos
+  .blurb
+    display inline-block
+  .blurb.shown
+    color blue
+  .panel
+    flex 5
+
   .motto p
     font-size 1rem
     margin 0.5rem 0
   main
     flex-direction column
   .panel
-    flex 5
+    flex-grow 5
     // TODO nedd to make all panel active? with JS? 
 
 //end meeja
