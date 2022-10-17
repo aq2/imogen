@@ -11,14 +11,14 @@ General:
 meeja q's:
   ☐ header - images on one row if poss for small screens
     ☐ maybe everythining in header on one row?
-  ☐ improve break points!
-  ☐ all panels auto expand for portrait screens
-    ☐ but they should go back to normal when screen biggens
-    ✔ js ready :) @done(17-10-22 11:55)
-    ✔ mottos get overlaid :( @done(17-10-22 12:38)
+  ☐ improve break points!  
   ☐ make 'what is dru?' wrap -> 'Dru? goes on next line
 
-
+active panels when small, else normal 🥫:
+  ✔ all panels auto expand for portrait screens @done(17-10-22 13:58)
+  ☐ but they should go back to normal when screen biggens
+  ☐ mottos problem!
+  ☐ on upbiggen, change elements display property instead?
 
 
 Imogen:
