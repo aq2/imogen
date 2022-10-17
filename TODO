@@ -7,18 +7,20 @@ General:
     ✔ data attributes on panels @done(17-10-22 11:55)
   ✔ add email address to contact page @done(17-10-22 15:56)
   ✔ form error handling?? @done(17-10-22 15:56)
-  ☐ mottos in small active panel not centre aligned grr
+  ✔ mottos in small active panel not centre aligned grr @done(17-10-22 18:55)
   ✘ wobbly contact motto??? -> temp glitch @cancelled(17-10-22 16:04)
   ☐ learn moar flexbox!
-  ☐ what is dru title
+  ✔ what is dru title @done(17-10-22 18:55)
   
 meeja q's:
   ☐ header - images on one row if poss for small screens
     ☐ maybe everythining in header on one row?
+  ☐ align imgs bottom!
   ☐ improve break points!  
-  ☐ make 'what is dru?' wrap -> 'Dru? goes on next line
-  ☐ motto click problems in small screens..
+  ✔ make 'what is dru?' wrap -> 'Dru? goes on next line @done(17-10-22 18:55)
+  ✔ motto click problems in small screens.. @done(17-10-22 18:55)
   ✔ don't need 'click to expand' 😄 @done(17-10-22 16:05)
+  ☐ how deep does rabbit hole go? min-width?
 
 active panels when small, else normal 🥫:
   ✔ all panels auto expand for portrait screens @done(17-10-22 13:58)

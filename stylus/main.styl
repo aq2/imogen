@@ -292,77 +292,61 @@ span.quote
 
 // reduce blurb/motto paddings/margins somwhere
 
-// 'what is dru' => two lines
-// 💩 problemo, reduces when shown
+// 'what is dru'
 @media(max-width: 1760px) 
-  .title.dru h2
-    color white
   .title.dru
     flex-direction column
-    
+  .panel.shown .title.dru
+    flex-direction row
 
 // reduce size of 'meditate'
 @media(max-width: 1500px)
   .title h2
     font-size 1.5rem
-    // color red
 
+// reduce size of 'meditate' again
 @media(max-width: 1200px)
   .title h2
     font-size 1.25rem
-    color red
 
-  // what is dru can change here
-  // .title.dru
-  //   flex-direction column
-  //   background pink
-  //   color white
-
-/*
-
-@media(max-width: 1200px)
-  body
-    overflow-y auto
-  
-  h1
-    font-size 2.5rem
-  
-  .title h2
-    font-size 1.25rem
-  
-  .motto p
-    font-size 1rem
-  
-  // header
-  //   flex-direction column
-
-*/
+// portrait setting
 @media(max-width: 980px)
   body
     overflow-y auto
   main
     flex-direction column
   
-  // todo restore title.dru
+  header h1
+    font-size 3rem
+
+  .title h2
+    font-size 1.75rem
+  .title.dru
+    flex-direction row
 
   .blurb
     display inline-block
-  
+ 
   .motto
-    text-align center
-    display inline-block
-
-  .motto.shown
-    margin 3rem
-    padding-bottom 2rem
-
-  .motto p
-    font-size 1rem
-    text-align center
+    display block
+  .motto.shown  
+    font-size 1.25rem
+    padding 1rem 0 2rem 0
 
   .c2e
     display none
 
-
+@media(max-width: 880px)
+  header h1
+    font-size 2.75rem
+  header img
+    width 100px
+    height 100px
   
+@media(max-width: 806px)
+  header h1
+    font-size 2.5rem
+  header img
+    width 80px
+    height 80px
 //end meeja
