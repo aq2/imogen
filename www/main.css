@@ -71,7 +71,7 @@ main {
   background-position: center;
   background-repeat: no-repeat;
 }
-.panel.active {
+.panel.shown {
   flex: 5;
   cursor: default;
 }
@@ -85,7 +85,7 @@ main {
 .blurb {
   display: none;
 }
-.blurb.active {
+.blurb.shown {
   display: inline;
 }
 hr {
@@ -135,7 +135,7 @@ p {
 .motto {
   display: none;
 }
-.motto.shown {
+.motto.motto.shown {
   display: block;
   margin: -1rem 0 -2rem 0;
 }
