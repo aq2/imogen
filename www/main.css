@@ -33,7 +33,7 @@ body {
   color: #000;
   padding: 0.5rem;
   overflow-y: hidden;
-  background: rgba(108,173,201,0.5);
+  background: rgba(108,173,201,0.34);
   font-family: 'Josefin Sans', sans-serif;
 }
 header {
@@ -74,7 +74,7 @@ main {
   flex: 5;
   cursor: default;
 }
-.panel .title {
+.title {
   top: 0;
   display: flex;
   position: -webkit-sticky;
@@ -154,8 +154,8 @@ a {
   color: #a62923;
 }
 a:hover {
-  background: #d69c19;
   transform: scale(1.02);
+  background: #d69c19;
 }
 a:active {
   transform: scale(0.98);

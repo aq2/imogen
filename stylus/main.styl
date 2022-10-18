@@ -5,7 +5,7 @@ $dru-blue-back = #795778
 $dru-orange = #d69c19
 $dru-orange-back = #a62923
 
-$background = alpha($dru-blue, 0.5)
+$background = alpha($dru-blue, 0.34)
 $contentBack = alpha($dru-blue, 0.68)
 
 $text = black
@@ -91,14 +91,14 @@ main
     flex 5
     cursor default
 
-  .title
-    top 0
-    display flex
-    position sticky
-    min-height 4rem
-    align-items center
-    background $dru-blue
-    justify-content center
+.title
+  top 0
+  display flex
+  position sticky
+  min-height 4rem
+  align-items center
+  background $dru-blue
+  justify-content center
 
 .content
   margin 1rem 1rem
@@ -171,8 +171,8 @@ a
   color $dru-orange-back
 
 a:hover
-  background $dru-orange
   transform scale(1.02)
+  background $dru-orange
 
 a:active
   transform scale(0.98)
