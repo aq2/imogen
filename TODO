@@ -4,12 +4,17 @@
 
 General:
   ☐ learn moar flexbox!
-  ☐ occasional glitchy behaviour? or just resizing too fast?
+  ✘ occasional glitchy behaviour? or just resizing too fast? @cancelled(18-10-22 17:38)
   ✔ change panels starting from 0 @done(18-10-22 11:35)
   ☐ meta tags
   ✔ rename colors @done(18-10-22 16:50)
+  
+contact form:
+  ✔ simplified form css @done(18-10-22 17:15)
   ☐ form validation?
-  ✔ simplified form @done(18-10-22 17:15)
+  ☐ clicking on labels problem -> doesn't focus input
+    ☐ played with click handlers quickly
+    ☐ or make text jump up on click??
   
 meeja q's:
   ✔ motto click problems in small screens.. @done(18-10-22 11:16)

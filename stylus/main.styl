@@ -235,25 +235,32 @@ span.quote
 .form-input textarea:valid
   outline 0
   border-bottom-color blue
+  z-index 1
 
 .form-input label
   top 0.5rem
   left 0.5rem
   position absolute
+  // z-index -1
 
 .form-input label span
   min-width 5px
   font-size 1.25rem
   display inline-block
+  color white
+  // pointer-events none
+  // border 1px solid red
 
 .form-input input:focus + label span,
 .form-input input:valid + label span,
 .form-input textarea:focus + label span,
 .form-input textarea:valid + label span
-  // color $dru-blue-back
-  transition 0.3s ease-in
+  color $dru-blue-back
+  // color $background
+  // transition 0.3s ease-in
   transform translateY(-2rem)
   transition 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55)
+
 
 .btn
   border 0

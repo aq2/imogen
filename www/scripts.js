@@ -43,6 +43,27 @@ labels.forEach(label => {
       .join('')
 })
 
+// // 'ignore' clicks
+// labels.forEach(label => {
+//   label.addEventListener('click', (e) => {
+//     // get the target's input/textarea
+//     // focus the input there
+//     // console.log(e.target.parentElement.parentElement)
+//   })
+// })
+
+const emailInput = document.getElementsByClassName('email')[0]
+const messageInput = document.getElementsByClassName('message')[0]
+
+// emailInput.addEventListener('click', e => {
+//   console.log(e.target)
+// })
+
+emailInput.addEventListener('click', (e) => {
+  console.log(e.target)
+  emailInput.focus()
+})
+
 //end form
 
 
@@ -54,6 +75,6 @@ const scrollbarVisible = (element) => {
 
 const panel = panels[newPanelID]
 
-console.log('scrollbar: ' + scrollbarVisible(panel))
+// console.log('scrollbar: ' + scrollbarVisible(panel))
 
 //end scrollbar

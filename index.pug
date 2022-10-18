@@ -133,10 +133,10 @@ body
                 data-netlify='true' action='/success')
           form(name='contact' method='POST')
             .form-input
-              input(type='text' required)
+              input.email(type='text' required)
               label your email address
             .form-input
-              textarea(rows=6 cols=50 name='message' required)
+              textarea.message(rows=6 cols=50 name='message' required)
               label please enter your message
             button(type='submit').btn send message
 
