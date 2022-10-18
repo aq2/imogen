@@ -3,39 +3,18 @@
 * it's so easy to make things complicated... *
 
 General:
-  ✔ blurb is undefined console error - when clicking in active panel @done(17-10-22 11:56)
-    ✔ data attributes on panels @done(17-10-22 11:55)
-  ✔ add email address to contact page @done(17-10-22 15:56)
-  ✔ form error handling?? @done(17-10-22 15:56)
-  ✔ mottos in small active panel not centre aligned grr @done(17-10-22 18:55)
-  ✘ wobbly contact motto??? -> temp glitch @cancelled(17-10-22 16:04)
   ☐ learn moar flexbox!
-  ✔ what is dru title @done(17-10-22 18:55)
+  ☐ occasional glitchy behaviour? or just resizing too fast?
+  ✔ change panels starting from 0 @done(18-10-22 11:35)
   
 meeja q's:
-  ✔ header - images on one row if poss for small screens @done(17-10-22 20:21)
-    ✔ maybe everythining in header on one row? @done(17-10-22 20:21)
-  ✔ align imgs bottom! @done(17-10-22 20:21)
-  ✔ change header h1 h2 sizes at appropriate points @done(17-10-22 20:21)
-  ✔ improve break points! @done(17-10-22 20:21)
-  ✔ make 'what is dru?' wrap -> 'Dru? goes on next line @done(17-10-22 18:55)
-  ✔ motto click problems in small screens.. @done(17-10-22 18:55)
-  ✔ don't need 'click to expand' 😄 @done(17-10-22 16:05)
-  ✔ how deep does rabbit hole go? min-width? @done(17-10-22 20:21)
+  ✔ motto click problems in small screens.. @done(18-10-22 11:16)
   ☐ if what is dru wrapped, change all title heights? -> and back again...
-  ✔ titles vertically? @done(17-10-22 19:45)
-
-active panels when small, else normal 🥫:
-  ✔ all panels auto expand for portrait screens @done(17-10-22 13:58)
-  ✔ but they should go back to normal when screen biggens @done(17-10-22 14:51)
-  ✔ mottos problem - need margin or something! @done(17-10-22 15:56)
-  ✔ on upbiggen, change elements display property instead? @done(17-10-22 15:16)
-  ✔ still waaay too complicated 💩 -> use meeja and classes? @done(17-10-22 15:16)
+  ☐ top/bottom margin between panels in small screen
 
 l8rs:
   ☐ panel border-radius for edge scrollbars
   ☐ position background images better
-
 
 Imogen:
   ☐ words
@@ -50,6 +29,27 @@ Imogen:
 #
 
 Archive:
+  ✔ maybe everythining in header on one row? @done(17-10-22 20:21) @project(meeja q's)
+  ✔ align imgs bottom! @done(17-10-22 20:21) @project(meeja q's)
+  ✔ change header h1 h2 sizes at appropriate points @done(17-10-22 20:21) @project(meeja q's)
+  ✔ improve break points! @done(17-10-22 20:21) @project(meeja q's)
+  ✔ how deep does rabbit hole go? min-width? @done(17-10-22 20:21) @project(meeja q's)
+  ✔ titles vertically? @done(17-10-22 19:45) @project(meeja q's)
+  ✔ mottos in small active panel not centre aligned grr @done(17-10-22 18:55) @project(General)
+  ✘ wobbly contact motto??? -> temp glitch @cancelled(17-10-22 16:04) @project(General)
+  ✔ what is dru title @done(17-10-22 18:55) @project(General)
+  ✔ header - images on one row if poss for small screens @done(17-10-22 20:21) @project(meeja q's)
+  ✔ make 'what is dru?' wrap -> 'Dru? goes on next line @done(17-10-22 18:55) @project(meeja q's)
+  ✔ don't need 'click to expand' 😄 @done(17-10-22 16:05) @project(meeja q's)
+  ✔ add email address to contact page @done(17-10-22 15:56) @project(General)
+  ✔ form error handling?? @done(17-10-22 15:56) @project(General)
+  ✔ mottos problem - need margin or something! @done(17-10-22 15:56) @project(active panels when small, else normal 🥫)
+  ✔ on upbiggen, change elements display property instead? @done(17-10-22 15:16) @project(active panels when small, else normal 🥫)
+  ✔ still waaay too complicated 💩 -> use meeja and classes? @done(17-10-22 15:16) @project(active panels when small, else normal 🥫)
+  ✔ all panels auto expand for portrait screens @done(17-10-22 13:58) @project(active panels when small, else normal 🥫)
+  ✔ but they should go back to normal when screen biggens @done(17-10-22 14:51) @project(active panels when small, else normal 🥫)
+  ✔ blurb is undefined console error - when clicking in active panel @done(17-10-22 11:56) @project(General)
+  ✔ data attributes on panels @done(17-10-22 11:55) @project(General)
   ✔ overflow-y hidden - no up/down scolling on wide screen @done(16-10-22 22:56) @project(meeja q's)
   ✘ bigger title panels for wrapped @cancelled(16-10-22 23:22) @project(meeja q's)
   ✔ make panel title box taller -> move text down a touch -> not affected so much by panel round borders @done(16-10-22 22:51) @project(General)

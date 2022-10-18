@@ -1,32 +1,37 @@
 /// panels
 
-var oldPanel = 1
-var newPanel = 1
+var oldPanelID = 0
+var newPanelID = 0
 const panels = document.querySelectorAll('.panel')
 const blurbs = document.querySelectorAll('.blurb')
 const mottos = document.querySelectorAll('.motto')
 
 panels.forEach(panel => {
-  panel.addEventListener('click', (e) => {
-    let activeNow = panel.classList.contains('shown')
-    
-    if (!activeNow) {
-      newPanel = parseInt(panel.dataset.idx)
-
-      switchActives(panels, oldPanel, newPanel)
-      switchActives(blurbs, oldPanel, newPanel)
-      switchActives(mottos, newPanel, oldPanel)
+  if (window.innerWidth > 980) { 
+    panel.addEventListener('click', (e) => {
+      let activeNow = panel.classList.contains('shown')
       
-      oldPanel = newPanel 
-    }
-  })
+      if (!activeNow) {
+        newPanelID = parseInt(panel.dataset.idx)
+
+        switchActives(panels, oldPanelID, newPanelID)
+        switchActives(blurbs, oldPanelID, newPanelID)
+        switchActives(mottos, newPanelID, oldPanelID)
+        
+        oldPanelID = newPanelID
+        // todo check for scrollbar and webkit styles?
+      }
+    })
+  }
 })
 
 function switchActives(elements, oldID, newID, status='shown') {
-  let elementOld = elements[oldID - 1]
-  elementOld.classList.remove(status)
-  let elementNew = elements[newID - 1]
-  elementNew.classList.add(status)
+  if (window.innerWidth > 980) {
+    let elementOld = elements[oldID]
+    elementOld.classList.remove(status)
+    let elementNew = elements[newID]
+    elementNew.classList.add(status)
+  }
 }
 
 //end panels
@@ -44,3 +49,16 @@ labels.forEach(label => {
 })
 
 //end form
+
+
+/// scrollbar detection
+
+const scrollbarVisible = (element) => {
+  return element.scrollHeight > element.clientHeight;
+}
+
+const panel = panels[newPanelID]
+
+console.log('scrollbar: ' + scrollbarVisible(panel))
+
+//end scrollbar
