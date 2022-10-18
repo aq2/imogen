@@ -10,14 +10,11 @@ panels.forEach(panel => {
   if (window.innerWidth > 980) { 
     panel.addEventListener('click', (e) => {
       let activeNow = panel.classList.contains('shown')
-      
       if (!activeNow) {
         newPanelID = parseInt(panel.dataset.idx)
-
         switchActives(panels, oldPanelID, newPanelID)
         switchActives(blurbs, oldPanelID, newPanelID)
-        switchActives(mottos, newPanelID, oldPanelID)
-        
+        switchActives(mottos, newPanelID, oldPanelID)        
         oldPanelID = newPanelID
         // todo check for scrollbar and webkit styles?
       }
@@ -25,12 +22,10 @@ panels.forEach(panel => {
   }
 })
 
-function switchActives(elements, oldID, newID, status='shown') {
+function switchActives(elements, oldID, newID) {
   if (window.innerWidth > 980) {
-    let elementOld = elements[oldID]
-    elementOld.classList.remove(status)
-    let elementNew = elements[newID]
-    elementNew.classList.add(status)
+    elements[oldID].classList.remove('shown')
+    elements[newID].classList.add('shown')
   }
 }
 

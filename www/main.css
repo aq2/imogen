@@ -31,14 +31,14 @@
 }
 body {
   padding: 0.5rem;
+  overflow-y: hidden;
   background: rgba(108,173,201,0.322);
   font-family: 'Josefin Sans', sans-serif;
-  overflow-y: hidden;
 }
 header {
   display: flex;
-  justify-content: center;
   align-items: flex-end;
+  justify-content: center;
 }
 header img {
   width: 115px;
@@ -145,7 +145,7 @@ p {
   text-align: center;
   display: none;
 }
-.motto.motto.shown {
+.motto.shown {
   display: block;
   margin: -1rem 0 -2rem 0;
 }

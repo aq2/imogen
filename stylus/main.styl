@@ -52,19 +52,17 @@ $background = #6cadc952
 *::-webkit-scrollbar-thumb
   background $dru-blue
   border-radius 80px
-  // height 90%
-  // border 3px solid blue
 
 body
   padding 0.5rem
+  overflow-y hidden
   background $background
   font-family 'Josefin Sans', sans-serif
-  overflow-y hidden
 
 header
   display flex
-  justify-content center
   align-items flex-end
+  justify-content center
   & img
     width 115px
     height 115px
@@ -169,7 +167,7 @@ p
 .motto
   text-align center
   display none
-  &&.shown
+  &.shown
     display block
     margin -1rem 0 -2rem 0
 
