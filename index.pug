@@ -22,7 +22,6 @@ body
     .logoo  
       img(src='imgs/yoga-logo.jpg')
       img(src='imgs/meditation-logo.jpg')
-    //- might need to split into two for narrow sreens
     .headtitle
       h2 Imogen Groves 
       h1 Dru Yoga and Meditation
@@ -32,11 +31,7 @@ body
   main
     /// what is dru?
     .panel.panel1(data-idx='0').shown
-      //- .title.dru
       .title
-        //- h2 What is <span> Dru?
-        //- h2 What is
-        //- h2 &nbsp; Dru?
         h2 What is Dru?
       .content
         .motto
@@ -56,7 +51,7 @@ body
           //- hr
 
           h2 About Me
-          .about
+          .flexer
             img(src='imgs/melon.jpg')
             .spiel
               p blah blah...
@@ -122,8 +117,9 @@ body
           p Either way, I'll reply as soon as I can.
           
           .form-container
-            form(name='contact' method='POST' 
+            //- form(name='contact' method='POST' 
                  data-netlify='true' action='/success')
+            form(name='contact' method='POST')
               .form-control
                 input(type='text' required)
                 label your email address

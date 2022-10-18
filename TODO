@@ -7,14 +7,15 @@ General:
   ☐ occasional glitchy behaviour? or just resizing too fast?
   ✔ change panels starting from 0 @done(18-10-22 11:35)
   ☐ meta tags
-  ☐ rename colors
+  ✔ rename colors @done(18-10-22 16:50)
+  ☐ form validation?
   
 meeja q's:
   ✔ motto click problems in small screens.. @done(18-10-22 11:16)
   ✘ if what is dru wrapped, change all title heights? -> and back again... @cancelled(18-10-22 11:56)
   ☐ top/bottom margin between panels in small screen
   ✔ bigger headings in bigger screens? @done(18-10-22 16:08)
-  ☐ header margins
+  ✔ header margins @done(18-10-22 16:51)
 
 l8rs:
   ☐ edge scrollbars - make track transparent?

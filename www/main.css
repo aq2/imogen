@@ -30,9 +30,10 @@
   border-radius: 80px;
 }
 body {
+  color: #000;
   padding: 0.5rem;
   overflow-y: hidden;
-  background: rgba(108,173,201,0.322);
+  background: rgba(108,173,201,0.5);
   font-family: 'Josefin Sans', sans-serif;
 }
 header {
@@ -55,10 +56,6 @@ main {
   display: flex;
   margin: 0 auto;
 }
-.success {
-  text-align: center;
-  margin-top: 2rem;
-}
 .panel {
   flex: 1;
   height: 82vh;
@@ -77,12 +74,21 @@ main {
   flex: 5;
   cursor: default;
 }
+.panel .title {
+  top: 0;
+  display: flex;
+  position: -webkit-sticky;
+  position: sticky;
+  min-height: 4rem;
+  align-items: center;
+  background: #6cadc9;
+  justify-content: center;
+}
 .content {
   margin: 1rem 1rem;
-  color: #111;
   border-radius: 2rem;
   padding: 1.5rem 1rem;
-  background: rgba(121,87,120,0.8);
+  background: rgba(108,173,201,0.68);
 }
 .blurb {
   display: none;
@@ -90,11 +96,11 @@ main {
 .blurb.shown {
   display: inline;
 }
-.about {
+.flexer {
   display: flex;
   margin-bottom: 2rem;
 }
-.about img {
+.flexer img {
   width: 200px;
   margin-right: 2rem;
   border-radius: 2rem;
@@ -107,42 +113,28 @@ h1 {
   font-size: 3.5rem;
   color: #a62923;
 }
-.title {
-  top: 0;
-  display: flex;
-  position: -webkit-sticky;
-  position: sticky;
-  min-height: 4rem;
-  align-items: center;
-  color: #111;
-  background: #6cadc9;
-  justify-content: center;
-}
-.title h2 {
+h2 {
   font-size: 2rem;
-  text-align: center;
-  margin: 0.5rem;
-}
-.title.dru {
-  flex-wrap: wrap;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
 }
 header h2 {
   font-size: 2.75rem;
   color: #795778;
 }
+.title h2 {
+  margin: 0.5rem;
+  text-align: center;
+}
 .content h2 {
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
+  border-top: 2px solid #6cadc9;
 }
 p {
   font-size: 1.75rem;
   margin-bottom: 1rem;
 }
 .motto {
-  text-align: center;
   display: none;
+  text-align: center;
 }
 .motto.shown {
   display: block;
@@ -152,17 +144,18 @@ p {
   font-size: 1.25rem;
 }
 a {
-  color: #000;
   cursor: pointer;
   font-size: 2rem;
-  padding: 0.85rem;
-  border-radius: 2rem;
+  padding: 0.75rem;
+  border-radius: 1rem;
   display: inline-block;
   background: #6cadc9;
   text-decoration: none;
+  color: #a62923;
 }
 a:hover {
   background: #d69c19;
+  transform: scale(1.02);
 }
 a:active {
   transform: scale(0.98);
@@ -208,17 +201,16 @@ textarea {
   padding: 1rem;
   display: block;
   font-size: 1.5rem;
-  background: transparent;
-  background: rgba(121,87,120,0.8);
+  background: rgba(108,173,201,0.68);
   border-radius: 1rem 1rem 0 0;
-  border-bottom: 2px #111 solid;
+  border-bottom: 2px #795778 solid;
 }
 .form-control input:focus,
 .form-control input:valid,
 .form-control textarea:focus,
 .form-control textarea:valid {
   outline: 0;
-  border-bottom-color: #f00;
+  border-bottom-color: #00f;
 }
 .form-control label {
   top: 0.5rem;
@@ -234,7 +226,7 @@ textarea {
 .form-control input:valid + label span,
 .form-control textarea:focus + label span,
 .form-control textarea:valid + label span {
-  color: #add8e6;
+  color: #6cadc9;
   transition: 0.3s ease-in;
   transform: translateY(-2rem);
   transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
@@ -249,10 +241,15 @@ textarea {
   background: #6cadc9;
 }
 .btn:hover {
+  transform: scale(1.02);
   background: #d69c19;
 }
 .btn:active {
   transform: scale(0.98);
+}
+.success {
+  margin-top: 2rem;
+  text-align: center;
 }
 @media (max-width: 1500px) {
   .content {

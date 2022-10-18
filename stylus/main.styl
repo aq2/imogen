@@ -1,17 +1,14 @@
 /// colours
 
-$topText = black
-$contentBack = #333333dd
-$contentBack = #795778cc
-$contentFore = #eee
-$contentFore = #111
-
 $dru-blue = #6cadc9
 $dru-blue-back = #795778 
 $dru-orange = #d69c19
 $dru-orange-back = #a62923
 
-$background = #6cadc952
+$background = alpha($dru-blue, 0.5)
+$contentBack = alpha($dru-blue, 0.68)
+
+$text = black
 
 //end colours
 
@@ -43,17 +40,16 @@ $background = #6cadc952
   width 12px
   border-radius 80px
 
-
 *::-webkit-scrollbar-track
   background $dru-orange
   border-radius 80px
-
 
 *::-webkit-scrollbar-thumb
   background $dru-blue
   border-radius 80px
 
 body
+  color $text
   padding 0.5rem
   overflow-y hidden
   background $background
@@ -77,10 +73,6 @@ header
 main
   display flex
   margin 0 auto
-  
-.success
-  text-align center
-  margin-top 2rem
 
 .panel
   flex 1
@@ -99,9 +91,17 @@ main
     flex 5
     cursor default
 
+  .title
+    top 0
+    display flex
+    position sticky
+    min-height 4rem
+    align-items center
+    background $dru-blue
+    justify-content center
+
 .content
   margin 1rem 1rem
-  color $contentFore
   border-radius 2rem
   padding 1.5rem 1rem
   background $contentBack
@@ -111,11 +111,11 @@ main
   &.shown
     display inline
 
-.about
+.flexer
   display flex
   margin-bottom 2rem
 
-.about img
+.flexer img
   width 200px
   margin-right 2rem
   border-radius 2rem
@@ -130,48 +130,29 @@ h1, h2
 h1 
   font-size 3.5rem
   color $dru-orange-back
-  
-.title
-  top 0
-  display flex
-  position sticky
-  min-height 4rem
-  align-items center
-  color $contentFore
-  background $dru-blue
-  justify-content center
 
-.title h2
+h2
   font-size 2rem
-  text-align center
-  margin 0.5rem
-
-.title.dru
-  // display flex
-  flex-wrap wrap
-  text-align center
-  align-items center
-  justify-content center
-
-.title.dru h2
-  // text-align left
-  // display inline-block
 
 header h2
   font-size 2.75rem
   color $dru-blue-back
 
+.title h2
+  margin 0.5rem
+  text-align center
+
 .content h2
-  // font-size 2.5rem
-  margin-bottom 1rem
+  margin-bottom 0.5rem
+  border-top 2px solid $dru-blue
 
 p
   font-size 1.75rem
   margin-bottom 1rem
   
 .motto
-  text-align center
   display none
+  text-align center
   &.shown
     display block
     margin -1rem 0 -2rem 0
@@ -180,17 +161,18 @@ p
   font-size 1.25rem
 
 a
-  color black
   cursor pointer
   font-size 2rem
-  padding 0.85rem
-  border-radius 2rem
+  padding 0.75rem
+  border-radius 1rem
   display inline-block
   background $dru-blue
   text-decoration none
+  color $dru-orange-back
 
 a:hover
   background $dru-orange
+  transform scale(1.02)
 
 a:active
   transform scale(0.98)
@@ -243,17 +225,16 @@ span.quote
   padding 1rem
   display block
   font-size 1.5rem
-  background transparent
   background $contentBack
   border-radius 1rem 1rem 0 0
-  border-bottom 2px $contentFore solid
+  border-bottom 2px $dru-blue-back solid
 
 .form-control input:focus,
 .form-control input:valid,
 .form-control textarea:focus,
 .form-control textarea:valid
   outline 0
-  border-bottom-color red
+  border-bottom-color blue
 
 .form-control label
   top 0.5rem
@@ -269,7 +250,7 @@ span.quote
 .form-control input:valid + label span,
 .form-control textarea:focus + label span,
 .form-control textarea:valid + label span
-  color lightblue
+  color $dru-blue
   transition 0.3s ease-in
   transform translateY(-2rem)
   transition 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55)
@@ -281,13 +262,16 @@ span.quote
   cursor pointer
   font-size 1.5rem
   border-radius 1rem
-  // font-family inherit
-  // display inline-block
   background $dru-blue
   &:hover
+    transform scale(1.02)
     background $dru-orange
   &:active
     transform scale(0.98)
+
+.success
+  margin-top 2rem
+  text-align center
 
 //end form
 
