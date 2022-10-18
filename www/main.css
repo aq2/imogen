@@ -185,7 +185,7 @@ span.quote {
   font-size: 1.25rem;
 }
 .form-input {
-  margin: 2rem auto;
+  margin: 2.5rem auto;
   position: relative;
 }
 .form-input input,
@@ -203,18 +203,17 @@ textarea {
 .form-input input:valid,
 .form-input textarea:focus,
 .form-input textarea:valid {
-  outline: 0;
+  outline: 1;
   border-bottom-color: #00f;
-  z-index: 1;
 }
 .form-input label {
-  top: 0.5rem;
-  left: 0.5rem;
+  top: 1rem;
+  right: 2rem;
   position: absolute;
 }
 .form-input label span {
   min-width: 5px;
-  font-size: 1.25rem;
+  font-size: 1.75rem;
   display: inline-block;
   color: #fff;
 }
@@ -223,7 +222,7 @@ textarea {
 .form-input textarea:focus + label span,
 .form-input textarea:valid + label span {
   color: #795778;
-  transform: translateY(-2rem);
+  transform: translateY(-3.25rem);
   transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 .btn {

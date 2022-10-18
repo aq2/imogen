@@ -12,9 +12,11 @@ General:
 contact form:
   ✔ simplified form css @done(18-10-22 17:15)
   ☐ form validation?
-  ☐ clicking on labels problem -> doesn't focus input
-    ☐ played with click handlers quickly
-    ☐ or make text jump up on click??
+  ✔ clicking on labels problem -> doesn't focus input @done(18-10-22 19:33)
+    ✔ 'sidestepped' the issue 😃 @done(18-10-22 19:33)
+    ✘ played with click handlers quickly @cancelled(18-10-22 19:32)
+    ✘ or make text jump up on click?? @cancelled(18-10-22 19:32)
+  ☐ form colors
   
 meeja q's:
   ✔ motto click problems in small screens.. @done(18-10-22 11:16)
