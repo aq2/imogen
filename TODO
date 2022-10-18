@@ -6,14 +6,17 @@ General:
   ☐ learn moar flexbox!
   ☐ occasional glitchy behaviour? or just resizing too fast?
   ✔ change panels starting from 0 @done(18-10-22 11:35)
+  ☐ meta tags
   
 meeja q's:
   ✔ motto click problems in small screens.. @done(18-10-22 11:16)
   ✘ if what is dru wrapped, change all title heights? -> and back again... @cancelled(18-10-22 11:56)
   ☐ top/bottom margin between panels in small screen
+  ☐ bigger headings in bigger screens?
+  ☐ header margins
 
 l8rs:
-  ☐ panel border-radius for edge scrollbars
+  ☐ edge scrollbars - make track transparent?
   ☐ position background images better
 
 Imogen:
