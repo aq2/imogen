@@ -33,7 +33,7 @@ function switchActives(elements, oldID, newID) {
 
 /// form
 
-const labels = document.querySelectorAll('.form-control label')
+const labels = document.querySelectorAll('.form-input label')
 
 labels.forEach(label => {
   label.innerHTML = 
