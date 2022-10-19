@@ -4,8 +4,9 @@
 
 General:
   ☐ meta tags
-  ✔ header alignments landscape @done(19-10-22 12:54)
   ☐ header alignments portrait
+  ☐ dark border bottom of testimonials?
+  ✔ header alignments landscape @done(19-10-22 12:54)
   ✔ title block heights @done(19-10-22 12:15)
   ✔ get rid of .panel1 etc @done(19-10-22 17:10)
     ✔ use data-dix in css? nth-child... @done(19-10-22 17:10)
@@ -19,9 +20,9 @@ contact form:
   ☐ better labels, maybe?
     
 meeja q's:
-  ✔ 💡 meeja info span @done(19-10-22 14:15)
   ☐ top/bottom margin between panels in small screen
   ☐ 📁 too many breakpoints
+  ✔ 💡 meeja info span @done(19-10-22 14:15)
   ✔ meeja aside now needs tweaking for breaks 😆 @done(19-10-22 17:42)
   
 l8rs:
@@ -34,7 +35,7 @@ Imogen:
   ☐ need to link with namecheap
   ☐ get namecheap and netlify passwoids
   ☐ add paypal button?
-  ☐ test form wehn active
+  ☐ test form when active
 
 meta:
   ☐ learn moar flexbox!
