@@ -3,7 +3,6 @@
 * it's so easy to make things complicated... *
   
 breakpoints:
-  ✔ 🐠'fancy' media aside @done(19-10-22 16:15)
   ☐ too many breakpoints? => moar control, but...
     ☐ big => 'meditation' title issue
     ☐ small => header sizes and alignment
@@ -37,3 +36,5 @@ breakpoints:
     667
   -> don't need so many small ones!
 
+Archive:
+  ✔ 🐠'fancy' media aside @done(19-10-22 16:15) @project(breakpoints)
