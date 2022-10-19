@@ -118,8 +118,6 @@ h1 {
 }
 h1.imogen {
   color: #795778;
-  margin-bottom: -0.5rem;
-  margin-bottom: -0.1rem;
   margin-bottom: -0.3rem;
 }
 h2 {
@@ -257,6 +255,11 @@ textarea {
   margin-top: 2rem;
   text-align: center;
 }
+@media (min-width: 1500px) {
+  .meeja span.big {
+    display: inline-block;
+  }
+}
 @media (max-width: 1500px) {
   .content {
     margin: 0.5rem;
@@ -266,6 +269,9 @@ textarea {
   }
   .motto.shown p {
     margin: -1rem -0.5rem 1rem -0.5rem;
+  }
+  .meeja span.b15 {
+    display: inline-block;
   }
 }
 @media (max-width: 1240px) {
@@ -280,6 +286,15 @@ textarea {
   .title h2 {
     font-size: 1.35rem;
   }
+  .meeja span {
+    display: none;
+  }
+  .meeja span.b15 {
+    display: none;
+  }
+  .meeja span.b11 {
+    display: inline-block;
+  }
 }
 @media (max-width: 980px) {
   body {
@@ -289,8 +304,21 @@ textarea {
   main {
     flex-direction: column;
   }
-  header h1 {
+  h1 {
     font-size: 3rem;
+    margin-bottom: -0.75rem;
+  }
+  h1.imogen {
+    margin-bottom: 0.5rem;
+  }
+  .meeja span {
+    display: none;
+  }
+  .meeja span.b9 {
+    display: inline-block;
+  }
+  .meeja span.b11 {
+    display: none;
   }
   p {
     font-size: 1.5rem;
@@ -326,11 +354,12 @@ textarea {
   header {
     align-items: flex-end;
   }
-  header h1 {
+  h1 {
     font-size: 2.75rem;
+    margin-bottom: -0.5rem;
   }
-  header h2 {
-    font-size: 2.5rem;
+  h1.imogen {
+    margin-bottom: 0rem;
   }
   header img {
     width: 100px;
@@ -339,6 +368,15 @@ textarea {
   }
   .panel {
     margin: 0;
+  }
+  .meeja span {
+    display: none;
+  }
+  .meeja span.b8 {
+    display: inline-block;
+  }
+  .meeja span.b9 {
+    display: none;
   }
 }
 @media (max-width: 806px) {
@@ -352,23 +390,47 @@ textarea {
     width: 80px;
     height: 80px;
   }
+  .meeja span {
+    display: none;
+  }
+  .meeja span.b7 {
+    display: inline-block;
+  }
+  .meeja span.b8 {
+    display: none;
+  }
 }
 @media (max-width: 686px) {
-  header h1 {
+  h1 {
     font-size: 2rem;
-  }
-  header h2 {
-    font-size: 1.75rem;
   }
   header img {
     width: 70px;
     height: 70px;
     margin: 0 0.25rem;
   }
+  .meeja span {
+    display: none;
+  }
+  .meeja span.b6 {
+    display: inline-block;
+  }
+  .meeja span.b7 {
+    display: none;
+  }
 }
 @media (max-width: 560px) {
   header h1 {
     font-size: 1.5rem;
+  }
+  .meeja span {
+    display: none;
+  }
+  .meeja span.b5 {
+    display: inline-block;
+  }
+  .meeja span.b6 {
+    display: none;
   }
 }
 @media (max-width: 460px) {
@@ -383,6 +445,15 @@ textarea {
     height: 60px;
     margin: 0 0.15rem;
   }
+  .meeja span {
+    display: none;
+  }
+  .meeja span.b4 {
+    display: inline-block;
+  }
+  .meeja span.b5 {
+    display: none;
+  }
 }
 @media (max-width: 386px) {
   header h1 {
@@ -396,6 +467,15 @@ textarea {
     height: 50px;
     margin: 0 0.05rem;
   }
+  .meeja span {
+    display: none;
+  }
+  .meeja span.b3 {
+    display: inline-block;
+  }
+  .meeja span.b4 {
+    display: none;
+  }
 }
 @media (max-width: 359px) {
   header h1 {
@@ -404,4 +484,22 @@ textarea {
   header h2 {
     font-size: 1rem;
   }
+  .meeja span {
+    display: none;
+  }
+  .meeja span.b2 {
+    display: inline-block;
+  }
+  .meeja span.b3 {
+    display: none;
+  }
+}
+.meeja {
+  margin-top: -1rem;
+  text-align: right;
+  padding-right: 2rem;
+}
+.meeja span {
+  color: #000;
+  display: none;
 }
