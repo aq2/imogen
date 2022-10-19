@@ -45,7 +45,7 @@ function switchActives(elements, oldID, newID) {
 
 /// form
 
-const labels = $all('.form-input label')
+const labels = $all('label')
 
 labels.forEach(label => {
   label.innerHTML = 

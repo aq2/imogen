@@ -197,43 +197,46 @@ span.quote {
   text-align: right;
   font-size: 1.25rem;
 }
-.form-input {
-  margin: 2.5rem auto;
+form {
   position: relative;
 }
-.form-input input,
+input,
 textarea {
   border: 0;
   width: 100%;
   padding: 1rem;
   display: block;
   font-size: 1.5rem;
+  margin-bottom: 2rem;
   background: rgba(108,173,201,0.68);
   border-radius: 1rem 1rem 0 0;
   border-bottom: 2px #795778 solid;
 }
-.form-input input:focus,
-.form-input input:valid,
-.form-input textarea:focus,
-.form-input textarea:valid {
+input:focus,
+input:valid,
+textarea:focus,
+textarea:valid {
   outline: 1;
   border-bottom-color: #00f;
 }
-.form-input label {
+label {
   top: 1rem;
   right: 2rem;
   position: absolute;
-}
-.form-input label span {
-  min-width: 5px;
   font-size: 1.75rem;
+}
+label.msg {
+  margin-top: 6rem;
+}
+label span {
+  min-width: 5px;
   display: inline-block;
   color: #fff;
 }
-.form-input input:focus + label span,
-.form-input input:valid + label span,
-.form-input textarea:focus + label span,
-.form-input textarea:valid + label span {
+input:focus + label span,
+input:valid + label span,
+textarea:focus + label span,
+textarea:valid + label span {
   color: #795778;
   transform: translateY(-3.25rem);
   transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);

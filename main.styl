@@ -17,16 +17,16 @@ $text = black
 /// panel images
 
 .panel:nth-child(1)
-  background-image url('imgs/yoga-class.jpg')
+  background-image url(imgs/yoga-class.jpg)
 
 .panel:nth-child(2)
-  background-image url('imgs/yoga2.jpg')
+  background-image url(imgs/yoga2.jpg)
 
 .panel:nth-child(3)
-  background-image url('imgs/meditate.jpg')
+  background-image url(imgs/meditate.jpg)
   
 .panel:nth-child(4)
-  background-image url('imgs/lotus.jpg')
+  background-image url(imgs/lotus.jpg)
 
 //end panel images
 
@@ -223,42 +223,45 @@ span.quote
 
 /// form
 
-.form-input 
-  margin 2.5rem auto
+form
   position relative
 
-.form-input input, textarea
+input, textarea
   border 0
   width 100%
   padding 1rem
   display block
   font-size 1.5rem
+  margin-bottom 2rem
   background $contentBack
   border-radius 1rem 1rem 0 0
   border-bottom 2px $dru-blue-back solid
 
-.form-input input:focus,
-.form-input input:valid,
-.form-input textarea:focus,
-.form-input textarea:valid
+input:focus,
+input:valid,
+textarea:focus,
+textarea:valid
   outline 1
   border-bottom-color blue
 
-.form-input label
+label
   top 1rem
   right 2rem
   position absolute
-
-.form-input label span
-  min-width 5px
   font-size 1.75rem
+
+label.msg
+  margin-top 6rem
+
+label span
+  min-width 5px
   display inline-block
   color white
 
-.form-input input:focus + label span,
-.form-input input:valid + label span,
-.form-input textarea:focus + label span,
-.form-input textarea:valid + label span
+input:focus + label span,
+input:valid + label span,
+textarea:focus + label span,
+textarea:valid + label span
   color $dru-blue-back
   transform translateY(-3.25rem)
   transition 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55)

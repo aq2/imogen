@@ -124,12 +124,10 @@ body
           //- form(name='contact' method='POST' 
                 data-netlify='true' action='/success')
           form(name='contact' method='POST')
-            .form-input
-              input.email(type='text' required)
-              label your email address
-            .form-input
-              textarea.message(rows=6 cols=50 name='message' required)
-              label please enter your message
+            input.email(type='text' required)
+            label your email address
+            textarea.message(rows=6 cols=50 name='message' required)
+            label.msg please enter your message
             button(type='submit').btn send message
 
     //end contact
