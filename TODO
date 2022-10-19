@@ -10,7 +10,8 @@ General:
   ✔ get rid of .panel1 etc @done(19-10-22 17:10)
     ✔ use data-dix in css? nth-child... @done(19-10-22 17:10)
     ✘ -> or js @cancelled(19-10-22 17:10)
-  ☐ 😎 aQuery? $getAll $getID etc...?
+  ✔ 😎 aQuery? $getAll $getID etc...? @done(19-10-22 17:41)
+  ✔ h2 for .title, h3 for content @done(19-10-22 17:43)
   
 contact form:
   ☐ form validation?
@@ -21,7 +22,7 @@ meeja q's:
   ✔ 💡 meeja info span @done(19-10-22 14:15)
   ☐ top/bottom margin between panels in small screen
   ☐ 📁 too many breakpoints
-  ☐ meeja aside now needs tweaking for breaks 😆
+  ✔ meeja aside now needs tweaking for breaks 😆 @done(19-10-22 17:42)
   
 l8rs:
   ☐ edge scrollbars - make track transparent?

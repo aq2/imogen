@@ -1,10 +1,22 @@
+/// aQuery
+
+function $all(elements) {
+  return document.querySelectorAll(elements)
+}
+
+function $id(element) {
+  return document.querySelector(element)
+}
+
+//end aQuery
+
 /// panels
 
 var oldPanelID = 0
 var newPanelID = 0
-const panels = document.querySelectorAll('.panel')
-const blurbs = document.querySelectorAll('.blurb')
-const mottos = document.querySelectorAll('.motto')
+const panels = $all('.panel')
+const blurbs = $all('.blurb')
+const mottos = $all('.motto')
 
 panels.forEach(panel => {
   if (window.innerWidth > 980) { 
@@ -33,7 +45,7 @@ function switchActives(elements, oldID, newID) {
 
 /// form
 
-const labels = document.querySelectorAll('.form-input label')
+const labels = $all('.form-input label')
 
 labels.forEach(label => {
   label.innerHTML = 
@@ -43,7 +55,6 @@ labels.forEach(label => {
       .join('')
 })
 
-
 //end form
 
 /// width detection!
@@ -51,8 +62,9 @@ labels.forEach(label => {
 let delay = 150
 let range = 'XXX'
 let timeout = false
-const w = document.querySelector("#width")
-const r = document.querySelector("#range")
+
+const w = $id('#width')
+const r = $id('#range')
 
 function getDimensions() {
   let width = window.innerWidth

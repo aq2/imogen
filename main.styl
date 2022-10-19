@@ -110,6 +110,13 @@ main
   padding 1.5rem 1rem
   background $contentBack
 
+.motto
+  display none
+  text-align center
+  &.shown
+    display block
+    margin -1rem 0 -2rem 0
+
 .blurb
   display none
   &.shown
@@ -136,32 +143,27 @@ aside
 
 /// typography
 
-h1, h2
+h1, h2, h3
   font-family 'Cardo', serif
   
 h1 
   font-size 3.5rem
-  color $dru-orange-back
   margin-bottom -0.9rem
-  z-index 1
+  color $dru-orange-back
 
 h1.imogen
   color $dru-blue-back
   margin-bottom -0.3rem
 
-h2
+h2, h3
   font-size 2rem
 
-header h2
-  font-size 2.75rem
-  color $dru-blue-back
-
-.title h2
+h2
   margin 0 0.5rem
   text-align center
   line-height 99.5%
 
-.content h2
+h3
   margin-bottom 0.5rem
   border-top 2px solid $dru-blue
 
@@ -169,13 +171,6 @@ p
   font-size 1.75rem
   margin-bottom 1rem
   
-.motto
-  display none
-  text-align center
-  &.shown
-    display block
-    margin -1rem 0 -2rem 0
-
 .motto p
   font-size 1.25rem
 
@@ -300,7 +295,7 @@ span.quote
 @media(max-width: 1500px)
   .content
     margin 0.5rem
-  .title h2
+  h2
     font-size 1.75rem
   .motto.shown p
     margin -1rem -0.5rem 1rem -0.5rem
@@ -311,12 +306,12 @@ span.quote
 @media(max-width: 1240px)
   .title
     min-height 4rem
-  .title h2
+  h2
     font-size 1.5rem
 
 // reduce size of 'meditate' again
 @media(max-width: 1100px)
-  .title h2
+  h2
     font-size 1.35rem
 
 
@@ -346,7 +341,7 @@ span.quote
   .title
     min-height 4rem
 
-  .title h2
+  h2
     font-size 1.75rem
   
   .blurb
@@ -383,10 +378,8 @@ span.quote
   
   
 @media(max-width: 806px)
-  header h1
+  h1
     font-size 2.5rem
-  header h2
-    font-size 2rem
   header img
     width 80px
     height 80px
@@ -400,19 +393,11 @@ span.quote
     margin 0 0.25rem
 
 @media(max-width: 560px)
-  header h1
+  h1
     font-size 1.5rem
-  .meeja span
-    display none
-  .meeja span.b5
-    display inline-block
-  .meeja span.b6
-    display none
   
 @media(max-width: 460px)
-  header h1
-    font-size 1.25rem
-  header h2
+  h1
     font-size 1.25rem
   header img
     width 60px
@@ -422,19 +407,15 @@ span.quote
   // todo about me flex widths...
 
 @media(max-width: 386px)
-  header h1
+  h1
     font-size 1.2rem
-  header h2
-    font-size 1.5rem
   header img
     width 50px
     height 50px
     margin 0 0.05rem
 
 @media(max-width: 359px)
-  header h1
-    font-size 1rem
-  header h2
+  h1
     font-size 1rem
 
 
