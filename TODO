@@ -5,12 +5,14 @@
 General:
   ☐ learn moar flexbox!
   ☐ meta tags
-  ☐ header alignments
+  ✔ header alignments landscape @done(19-10-22 12:54)
+  ☐ header alignments portrait
   ✔ title block heights @done(19-10-22 12:15)
   
 contact form:
   ☐ form validation?
   ☐ form colors
+  ☐ better labels, maybe?
   
 meeja q's:
   ☐ top/bottom margin between panels in small screen

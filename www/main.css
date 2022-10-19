@@ -40,11 +40,12 @@ header {
   display: flex;
   align-items: flex-end;
   justify-content: center;
+  margin-bottom: 1rem;
 }
 header img {
-  width: 115px;
-  height: 115px;
-  margin: 0 1rem;
+  width: 110px;
+  height: 110px;
+  margin-right: 1rem;
   border-radius: 1rem;
 }
 .headtitle {
@@ -112,6 +113,14 @@ h2 {
 h1 {
   font-size: 3.5rem;
   color: #a62923;
+  margin-bottom: -0.9rem;
+  z-index: 1;
+}
+h1.imogen {
+  color: #795778;
+  margin-bottom: -0.5rem;
+  margin-bottom: -0.1rem;
+  margin-bottom: -0.3rem;
 }
 h2 {
   font-size: 2rem;
