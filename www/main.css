@@ -35,6 +35,7 @@ body {
   overflow-y: hidden;
   background: rgba(108,173,201,0.34);
   font-family: 'Josefin Sans', sans-serif;
+  position: relative;
 }
 header {
   display: flex;
@@ -286,15 +287,6 @@ textarea {
   .title h2 {
     font-size: 1.35rem;
   }
-  .meeja span {
-    display: none;
-  }
-  .meeja span.b15 {
-    display: none;
-  }
-  .meeja span.b11 {
-    display: inline-block;
-  }
 }
 @media (max-width: 980px) {
   body {
@@ -310,15 +302,6 @@ textarea {
   }
   h1.imogen {
     margin-bottom: 0.5rem;
-  }
-  .meeja span {
-    display: none;
-  }
-  .meeja span.b9 {
-    display: inline-block;
-  }
-  .meeja span.b11 {
-    display: none;
   }
   p {
     font-size: 1.5rem;
@@ -366,15 +349,6 @@ textarea {
   .panel {
     margin: 0;
   }
-  .meeja span {
-    display: none;
-  }
-  .meeja span.b8 {
-    display: inline-block;
-  }
-  .meeja span.b9 {
-    display: none;
-  }
 }
 @media (max-width: 806px) {
   header h1 {
@@ -387,15 +361,6 @@ textarea {
     width: 80px;
     height: 80px;
   }
-  .meeja span {
-    display: none;
-  }
-  .meeja span.b7 {
-    display: inline-block;
-  }
-  .meeja span.b8 {
-    display: none;
-  }
 }
 @media (max-width: 686px) {
   h1 {
@@ -405,15 +370,6 @@ textarea {
     width: 70px;
     height: 70px;
     margin: 0 0.25rem;
-  }
-  .meeja span {
-    display: none;
-  }
-  .meeja span.b6 {
-    display: inline-block;
-  }
-  .meeja span.b7 {
-    display: none;
   }
 }
 @media (max-width: 560px) {
@@ -442,15 +398,6 @@ textarea {
     height: 60px;
     margin: 0 0.15rem;
   }
-  .meeja span {
-    display: none;
-  }
-  .meeja span.b4 {
-    display: inline-block;
-  }
-  .meeja span.b5 {
-    display: none;
-  }
 }
 @media (max-width: 386px) {
   header h1 {
@@ -464,15 +411,6 @@ textarea {
     height: 50px;
     margin: 0 0.05rem;
   }
-  .meeja span {
-    display: none;
-  }
-  .meeja span.b3 {
-    display: inline-block;
-  }
-  .meeja span.b4 {
-    display: none;
-  }
 }
 @media (max-width: 359px) {
   header h1 {
@@ -481,20 +419,11 @@ textarea {
   header h2 {
     font-size: 1rem;
   }
-  .meeja span {
-    display: none;
-  }
-  .meeja span.b2 {
-    display: inline-block;
-  }
-  .meeja span.b3 {
-    display: none;
-  }
 }
 aside {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.5rem;
   text-align: right;
-  margin: -8.5rem 2rem 6rem 0;
-}
-.meeja span {
-  display: none;
 }

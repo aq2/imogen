@@ -9,6 +9,7 @@ General:
   ☐ header alignments portrait
   ✔ title block heights @done(19-10-22 12:15)
   ☐ get rid of .panel1 etc -> use data-dix in css?
+  ☐ 😎 aQuery? $getAll $getID etc...?
   
 contact form:
   ☐ form validation?
@@ -19,10 +20,12 @@ meeja q's:
   ✔ 💡 meeja info span @done(19-10-22 14:15)
   ☐ top/bottom margin between panels in small screen
   ☐ 📁 too many breakpoints
+  meeja aside now needs tweaking for breaks 😆
   
 l8rs:
   ☐ edge scrollbars - make track transparent?
   ☐ position background images better
+  ☐ standard list of emojis! bulb etc...
 
 Imogen:
   ☐ words
