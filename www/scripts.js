@@ -46,7 +46,6 @@ labels.forEach(label => {
 
 //end form
 
-
 /// width detection!
 
 let delay = 150
@@ -93,7 +92,6 @@ getDimensions()
 
 
 //end width detection
-
 
 /// scrollbar detection
 

@@ -1,4 +1,10 @@
 {
   "livePugCompiler.savePath": "/www",
-  "stylusCompile.settings.showOutputWindow": false
+  "stylusCompile.settings.showOutputWindow": false,
+  "stylusCompile.settings.formats": [
+    {
+      "extensionName": ".css",
+      "savePath": "/www"
+    }
+  ]
 }
