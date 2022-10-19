@@ -60,7 +60,7 @@ function getDimensions() {
   w.innerHTML = 'width: ' + width
   
   if (width > 1500) {
-    range = '>1500'
+    range = '1500+'
   } else if (width > 1100) { 
     range = '1100 - 1500'
   } else if (width > 980) {
@@ -74,12 +74,13 @@ function getDimensions() {
   } else if (width > 560) {
     range = '460 - 560'
   } else if (width > 460) {
-  range = '460 - 560'
-} else if (width > 388) {
-  range = '388 - 460'
-} else {
-  range = 'teeny'
-}
+    range = '460 - 560'
+  } else if (width > 388) {
+    range = '388 - 460'
+  } else {
+    range = 'teeny'
+  }
+  
   r.innerHTML = 'range: ' + range
 }
 

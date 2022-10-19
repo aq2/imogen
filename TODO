@@ -3,12 +3,13 @@
 * it's so easy to make things complicated... *
 
 General:
-  ☐ learn moar flexbox!
   ☐ meta tags
   ✔ header alignments landscape @done(19-10-22 12:54)
   ☐ header alignments portrait
   ✔ title block heights @done(19-10-22 12:15)
-  ☐ get rid of .panel1 etc -> use data-dix in css?
+  ☐ get rid of .panel1 etc
+    ☐ use data-dix in css?
+    ☐ -> or js
   ☐ 😎 aQuery? $getAll $getID etc...?
   
 contact form:
@@ -25,7 +26,6 @@ meeja q's:
 l8rs:
   ☐ edge scrollbars - make track transparent?
   ☐ position background images better
-  ☐ standard list of emojis! bulb etc...
 
 Imogen:
   ☐ words
@@ -33,7 +33,13 @@ Imogen:
   ☐ need to link with namecheap
   ☐ get namecheap and netlify passwoids
   when active:
-    ☐ test form  
+    ☐ test form
+
+meta:
+  ☐ learn moar flexbox!
+  ☐ standard list of emojis! bulb etc...
+  ☐ code colors 😎
+
 
 #  
 ##############################################################  
