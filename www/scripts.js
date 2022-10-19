@@ -47,6 +47,27 @@ labels.forEach(label => {
 //end form
 
 
+/// width detection!
+
+let delay = 500
+let timeout = false
+const w = document.querySelector("#width")
+
+function getDimensions() {
+  w.innerHTML = 'width: ' + window.innerWidth
+}
+
+window.addEventListener('resize', () => {
+  clearTimeout(timeout)
+  timeout = setTimeout(getDimensions, delay)
+})
+
+getDimensions()
+
+//end width detection
+
+
+
 /// scrollbar detection
 
 const scrollbarVisible = (element) => {
