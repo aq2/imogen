@@ -4,26 +4,16 @@
 
 General:
   ☐ learn moar flexbox!
-  ✘ occasional glitchy behaviour? or just resizing too fast? @cancelled(18-10-22 17:38)
-  ✔ change panels starting from 0 @done(18-10-22 11:35)
   ☐ meta tags
-  ✔ rename colors @done(18-10-22 16:50)
+  ☐ header alignments
+  ✔ title block heights @done(19-10-22 12:15)
   
 contact form:
-  ✔ simplified form css @done(18-10-22 17:15)
   ☐ form validation?
-  ✔ clicking on labels problem -> doesn't focus input @done(18-10-22 19:33)
-    ✔ 'sidestepped' the issue 😃 @done(18-10-22 19:33)
-    ✘ played with click handlers quickly @cancelled(18-10-22 19:32)
-    ✘ or make text jump up on click?? @cancelled(18-10-22 19:32)
   ☐ form colors
   
 meeja q's:
-  ✔ motto click problems in small screens.. @done(18-10-22 11:16)
-  ✘ if what is dru wrapped, change all title heights? -> and back again... @cancelled(18-10-22 11:56)
   ☐ top/bottom margin between panels in small screen
-  ✔ bigger headings in bigger screens? @done(18-10-22 16:08)
-  ✔ header margins @done(18-10-22 16:51)
 
 l8rs:
   ☐ edge scrollbars - make track transparent?
@@ -42,6 +32,18 @@ Imogen:
 #
 
 Archive:
+  ✔ clicking on labels problem -> doesn't focus input @done(18-10-22 19:33) @project(contact form)
+  ✔ 'sidestepped' the issue 😃 @done(18-10-22 19:33) @project(contact form)
+  ✘ played with click handlers quickly @cancelled(18-10-22 19:32) @project(contact form)
+  ✘ or make text jump up on click?? @cancelled(18-10-22 19:32) @project(contact form)
+  ✘ occasional glitchy behaviour? or just resizing too fast? @cancelled(18-10-22 17:38) @project(General)
+  ✔ change panels starting from 0 @done(18-10-22 11:35) @project(General)
+  ✔ rename colors @done(18-10-22 16:50) @project(General)
+  ✔ simplified form css @done(18-10-22 17:15) @project(contact form)
+  ✔ bigger headings in bigger screens? @done(18-10-22 16:08) @project(meeja q's)
+  ✔ header margins @done(18-10-22 16:51) @project(meeja q's)
+  ✔ motto click problems in small screens.. @done(18-10-22 11:16) @project(meeja q's)
+  ✘ if what is dru wrapped, change all title heights? -> and back again... @cancelled(18-10-22 11:56) @project(meeja q's)
   ✔ maybe everythining in header on one row? @done(17-10-22 20:21) @project(meeja q's)
   ✔ align imgs bottom! @done(17-10-22 20:21) @project(meeja q's)
   ✔ change header h1 h2 sizes at appropriate points @done(17-10-22 20:21) @project(meeja q's)

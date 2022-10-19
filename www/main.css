@@ -79,7 +79,7 @@ main {
   display: flex;
   position: -webkit-sticky;
   position: sticky;
-  min-height: 4rem;
+  min-height: 5rem;
   align-items: center;
   background: #6cadc9;
   justify-content: center;
@@ -121,8 +121,9 @@ header h2 {
   color: #795778;
 }
 .title h2 {
-  margin: 0.5rem;
+  margin: 0 0.5rem;
   text-align: center;
+  line-height: 99.5%;
 }
 .content h2 {
   margin-bottom: 0.5rem;
@@ -259,6 +260,9 @@ textarea {
   }
 }
 @media (max-width: 1240px) {
+  .title {
+    min-height: 4rem;
+  }
   .title h2 {
     font-size: 1.5rem;
   }
@@ -286,11 +290,11 @@ textarea {
     cursor: default;
     padding-bottom: 2rem;
   }
+  .title {
+    min-height: 4rem;
+  }
   .title h2 {
     font-size: 1.75rem;
-  }
-  .title.dru {
-    flex-direction: row;
   }
   .blurb {
     display: inline-block;

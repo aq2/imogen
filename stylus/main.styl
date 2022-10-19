@@ -95,7 +95,7 @@ main
   top 0
   display flex
   position sticky
-  min-height 4rem
+  min-height 5rem
   align-items center
   background $dru-blue
   justify-content center
@@ -139,8 +139,10 @@ header h2
   color $dru-blue-back
 
 .title h2
-  margin 0.5rem
+  margin 0 0.5rem
   text-align center
+  line-height 99.5%
+  // border 1px solid blue
 
 .content h2
   margin-bottom 0.5rem
@@ -284,6 +286,8 @@ span.quote
 
 // reduce size of 'meditate' again
 @media(max-width: 1240px)
+  .title
+    min-height 4rem
   .title h2
     font-size 1.5rem
 
@@ -309,11 +313,12 @@ span.quote
     cursor default
     padding-bottom 2rem
   
+  .title
+    min-height 4rem
+
   .title h2
     font-size 1.75rem
-  .title.dru
-    flex-direction row
-
+  
   .blurb
     display inline-block
  
