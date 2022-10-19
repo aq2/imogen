@@ -13,9 +13,42 @@ contact form:
   ☐ form validation?
   ☐ form colors
   ☐ better labels, maybe?
-  
+    
 meeja q's:
+  ✔ 💡 meeja info span @done(19-10-22 14:15)
   ☐ top/bottom margin between panels in small screen
+  
+breakpoints:
+  ☐ too many breakpoints? => moar control, but...
+    ☐ big => 'meditation' title issue
+    ☐ small => header sizes and alignment
+    ☐ ❓ can simplify?
+  current:
+    1500 shrink meditate
+    1000 shrink meditate
+    980 major portrait mode
+    880 smaller headers, margins, images
+    806 smaller headers, margins, images
+    686 smaller headers,          images
+    560 smaller headers
+    460 smaller headers,          images
+    386 smaller headers,          images
+    359 smaller headers
+  fewer means
+    smaller headers in portrait mode
+    -> imgs and h1 width/alignments
+  ☐ posible to get rid of some intermediates, fuck it?
+  what are common widths?
+    1080
+    1024
+    896
+    864
+    844
+    786
+    768
+    667
+  -> don't need so many small ones!
+
 
 l8rs:
   ☐ edge scrollbars - make track transparent?
