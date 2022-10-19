@@ -164,7 +164,7 @@ a {
   display: inline-block;
   background: #6cadc9;
   text-decoration: none;
-  color: #a62923;
+  color: #000;
 }
 a:hover {
   transform: scale(1.02);
@@ -203,7 +203,9 @@ form {
 input,
 textarea {
   border: 0;
+  outline: 0;
   width: 100%;
+  opacity: 0.5;
   padding: 1rem;
   display: block;
   font-size: 1.5rem;
@@ -213,11 +215,16 @@ textarea {
   border-bottom: 2px #795778 solid;
 }
 input:focus,
+textarea:focus {
+  border-bottom-color: #f00;
+  opacity: 1;
+}
 input:valid,
-textarea:focus,
 textarea:valid {
-  outline: 1;
   border-bottom-color: #00f;
+}
+input:valid + label span {
+  color: #00f;
 }
 label {
   top: 1rem;
@@ -234,10 +241,9 @@ label span {
   color: #fff;
 }
 input:focus + label span,
-input:valid + label span,
 textarea:focus + label span,
 textarea:valid + label span {
-  color: #795778;
+  color: $white;
   transform: translateY(-3.25rem);
   transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
