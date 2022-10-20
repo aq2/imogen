@@ -10,24 +10,24 @@ function $id(element) {
 
 //end aQuery
 
-/// panels
+/// sections
 
-var oldPanelID = 0
-var newPanelID = 0
-const panels = $all('.panel')
-const blurbs = $all('.blurb')
-const mottos = $all('.motto')
+var oldSectionID = 0
+var newSectionID = 0
+const sections = $all('section')
+const articles = $all('article')
+const asides = $all('aside')
 
-panels.forEach(panel => {
+sections.forEach(section => {
   if (window.innerWidth > 980) { 
-    panel.addEventListener('click', (e) => {
-      let activeNow = panel.classList.contains('shown')
+    section.addEventListener('click', (e) => {
+      let activeNow = section.classList.contains('shown')
       if (!activeNow) {
-        newPanelID = parseInt(panel.dataset.idx)
-        switchActives(panels, oldPanelID, newPanelID)
-        switchActives(blurbs, oldPanelID, newPanelID)
-        switchActives(mottos, newPanelID, oldPanelID)        
-        oldPanelID = newPanelID
+        newSectionID = parseInt(section.dataset.idx)
+        switchActives(sections, oldSectionID, newSectionID)
+        switchActives(articles, oldSectionID, newSectionID)
+        switchActives(asides, newSectionID, oldSectionID)        
+        oldSectionID = newSectionID
         // todo check for scrollbar and webkit styles?
       }
     })
@@ -41,7 +41,7 @@ function switchActives(elements, oldID, newID) {
   }
 }
 
-//end panels
+//end sections
 
 /// form
 
@@ -116,8 +116,8 @@ const scrollbarVisible = (element) => {
   return element.scrollHeight > element.clientHeight;
 }
 
-const panel = panels[newPanelID]
+const section = sections[newSectionID]
 
-// console.log('scrollbar: ' + scrollbarVisible(panel))
+// console.log('scrollbar: ' + scrollbarVisible(section))
 
 //end scrollbar

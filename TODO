@@ -5,14 +5,14 @@
 General:
   ☐ meta tags
   ☐ header alignments portrait
-  ☐ dark border bottom of testimonials?
-  ✔ header alignments landscape @done(19-10-22 12:54)
-  ✔ title block heights @done(19-10-22 12:15)
-  ✔ get rid of .panel1 etc @done(19-10-22 17:10)
-    ✔ use data-dix in css? nth-child... @done(19-10-22 17:10)
-    ✘ -> or js @cancelled(19-10-22 17:10)
-  ✔ 😎 aQuery? $getAll $getID etc...? @done(19-10-22 17:41)
-  ✔ h2 for .title, h3 for content @done(19-10-22 17:43)
+  ✔ dark border bottom of testimonials? @done(20-10-22 15:55)
+  ✔ semanticize! @done(20-10-22 15:55)
+    ✔ .panel -> section @done(20-10-22 15:21)
+    ✘ .title -> h2 @cancelled(20-10-22 15:54)
+    ✔ .blurb -> article @done(20-10-22 15:54)
+    ✔ .motto -> aside @done(20-10-22 15:54)
+    ✔ ❓ do we need .content? @done(20-10-22 15:54)
+  ☐ choose initial active/shown section?
   
 contact form:
   ☐ fieldset?
@@ -21,10 +21,9 @@ contact form:
   ☐ better labels, maybe?
     
 meeja q's:
+  ☐ repair havoc caused y semanticizing!
   ☐ top/bottom margin between panels in small screen
   ☐ 📁 too many breakpoints
-  ✔ 💡 meeja info span @done(19-10-22 14:15)
-  ✔ meeja aside now needs tweaking for breaks 😆 @done(19-10-22 17:42)
   
 l8rs:
   ☐ edge scrollbars - make track transparent?
@@ -43,12 +42,20 @@ meta:
   ☐ standard list of emojis! bulb etc...
   ☐ code colors 😎
 
-
 #  
 ##############################################################  
 #
 
 Archive:
+  ✔ h2 for .title, h3 for content @done(19-10-22 17:43) @project(General)
+  ✔ 💡 meeja info span @done(19-10-22 14:15) @project(meeja q's)
+  ✔ meeja aside now needs tweaking for breaks 😆 @done(19-10-22 17:42) @project(meeja q's)
+  ✔ get rid of .panel1 etc @done(19-10-22 17:10) @project(General)
+  ✔ use data-dix in css? nth-child... @done(19-10-22 17:10) @project(General)
+  ✘ -> or js @cancelled(19-10-22 17:10) @project(General)
+  ✔ 😎 aQuery? $getAll $getID etc...? @done(19-10-22 17:41) @project(General)
+  ✔ header alignments landscape @done(19-10-22 12:54) @project(General)
+  ✔ title block heights @done(19-10-22 12:15) @project(General)
   ✔ clicking on labels problem -> doesn't focus input @done(18-10-22 19:33) @project(contact form)
   ✔ 'sidestepped' the issue 😃 @done(18-10-22 19:33) @project(contact form)
   ✘ played with click handlers quickly @cancelled(18-10-22 19:32) @project(contact form)

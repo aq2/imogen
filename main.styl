@@ -14,21 +14,21 @@ $text = black
 
 //end colours
 
-/// panel images
+/// section images
 
-.panel:nth-child(1)
+section:nth-child(1)
   background-image url(imgs/yoga-class.jpg)
 
-.panel:nth-child(2)
+section:nth-child(2)
   background-image url(imgs/yoga2.jpg)
 
-.panel:nth-child(3)
+section:nth-child(3)
   background-image url(imgs/meditate.jpg)
   
-.panel:nth-child(4)
+section:nth-child(4)
   background-image url(imgs/lotus.jpg)
 
-//end panel images
+//end section images
 
 /// layout
 *
@@ -58,7 +58,7 @@ body
   background $background
   font-family 'Josefin Sans', sans-serif
 
-header
+#bigheader
   display flex
   margin-bottom 1rem
   align-items flex-end
@@ -69,7 +69,7 @@ header
     margin-right 1rem
     border-radius 1rem
 
-.headtitle 
+#headtitle 
   display flex
   flex-direction column
   justify-content space-between
@@ -78,7 +78,7 @@ main
   display flex
   margin 0 auto
 
-.panel
+section
   flex 1
   height 82vh
   margin 0.5rem
@@ -95,7 +95,7 @@ main
     flex 5
     cursor default
 
-.title
+section header
   top 0
   display flex
   position sticky
@@ -104,23 +104,23 @@ main
   background $dru-blue
   justify-content center
 
-.content
-  margin 1rem 1rem
-  border-radius 2rem
-  padding 1.5rem 1rem
-  background $contentBack
 
-.motto
+aside, article
   display none
-  text-align center
   &.shown
     display block
-    margin -1rem 0 -2rem 0
+    margin 1rem 1rem
+    border-radius 2rem
+    background $contentBack
 
-.blurb
-  display none
+aside
   &.shown
-    display inline
+    text-align center
+    padding 0.75rem 0.75rem 0.1rem 0.75rem
+
+article
+  &.shown
+    padding 1.5rem 1rem
 
 .flexer
   display flex
@@ -131,13 +131,13 @@ main
   margin-right 2rem
   border-radius 2rem
 
-aside
-  position absolute
+cite
   top 1rem
   right 1rem
   font-size 1.5rem
   text-align right
-  // display none
+  position absolute
+
 
 //end layout
 
@@ -171,7 +171,7 @@ p
   font-size 1.75rem
   margin-bottom 1rem
   
-.motto p
+aside p
   font-size 1.25rem
 
 a
@@ -203,7 +203,6 @@ blockquote
   margin 0 auto 1.5rem auto
   background alpha($dru-orange, 0.6)
   border-left 15px solid $dru-orange-back
-  // border-bottom 5px solid $dru-orange-back
 
 span.quote
   left 1rem
@@ -310,24 +309,17 @@ span.email.ok
 
 /// meeja qs
 
-@media(min-width: 1500px)
-  .meeja span.big
-    display inline-block
-
 // reduce size of 'meditate'
 @media(max-width: 1500px)
-  .content
-    margin 0.5rem
   h2
     font-size 1.75rem
-  .motto.shown p
+  aside.shown p
     margin -1rem -0.5rem 1rem -0.5rem
-  .meeja span.b15
-    display inline-block
+  
 
 // reduce size of 'meditate' again
 @media(max-width: 1240px)
-  .title
+  header
     min-height 4rem
   h2
     font-size 1.5rem
@@ -357,22 +349,22 @@ span.email.ok
   p
    font-size 1.5rem
 
-  .panel
+  section
     cursor default
     padding-bottom 2rem
   
-  .title
+  header
     min-height 4rem
 
   h2
     font-size 1.75rem
   
-  .blurb
+  article
     display inline-block
  
-  .motto
+  aside
     display block
-  .motto.shown  
+  aside.shown  
     font-size 1.25rem
     padding 1rem 0 2rem 0
 
@@ -392,25 +384,26 @@ span.email.ok
   h1.imogen
     margin-bottom -0rem
 
-  header img
+  .logo img
     width 100px
     height 100px
     margin 0 0.5rem
-  .panel
+  
+  section
     margin 0
   
   
 @media(max-width: 806px)
   h1
     font-size 2.5rem
-  header img
+  .logo img
     width 80px
     height 80px
 
 @media(max-width: 686px)
   h1
     font-size 2rem
-  header img
+  .logo img
     width 70px
     height 70px
     margin 0 0.25rem
@@ -422,7 +415,7 @@ span.email.ok
 @media(max-width: 460px)
   h1
     font-size 1.25rem
-  header img
+  .logo img
     width 60px
     height 60px
     margin 0 0.15rem
@@ -432,7 +425,7 @@ span.email.ok
 @media(max-width: 386px)
   h1
     font-size 1.2rem
-  header img
+  .logo img
     width 50px
     height 50px
     margin 0 0.05rem

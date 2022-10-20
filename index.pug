@@ -18,15 +18,15 @@ head
 
 body
   /// header
-  header
-    .logoo  
+  #bigheader
+    .logo  
       img(src='imgs/yoga-logo.jpg')
       img(src='imgs/meditation-logo.jpg')
-    .headtitle
+    #headtitle
       h1.imogen Imogen Groves         
       h1 Dru Yoga and Meditation
 
-  aside
+  cite
     #width width
     #range range
   
@@ -34,109 +34,105 @@ body
 
   main
     /// what is dru?
-    .panel(data-idx='0')
-      .title
+    section(data-idx='0').shown
+      header
         h2 What is Dru?
-      .content
-        .motto.shown
-          p Peace begins with the individual.
-          p.c2e (click to expand)
-        .blurb
-          p Dru yoga is a graceful and potent form of yoga, based on flowing movements, directed breathing and visualisation.
-          p With its foundation set firmly in ancient yogic tradition, Dru works on body, mind and spirit - improving strength and flexibility, creating core stability, building a heightened feeling of positivity and is deeply relaxing whilst rejuvenating your whole being.
-          p Designed to be practised by people of all abilities, all fitness levels and all age groups, Dru is a style of yoga that can be quickly dipped into or learnt in more depth over a lifetime.
-          
-          blockquote
-            span.quote &ldquo;
-            .testimonial.
-              Classes are enjoyable and gently challenging. I always come away with a strong sense of achievement and renewed calm.
-            .punter S.H.  
+      aside
+        p Peace begins with the individual.
+        p.c2e (click to expand)
+      article.shown
+        p Dru yoga is a graceful and potent form of yoga, based on flowing movements, directed breathing and visualisation.
+        p With its foundation set firmly in ancient yogic tradition, Dru works on body, mind and spirit - improving strength and flexibility, creating core stability, building a heightened feeling of positivity and is deeply relaxing whilst rejuvenating your whole being.
+        p Designed to be practised by people of all abilities, all fitness levels and all age groups, Dru is a style of yoga that can be quickly dipped into or learnt in more depth over a lifetime.
+        
+        blockquote
+          span.quote &ldquo;
+          .testimonial.
+            Classes are enjoyable and gently challenging. I always come away with a strong sense of achievement and renewed calm.
+          .punter S.H.  
 
-          //- hr
+        //- hr
 
-          h3 About Me
-          .flexer
-            img(src='imgs/melon.jpg')
-            .spiel
-              p blah blah...
-              p need a nicer picture of imogen (if one exists 😉)
-       
-          blockquote
-            span.quote &ldquo;
-            .testimonial
-              span Dru is a very gentle way of connecting to your body stretching and balancing. Classes are fun and engaging.
-            .punter C.F.
+        h3 About Me
+        .flexer
+          img(src='imgs/melon.jpg')
+          .spiel
+            p blah blah...
+            p need a nicer picture of imogen (if one exists 😉)
+      
+        blockquote
+          span.quote &ldquo;
+          .testimonial
+            span Dru is a very gentle way of connecting to your body stretching and balancing. Classes are fun and engaging.
+          .punter C.F.
 
     //end what is  
 
     /// yoga
-    .panel(data-idx='1')
-      .title
+    section(data-idx='1')
+      header
         h2 Yoga Classes
-      .content
-        .motto.shown
-          p Yoga is not a work-out, it's a work-in.
-          p.c2e (click to expand)
-        .blurb
-          p ## details of different classes
-          p ## dates, times, locations, costs etc
-          blockquote
-            span.quote &ldquo;
-            .testimonial
-              span After attending many yoga classes over nearly 40 years, these are the best classes I have ever been to. Apart from the improved flexibility and the increased vitality and clarity of mind that the classes give, there is a sense of pure joy in taking part.
-            .punter G.M.
+      aside.shown
+        p Yoga is not a work-out, it's a work-in.
+        p.c2e (click to expand)
+      article
+        p ## details of different classes
+        p ## dates, times, locations, costs etc
+        blockquote
+          span.quote &ldquo;
+          .testimonial
+            span After attending many yoga classes over nearly 40 years, these are the best classes I have ever been to. Apart from the improved flexibility and the increased vitality and clarity of mind that the classes give, there is a sense of pure joy in taking part.
+          .punter G.M.
     
     //end yoga
 
     /// meditate
-    .panel(data-idx='2')
-      .title
+    section(data-idx='2')
+      header
         h2 Meditation Classes
-      .content
-        .motto.shown
-          p Sit, and know that you're sitting.
-          p.c2e (click to expand)
-        .blurb
-          p Breathe, and know that you're breathing.
-          blockquote
-            span.quote &ldquo;
-            .testimonial
-              span It's been great online too. Imogen is such a lovely, patient, fun and professional teacher. Highly recommended.
-            .punter N.C.
-          p ## details
+      aside.shown
+        p Sit, and know that you're sitting.
+        p.c2e (click to expand)
+      article
+        p Breathe, and know that you're breathing.
+        blockquote
+          span.quote &ldquo;
+          .testimonial
+            span It's been great online too. Imogen is such a lovely, patient, fun and professional teacher. Highly recommended.
+          .punter N.C.
+        p ## details
 
     //end meditate
 
     /// contact
-    .panel(data-idx='3').shown
-      .title
+    section(data-idx='3')
+      header
         h2 Contact Me
-      .content
-        .motto
-          p We are all rivers flowing into the same lake.
-          p.c2e (click to expand)
-        .blurb.shown
-          p You can simply 
-            a(href='mailto:imogengroves@gmail.com') send me an email
-          p Or, use the form below to send me a message.
-          p Either way, I'll reply as soon as I can.
+      aside.shown
+        p We are all rivers flowing into the same lake.
+        p.c2e (click to expand)
+      article
+        p You can simply 
+          a(href='mailto:imogengroves@gmail.com') send me an email
+        p Or, use the form below to send me a message.
+        p Either way, I'll reply as soon as I can.
+        
+        //- form(name='contact' method='POST' 
+              data-netlify='true' action='/success')
+        form(name='contact' method='POST')
+          .field#email
+            input.email(type='email' required)
+            label.email your email address
+            //- span.email.ok ✔️
+            //- span.email.nope ✖️
           
-          //- form(name='contact' method='POST' 
-                data-netlify='true' action='/success')
-          form(name='contact' method='POST')
-            .field#email
-              input.email(type='email' required)
-              label.email your email address
-              //- span.email.ok ✔️
-              //- span.email.nope ✖️
-            
-            .field#msg
-              textarea.msg(rows=6 cols=50 name='message' required)
-              label.msg please enter your message
-              span.email.ok ✔️
-              span.msg.nope ✖️
-            
-            button(type='submit').btn send message
+          .field#msg
+            textarea.msg(rows=6 cols=50 name='message' required)
+            label.msg please enter your message
+            span.email.ok ✔️
+            span.msg.nope ✖️
+          
+          button(type='submit').btn send message
 
     //end contact
 
