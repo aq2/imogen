@@ -1,10 +1,16 @@
 {
-  "livePugCompiler.savePath": "/www",
-  "stylusCompile.settings.showOutputWindow": false,
-  "stylusCompile.settings.formats": [
-    {
-      "extensionName": ".css",
-      "savePath": "/www"
-    }
-  ]
+  // "livePugCompiler.savePath": "/www",
+  // "stylusCompile.settings.showOutputWindow": false,
+  // "stylusCompile.settings.formats": [
+  //   {
+  //     "extensionName": ".css",
+  //     "savePath": "/www"
+  //   }
+  // ],
+  "compile-hero.disable-compile-files-on-did-save-code": false,
+  "compile-hero.pug-output-directory": "./www",
+  "compile-hero.stylus-output-directory": "./www",
+  "compile-hero.javascript-output-toggle": true,
+  "compile-hero.javascript-output-directory": "./www",
+  // "compile-hero.jade-output-toggle": false
 }

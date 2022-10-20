@@ -1,13 +1,12 @@
 /// aQuery
 
-function $all(elements) {
-  return document.querySelectorAll(elements)
-}
+  function $all(elements) {
+    return document.querySelectorAll(elements)
+  }
 
-function $id(element) {
-  return document.querySelector(element)
-}
-
+  function $id(element) {
+    return document.querySelector(element)
+  }
 
 //end aQuery
 
@@ -59,20 +58,20 @@ function switchActives(elements, oldID, newID) {
 
 /// form
 
-const labels = $all('label')
+  const labels = $all('label')
 
-labels.forEach(label => {
-  label.innerHTML = 
-    label.innerText
-      .split('')
-      .map((letter, idx) => `<span style='transition-delay:${idx*20}ms'>${letter}</span>`)
-      .join('')
-})
+  labels.forEach(label => {
+    label.innerHTML = 
+      label.innerText
+        .split('')
+        .map((letter, idx) => `<span style='transition-delay:${idx*20}ms'>${letter}</span>`)
+        .join('')
+  })
 
-const emailInput = $id('#email')
-emailInput.addEventListener('click', (e) => {
-  console.log(e.target)
-})
+  const emailInput = $id('#email')
+  emailInput.addEventListener('click', (e) => {
+    console.log(e.target)
+  })
 
 //end form
 
@@ -134,5 +133,4 @@ const section = sections[newID]
 
 // console.log('scrollbar: ' + scrollbarVisible(section))
 
-//end scrollbar
-
+//end scollbar

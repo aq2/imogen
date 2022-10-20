@@ -40,13 +40,29 @@ Imogen:
   ☐ add paypal button?
   ☐ test form when active
 
+###########################################################
+
 meta:
   ☐ learn moar flexbox!
   ☐ standard list of emojis! bulb etc...
-  ☐ code colors 😎
+  ☐ intellisense/hover/ etc
+  ✔ emojis autocomplete on : filetypes @done(20-10-22 23:11)
+  
+code colors 😎:
+  ✔ non-syntax colors in normal settings.json @done(20-10-22 23:12)
   ✔ style to-dos differently to folds https://github.com/wayou/vscode-todo-highlight @done(20-10-22 17:41)
-  ☐ better folding for pug/stylus?
-  ☐ which compilation extension(s)?
+  ✔ better folding for pug/stylus? @done(20-10-22 23:29)
+  ☐ put sytnax tokens in aq-blue -> objective simplify 🦅
+  ☐ explorer file colors
+
+which compilation extension(s)?:
+    ☐ why not just hero? what's imogens problem
+    ☐ sort out js tampering...
+    ☐ can use per project/workspace settings
+
+useful keyboard shortcuts:
+  ☐ unfold all
+
 
 #  
 ##############################################################  

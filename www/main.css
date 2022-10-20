@@ -79,7 +79,6 @@ section.shown {
 section header {
   top: 0;
   display: flex;
-  position: -webkit-sticky;
   position: sticky;
   min-height: 5rem;
   align-items: center;
