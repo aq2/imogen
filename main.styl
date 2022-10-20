@@ -177,7 +177,7 @@ p
 a
   cursor pointer
   font-size 2rem
-  padding 0.75rem
+  padding 0.5rem
   border-radius 1rem
   display inline-block
   background $dru-blue
@@ -202,6 +202,8 @@ blockquote
   padding 0.25rem 1rem
   margin 0 auto 1.5rem auto
   background alpha($dru-orange, 0.6)
+  border-left 15px solid $dru-orange-back
+  // border-bottom 5px solid $dru-orange-back
 
 span.quote
   left 1rem
@@ -226,6 +228,9 @@ span.quote
 form
   position relative
 
+// .field
+  // border 1px solid black
+
 input, textarea
   border 0
   outline 0
@@ -234,7 +239,7 @@ input, textarea
   padding 1rem
   display block
   font-size 1.5rem
-  margin-bottom 2rem
+  margin-bottom 2.5rem
   background $contentBack
   border-radius 1rem 1rem 0 0
   border-bottom 2px $dru-blue-back solid
@@ -248,9 +253,9 @@ input:valid,
 textarea:valid
   border-bottom-color blue
 
-input:valid + label span
+input:valid + label span,
+textarea:valid + label span
   color blue
-
 
 
 label
@@ -275,6 +280,11 @@ textarea:valid + label span
   color $white
   transform translateY(-3.25rem)
   transition 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55)
+
+
+span.email.ok
+  margin-left 10.5rem
+  color green
 
 .btn
   border 0

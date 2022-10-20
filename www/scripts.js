@@ -55,6 +55,11 @@ labels.forEach(label => {
       .join('')
 })
 
+const emailInput = $id('#email')
+emailInput.addEventListener('click', (e) => {
+  console.log(e.target)
+})
+
 //end form
 
 /// width detection!

@@ -15,6 +15,7 @@ General:
   ✔ h2 for .title, h3 for content @done(19-10-22 17:43)
   
 contact form:
+  ☐ fieldset?
   ☐ form validation?
   ☐ form colors
   ☐ better labels, maybe?

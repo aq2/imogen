@@ -34,14 +34,14 @@ body
 
   main
     /// what is dru?
-    .panel(data-idx='0').shown
+    .panel(data-idx='0')
       .title
         h2 What is Dru?
       .content
-        .motto
+        .motto.shown
           p Peace begins with the individual.
           p.c2e (click to expand)
-        .blurb.shown
+        .blurb
           p Dru yoga is a graceful and potent form of yoga, based on flowing movements, directed breathing and visualisation.
           p With its foundation set firmly in ancient yogic tradition, Dru works on body, mind and spirit - improving strength and flexibility, creating core stability, building a heightened feeling of positivity and is deeply relaxing whilst rejuvenating your whole being.
           p Designed to be practised by people of all abilities, all fitness levels and all age groups, Dru is a style of yoga that can be quickly dipped into or learnt in more depth over a lifetime.
@@ -108,14 +108,14 @@ body
     //end meditate
 
     /// contact
-    .panel(data-idx='3')
+    .panel(data-idx='3').shown
       .title
         h2 Contact Me
       .content
-        .motto.shown
+        .motto
           p We are all rivers flowing into the same lake.
           p.c2e (click to expand)
-        .blurb
+        .blurb.shown
           p You can simply 
             a(href='mailto:imogengroves@gmail.com') send me an email
           p Or, use the form below to send me a message.
@@ -124,14 +124,18 @@ body
           //- form(name='contact' method='POST' 
                 data-netlify='true' action='/success')
           form(name='contact' method='POST')
-            input.email(type='email' required)
-            label.
-              your email address
-              <span class='ok'> ✔️</span> <span class='nope'> ✖️</span>
-            textarea.message(rows=6 cols=50 name='message' required)
-            label.msg.
-              please enter your message
-              <span class=' ok'>✔️</span> <span class=' nope'>✖️</span>
+            .field#email
+              input.email(type='email' required)
+              label.email your email address
+              //- span.email.ok ✔️
+              //- span.email.nope ✖️
+            
+            .field#msg
+              textarea.msg(rows=6 cols=50 name='message' required)
+              label.msg please enter your message
+              span.email.ok ✔️
+              span.msg.nope ✖️
+            
             button(type='submit').btn send message
 
     //end contact
