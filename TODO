@@ -13,6 +13,7 @@ General:
     ✔ .motto -> aside @done(20-10-22 15:54)
     ✔ ❓ do we need .content? @done(20-10-22 15:54)
   ☐ 💩 choose initial active/shown section?
+  ☐ cite, quote, q elements
   
 contact form:
   ✘ fieldset? @cancelled(20-10-22 16:57)
@@ -27,8 +28,8 @@ meeja q's:
   
 l8rs:
   ☐ edge scrollbars
-    ☐ detect scrollbar in section -> square top-right border
-    ☐ square top-right borders all round?
+    ☐ easy - square top-right borders all round?
+    ☐ tricky - detect section scrollbar -> square top-right border
   ☐ position background images better
 
 Imogen:
@@ -43,7 +44,7 @@ meta:
   ☐ learn moar flexbox!
   ☐ standard list of emojis! bulb etc...
   ☐ code colors 😎
-  ☐ style to-dos differently to folds https://github.com/wayou/vscode-todo-highlight
+  ✔ style to-dos differently to folds https://github.com/wayou/vscode-todo-highlight @done(20-10-22 17:41)
   ☐ better folding for pug/stylus?
   ☐ which compilation extension(s)?
 

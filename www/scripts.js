@@ -13,7 +13,7 @@ function $id(element) {
 
 /// sections
 
-// todo 
+// todo - sort this 💩 out!
 let notDoneYet = true
 let initialSection = 0
 
