@@ -135,12 +135,3 @@ const section = sections[newID]
 
 //end scrollbar
 
-
-/// set initial active section
-
-  // html - none have shown
-  // js - only once!
-    // set shown on active section
-    // set shown on all mottos/asides
-    // remove shown on active aside
-   

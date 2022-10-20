@@ -15,18 +15,20 @@ General:
   ☐ 💩 choose initial active/shown section?
   
 contact form:
-  ☐ fieldset?
+  ✘ fieldset? @cancelled(20-10-22 16:57)
   ☐ form validation?
   ☐ form colors
   ☐ better labels, maybe?
     
 meeja q's:
-  ☐ repair havoc caused y semanticizing!
+  ☐ repair havoc caused by semanticizing!
   ☐ top/bottom margin between panels in small screen
   ☐ 📁 too many breakpoints
   
 l8rs:
-  ☐ edge scrollbars - make track transparent?
+  ☐ edge scrollbars
+    ☐ detect scrollbar in section -> square top-right border
+    ☐ square top-right borders all round?
   ☐ position background images better
 
 Imogen:
