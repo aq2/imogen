@@ -13,6 +13,7 @@ function $id(element) {
 
 /// sections
 
+// todo 
 let notDoneYet = true
 let initialSection = 0
 
