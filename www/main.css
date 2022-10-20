@@ -22,12 +22,12 @@ section:nth-child(4) {
   border-radius: 80px;
 }
 *::-webkit-scrollbar-track {
-  background: #d69c19;
   border-radius: 80px;
+  background: #d69c19;
 }
 *::-webkit-scrollbar-thumb {
-  background: #6cadc9;
   border-radius: 80px;
+  background: #6cadc9;
 }
 body {
   color: #000;

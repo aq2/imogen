@@ -8,12 +8,16 @@ function $id(element) {
   return document.querySelector(element)
 }
 
+
 //end aQuery
 
 /// sections
 
-var oldSectionID = 0
-var newSectionID = 0
+let notDoneYet = true
+let initialSection = 0
+
+let oldID = initialSection
+let newID = initialSection
 const sections = $all('section')
 const articles = $all('article')
 const asides = $all('aside')
@@ -23,16 +27,25 @@ sections.forEach(section => {
     section.addEventListener('click', (e) => {
       let activeNow = section.classList.contains('shown')
       if (!activeNow) {
-        newSectionID = parseInt(section.dataset.idx)
-        switchActives(sections, oldSectionID, newSectionID)
-        switchActives(articles, oldSectionID, newSectionID)
-        switchActives(asides, newSectionID, oldSectionID)        
-        oldSectionID = newSectionID
+        newID = parseInt(section.dataset.idx)
+        switchActives(sections, oldID, newID)
+        switchActives(articles, oldID, newID)
+        switchActives(asides, newID, oldID)        
+        oldID = newID
         // todo check for scrollbar and webkit styles?
       }
     })
   }
 })
+
+// if (notDoneYet) {
+//   sections[initialSection].classList.add('shown')
+//   asides.forEach(aside => {
+//     aside.classList.add('shown')
+//   })
+//   asides[initialSection].classList.remove('shown')
+//   notDoneYet = false
+// }
 
 function switchActives(elements, oldID, newID) {
   if (window.innerWidth > 980) {
@@ -116,8 +129,18 @@ const scrollbarVisible = (element) => {
   return element.scrollHeight > element.clientHeight;
 }
 
-const section = sections[newSectionID]
+const section = sections[newID]
 
 // console.log('scrollbar: ' + scrollbarVisible(section))
 
 //end scrollbar
+
+
+/// set initial active section
+
+  // html - none have shown
+  // js - only once!
+    // set shown on active section
+    // set shown on all mottos/asides
+    // remove shown on active aside
+   
