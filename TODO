@@ -3,7 +3,7 @@
 * it's so easy to make things complicated... *
 
 General:
-  ☐ meta tags
+  ☐ meta tags -> promotion
   ☐ header alignments portrait
   ✔ dark border bottom of testimonials? @done(20-10-22 15:55)
   ✔ semanticize! @done(20-10-22 15:55)
@@ -14,24 +14,29 @@ General:
     ✔ ❓ do we need .content? @done(20-10-22 15:54)
   ☐ 💩 choose initial active/shown section?
   ☐ cite, quote, q elements
-  
+  ✔ google fonts @done(21-10-22 00:48)
+  ☐ navicon
+
+.
 contact form:
   ✘ fieldset? @cancelled(20-10-22 16:57)
   ☐ form validation?
   ☐ form colors
   ☐ better labels, maybe?
-    
+  
+.
 meeja q's:
   ☐ repair havoc caused by semanticizing!
   ☐ top/bottom margin between panels in small screen
   ☐ 📁 too many breakpoints
-  
+.
 l8rs:
   ☐ edge scrollbars
     ☐ easy - square top-right borders all round?
     ☐ tricky - detect section scrollbar -> square top-right border
   ☐ position background images better
 
+.
 Imogen:
   ☐ words
   ☐ pictures
@@ -40,14 +45,19 @@ Imogen:
   ☐ add paypal button?
   ☐ test form when active
 
+
+.
 ###########################################################
+.
 
 meta:
   ☐ learn moar flexbox!
-  ☐ standard list of emojis! bulb etc...
-  ☐ intellisense/hover/ etc
+  ✘ standard list of emojis! bulb etc... @cancelled(21-10-22 00:13)
+  ✔ intellisense/hover/ etc @done(21-10-22 00:12)
   ✔ emojis autocomplete on : filetypes @done(20-10-22 23:11)
-  
+  ☐ folding still not quite right
+
+.  
 code colors 😎:
   ✔ non-syntax colors in normal settings.json @done(20-10-22 23:12)
   ✔ style to-dos differently to folds https://github.com/wayou/vscode-todo-highlight @done(20-10-22 17:41)
@@ -55,14 +65,17 @@ code colors 😎:
   ☐ put sytnax tokens in aq-blue -> objective simplify 🦅
   ☐ explorer file colors
 
+.
 which compilation extension(s)?:
-    ☐ why not just hero? what's imogens problem
-    ☐ sort out js tampering...
+    ✔ why not just hero? what's imogens problem @done(21-10-22 00:38)
+    ✘ sort out js tampering... @cancelled(21-10-22 00:38)
     ☐ can use per project/workspace settings
 
+.
 useful keyboard shortcuts:
   ☐ unfold all
 
+.
 
 #  
 ##############################################################  
