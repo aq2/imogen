@@ -1,40 +1,17 @@
-/// aQuery
-
-  function $all(elements) {
-    return document.querySelectorAll(elements)
-  }
-
-  function $id(element) {
-    return document.querySelector(element)
-  }
-
-//end aQuery
-
 /// sections
 
-// todo - sort this 💩 out!
+let initialSection = 0   // 0 -> 3
+
 let notDoneYet = true
-let initialSection = 0
-
-// if (notDoneYet) {
-//   sections[initialSection].classList.add('shown')
-//   asides.forEach(aside => {
-//     aside.classList.add('shown')
-//   })
-//   asides[initialSection].classList.remove('shown')
-//   notDoneYet = false
-// }
-
-
-
-
-
-let oldID = initialSection
-let newID = initialSection
 const sections = $all('section')
 const articles = $all('article')
 const asides = $all('aside')
+let oldID = initialSection
+let newID = initialSection
 
+initializePanels()
+
+// add click listeners
 sections.forEach(section => {
   if (window.innerWidth > 980) { 
     section.addEventListener('click', (e) => {
@@ -45,29 +22,11 @@ sections.forEach(section => {
         switchActives(articles, oldID, newID)
         switchActives(asides, newID, oldID)        
         oldID = newID
-        changeBordersIfScrollbar(section)
-   
+        changeBordersIfScrollbar(section)        
       }
     })
   }
 })
-
-function changeBordersIfScrollbar(element) {
-  setTimeout(() => { 
-    const scrollbarVisible = (element.scrollHeight > element.clientHeight)
-    const firefox = typeof InstallTrigger !== 'undefined'
- 
-    if (scrollbarVisible && !firefox) {
-      section.classList.add('scrollbar')
-    } else {
-      section.classList.remove('scrollbar')
-    }
-  }, 250)
-}
-
-
-
-
 
 
 function switchActives(elements, oldID, newID) {
@@ -76,6 +35,35 @@ function switchActives(elements, oldID, newID) {
     elements[newID].classList.add('shown')
   }
 }
+
+
+function initializePanels() {
+  if (notDoneYet) {
+    sections[initialSection].classList.add('shown')
+    asides.forEach(aside => {
+      aside.classList.add('shown')
+    })
+    asides[initialSection].classList.remove('shown')
+    articles[initialSection].classList.add('shown')
+    changeBordersIfScrollbar(sections[initialSection])        
+    
+    notDoneYet = false
+  }
+}
+
+// there's always a quick initial scrollbar, so wait to settle
+function changeBordersIfScrollbar(elem) {
+  setTimeout(() => { 
+    const hasScrollbar = (elem.scrollHeight > elem.clientHeight)
+ 
+    if (hasScrollbar) {
+      elem.classList.add('scrollbar')
+    } else {
+      elem.classList.remove('scrollbar')
+    }
+  }, 250)
+}
+
 
 //end sections
 
@@ -146,3 +134,14 @@ getDimensions()
 
 //end width detection
 
+/// aQuery
+
+  function $all(elements) {
+    return document.querySelectorAll(elements)
+  }
+
+  function $id(element) {
+    return document.querySelector(element)
+  }
+
+//end aQuery

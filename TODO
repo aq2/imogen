@@ -5,7 +5,7 @@ General:
   ☐ header alignments portrait
   ☐ cite, quote, q elements -> 'span.quote &ldquo;' looks hacky 🔨
   ☐ navicon -> simple yoga/meds icon, or capital I - or both, overlaid...
-  ☐ 💩 initiate: initial active/shown section? + need scrollbar borders
+  ✔ 💩 initiate: initial active/shown section? + need scrollbar borders @done(21-10-22 14:01)
 
 .
 contact form:

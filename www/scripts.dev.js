@@ -1,32 +1,16 @@
 "use strict";
 
-/// aQuery
-function $all(elements) {
-  return document.querySelectorAll(elements);
-}
-
-function $id(element) {
-  return document.querySelector(element);
-} //end aQuery
 /// sections
-// todo - sort this 💩 out!
-
+var initialSection = 0; // 0 -> 3
 
 var notDoneYet = true;
-var initialSection = 0; // if (notDoneYet) {
-//   sections[initialSection].classList.add('shown')
-//   asides.forEach(aside => {
-//     aside.classList.add('shown')
-//   })
-//   asides[initialSection].classList.remove('shown')
-//   notDoneYet = false
-// }
-
-var oldID = initialSection;
-var newID = initialSection;
 var sections = $all('section');
 var articles = $all('article');
 var asides = $all('aside');
+var oldID = initialSection;
+var newID = initialSection;
+initializePanels(); // add click listeners
+
 sections.forEach(function (section) {
   if (window.innerWidth > 980) {
     section.addEventListener('click', function (e) {
@@ -44,24 +28,37 @@ sections.forEach(function (section) {
   }
 });
 
-function changeBordersIfScrollbar(element) {
-  setTimeout(function () {
-    var scrollbarVisible = element.scrollHeight > element.clientHeight;
-    var firefox = typeof InstallTrigger !== 'undefined';
-
-    if (scrollbarVisible && !firefox) {
-      section.classList.add('scrollbar');
-    } else {
-      section.classList.remove('scrollbar');
-    }
-  }, 250);
-}
-
 function switchActives(elements, oldID, newID) {
   if (window.innerWidth > 980) {
     elements[oldID].classList.remove('shown');
     elements[newID].classList.add('shown');
   }
+}
+
+function initializePanels() {
+  if (notDoneYet) {
+    sections[initialSection].classList.add('shown');
+    asides.forEach(function (aside) {
+      aside.classList.add('shown');
+    });
+    asides[initialSection].classList.remove('shown');
+    articles[initialSection].classList.add('shown');
+    changeBordersIfScrollbar(sections[initialSection]);
+    notDoneYet = false;
+  }
+} // there's always a quick initial scrollbar, so wait to settle
+
+
+function changeBordersIfScrollbar(elem) {
+  setTimeout(function () {
+    var hasScrollbar = elem.scrollHeight > elem.clientHeight;
+
+    if (hasScrollbar) {
+      elem.classList.add('scrollbar');
+    } else {
+      elem.classList.remove('scrollbar');
+    }
+  }, 250);
 } //end sections
 /// form
 
@@ -118,3 +115,12 @@ window.addEventListener('resize', function () {
   timeout = setTimeout(getDimensions, delay);
 });
 getDimensions(); //end width detection
+/// aQuery
+
+function $all(elements) {
+  return document.querySelectorAll(elements);
+}
+
+function $id(element) {
+  return document.querySelector(element);
+} //end aQuery
