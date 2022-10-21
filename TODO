@@ -13,9 +13,9 @@ General:
     ✔ .motto -> aside @done(20-10-22 15:54)
     ✔ ❓ do we need .content? @done(20-10-22 15:54)
   ☐ 💩 choose initial active/shown section?
-  ☐ cite, quote, q elements
+  ☐ cite, quote, q elements -> 'span.quote &ldquo;' looks hacky 🔨
   ✔ google fonts @done(21-10-22 00:48)
-  ☐ navicon
+  ☐ navicon -> simple yoga/meds icon, or capital I - or both, overlaid...
 
 .
 contact form:
@@ -32,7 +32,7 @@ meeja q's:
 .
 l8rs:
   ☐ edge scrollbars
-    ☐ easy - square top-right borders all round?
+    ☐ easy - square right borders all round?, only for edge
     ☐ tricky - detect section scrollbar -> square top-right border
   ☐ position background images better
 
@@ -40,8 +40,8 @@ l8rs:
 Imogen:
   ☐ words
   ☐ pictures
-  ☐ need to link with namecheap
   ☐ get namecheap and netlify passwoids
+  ☐ need to link with namecheap
   ☐ add paypal button?
   ☐ test form when active
 
@@ -62,7 +62,7 @@ code colors 😎:
   ✔ non-syntax colors in normal settings.json @done(20-10-22 23:12)
   ✔ style to-dos differently to folds https://github.com/wayou/vscode-todo-highlight @done(20-10-22 17:41)
   ✔ better folding for pug/stylus? @done(20-10-22 23:29)
-  ☐ put sytnax tokens in aq-blue -> objective simplify 🦅
+  ☐ put syntax tokens in aq-blue -> objective simplify 🦅
   ☐ explorer file colors
 
 .
@@ -70,10 +70,11 @@ which compilation extension(s)?:
     ✔ why not just hero? what's imogens problem @done(21-10-22 00:38)
     ✘ sort out js tampering... @cancelled(21-10-22 00:38)
     ☐ can use per project/workspace settings
+    ☐ roger not using hero?
 
 .
 useful keyboard shortcuts:
-  ☐ unfold all
+  ☐ unfold all - ctrl-u unfold all - u u fold all 💩
 
 .
 
