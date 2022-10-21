@@ -44,8 +44,9 @@ meta:
 
 .  
 code colors 😎:
-  ☐ put syntax tokens in aq-blue -> objective simplify 🦅
+  ✔ put syntax tokens in aq-blue -> objective simplify 🦅 @done(21-10-22 21:38)
   ☐ explorer file colors
+  ☐ js keywords/functions too similar?
 
 .
 which compilation extension(s)?:
