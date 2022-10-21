@@ -19,14 +19,11 @@ section:nth-child(4) {
 }
 *::-webkit-scrollbar {
   width: 12px;
-  border-radius: 80px;
 }
 *::-webkit-scrollbar-track {
-  border-radius: 80px;
   background: #d69c19;
 }
 *::-webkit-scrollbar-thumb {
-  border-radius: 80px;
   background: #6cadc9;
 }
 body {
@@ -75,6 +72,9 @@ section {
 section.shown {
   flex: 5;
   cursor: default;
+}
+section.scrollbar {
+  border-radius: 2rem 0 0 2rem;
 }
 section header {
   top: 0;

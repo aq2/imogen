@@ -13,7 +13,15 @@ function $id(element) {
 
 
 var notDoneYet = true;
-var initialSection = 0;
+var initialSection = 0; // if (notDoneYet) {
+//   sections[initialSection].classList.add('shown')
+//   asides.forEach(aside => {
+//     aside.classList.add('shown')
+//   })
+//   asides[initialSection].classList.remove('shown')
+//   notDoneYet = false
+// }
+
 var oldID = initialSection;
 var newID = initialSection;
 var sections = $all('section');
@@ -29,18 +37,25 @@ sections.forEach(function (section) {
         switchActives(sections, oldID, newID);
         switchActives(articles, oldID, newID);
         switchActives(asides, newID, oldID);
-        oldID = newID; // todo check for scrollbar and webkit styles?
+        oldID = newID;
+        changeBordersIfScrollbar(section);
       }
     });
   }
-}); // if (notDoneYet) {
-//   sections[initialSection].classList.add('shown')
-//   asides.forEach(aside => {
-//     aside.classList.add('shown')
-//   })
-//   asides[initialSection].classList.remove('shown')
-//   notDoneYet = false
-// }
+});
+
+function changeBordersIfScrollbar(element) {
+  setTimeout(function () {
+    var scrollbarVisible = element.scrollHeight > element.clientHeight;
+    var firefox = typeof InstallTrigger !== 'undefined';
+
+    if (scrollbarVisible && !firefox) {
+      section.classList.add('scrollbar');
+    } else {
+      section.classList.remove('scrollbar');
+    }
+  }, 250);
+}
 
 function switchActives(elements, oldID, newID) {
   if (window.innerWidth > 980) {
@@ -103,11 +118,3 @@ window.addEventListener('resize', function () {
   timeout = setTimeout(getDimensions, delay);
 });
 getDimensions(); //end width detection
-/// scrollbar detection
-
-var scrollbarVisible = function scrollbarVisible(element) {
-  return element.scrollHeight > element.clientHeight;
-};
-
-var section = sections[newID]; // console.log('scrollbar: ' + scrollbarVisible(section))
-//end scollbar

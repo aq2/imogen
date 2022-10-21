@@ -16,6 +16,19 @@
 let notDoneYet = true
 let initialSection = 0
 
+// if (notDoneYet) {
+//   sections[initialSection].classList.add('shown')
+//   asides.forEach(aside => {
+//     aside.classList.add('shown')
+//   })
+//   asides[initialSection].classList.remove('shown')
+//   notDoneYet = false
+// }
+
+
+
+
+
 let oldID = initialSection
 let newID = initialSection
 const sections = $all('section')
@@ -32,20 +45,30 @@ sections.forEach(section => {
         switchActives(articles, oldID, newID)
         switchActives(asides, newID, oldID)        
         oldID = newID
-        // todo check for scrollbar and webkit styles?
+        changeBordersIfScrollbar(section)
+   
       }
     })
   }
 })
 
-// if (notDoneYet) {
-//   sections[initialSection].classList.add('shown')
-//   asides.forEach(aside => {
-//     aside.classList.add('shown')
-//   })
-//   asides[initialSection].classList.remove('shown')
-//   notDoneYet = false
-// }
+function changeBordersIfScrollbar(element) {
+  setTimeout(() => { 
+    const scrollbarVisible = (element.scrollHeight > element.clientHeight)
+    const firefox = typeof InstallTrigger !== 'undefined'
+ 
+    if (scrollbarVisible && !firefox) {
+      section.classList.add('scrollbar')
+    } else {
+      section.classList.remove('scrollbar')
+    }
+  }, 250)
+}
+
+
+
+
+
 
 function switchActives(elements, oldID, newID) {
   if (window.innerWidth > 980) {
@@ -123,14 +146,3 @@ getDimensions()
 
 //end width detection
 
-/// scrollbar detection
-
-const scrollbarVisible = (element) => {
-  return element.scrollHeight > element.clientHeight;
-}
-
-const section = sections[newID]
-
-// console.log('scrollbar: ' + scrollbarVisible(section))
-
-//end scollbar

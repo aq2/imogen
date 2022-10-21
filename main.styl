@@ -41,14 +41,11 @@ section:nth-child(4)
   
 *::-webkit-scrollbar
   width 12px
-  border-radius 80px
 
 *::-webkit-scrollbar-track
-  border-radius 80px
   background $dru-orange
 
 *::-webkit-scrollbar-thumb
-  border-radius 80px
   background $dru-blue
 
 body
@@ -95,6 +92,10 @@ section
   &.shown
     flex 5
     cursor default
+section.scrollbar
+  border-radius 2rem 0 0 2rem
+  // background blue
+  
 
 section header
   top 0
@@ -438,3 +439,9 @@ span.email.ok
 
 //end meeja
 
+/// sniffing
+@supports (not (-moz-appearance: none))
+  body
+    // background blue
+  section
+    // border-radius 0
