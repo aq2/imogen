@@ -17,10 +17,17 @@ contact form:
 .
 meeja q's:
   ☐ repair havoc caused by semanticizing!
-  ☐ why no article/asides backgrounds??
+  ✔ asides padding @done(24-10-22 13:27)
   ☐ top/bottom margin between panels in small screen
   ☐ 📁 too many breakpoints
+
 .
+why no article/asides backgrounds??:
+  ☐ 💡 radical js solution? for switching classes onclick
+  ☐ 💡 radical js solution? for switching classes portrait
+  ☐ 💡 radical js solution? for initialisation
+
+  .
 l8rs:
   ☐ position background images better
 
