@@ -38,23 +38,23 @@
     box-sizing border-box
     scrollbar-width thin
     scrollbar-color $dru-blue $dru-blue-back
-    
+  //    
   *::-webkit-scrollbar
     width 12px
 
-  *::-webkit-scrollbar-track
-    background $dru-orange
+    *::-webkit-scrollbar-track
+      background $dru-orange
 
-  *::-webkit-scrollbar-thumb
-    background $dru-blue
-
+    *::-webkit-scrollbar-thumb
+      background $dru-blue
+  //
   body
     color $text
     padding 0.5rem
     position relative
     overflow-y hidden
     background $background
-
+  //
   header
     display flex
     margin-bottom 1rem
@@ -66,15 +66,16 @@
       margin-right 1rem
       border-radius 1rem
 
-  #headtitle 
-    display flex
-    flex-direction column
-    justify-content space-between
+    #headtitle 
+      display flex
+      flex-direction column
+      justify-content space-between
 
+  //
   main
     display flex
     margin 0 auto
-
+  //
   section
     flex 1
     height 82vh
@@ -91,10 +92,7 @@
     &.shown
       flex 5
       cursor default
-  section.scrollbar
-    border-radius 2rem 0 0 2rem
     
-
   section header
     top 0
     display flex
@@ -103,8 +101,11 @@
     align-items center
     background $dru-blue
     justify-content center
-
-
+  
+  section.scrollbar
+    border-radius 2rem 0 0 2rem
+      
+ //
   aside, article
     display none
     &.shown
@@ -121,7 +122,7 @@
   article
     &.shown
       padding 1.5rem 1rem
-
+  //
   .flexer
     display flex
     margin-bottom 2rem
@@ -130,14 +131,14 @@
     width 200px
     margin-right 2rem
     border-radius 2rem
-
+  //
   #width-widget
     top 1rem
     right 1rem
     font-size 1.5rem
     text-align right
     position absolute
-
+  //
 
 //end layout
 
@@ -372,10 +373,13 @@
       display block
     aside.shown  
       font-size 1.25rem
-      padding 1rem 0 2rem 0
-
-    .c2e
+      // padding 1rem 0 2rem 0
+    
+    aside p
       display none
+
+    // .c2e
+      // display none
 
 
   // ..and beyond, for baby screens

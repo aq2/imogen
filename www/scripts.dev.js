@@ -3,14 +3,22 @@
 /// sections
 var initialSection = 0; // 0 -> 3
 
-var notDoneYet = true;
 var sections = $all('section');
 var articles = $all('article');
 var asides = $all('aside');
 var oldID = initialSection;
 var newID = initialSection;
-console.log('panel code');
-initializePanels(); // add click listeners
+var sectionShown = true; // init2
+// initializePanels()
+
+sections[initialSection].classList.add('shown');
+asides.forEach(function (aside) {
+  aside.classList.add('shown');
+});
+asides[initialSection].classList.remove('shown');
+articles[initialSection].classList.add('shown');
+changeBordersIfScrollbar(sections[initialSection]); // articles[initialSection].style.color='red'
+// add click listeners
 
 sections.forEach(function (section) {
   if (window.innerWidth > 980) {
@@ -25,6 +33,8 @@ sections.forEach(function (section) {
         oldID = newID;
         changeBordersIfScrollbar(section);
       }
+
+      console.log(window.innerWidth); // let section.shown = 1
     });
   }
 });
@@ -34,19 +44,15 @@ function switchActives(elements, oldID, newID) {
     elements[oldID].classList.remove('shown');
     elements[newID].classList.add('shown');
   }
+} // hideElement(asides[2])
+
+
+function hideElement(element) {
+  element.style.display = 'none'; // element.classList.remove('shown')
 }
 
-function initializePanels() {
-  if (notDoneYet) {
-    sections[initialSection].classList.add('shown');
-    asides.forEach(function (aside) {
-      aside.classList.add('shown');
-    });
-    asides[initialSection].classList.remove('shown');
-    articles[initialSection].classList.add('shown');
-    changeBordersIfScrollbar(sections[initialSection]);
-    notDoneYet = false;
-  }
+function considerElement(element, display) {
+  element.style.display = display;
 } // there's always a quick initial scrollbar, so wait to settle
 
 
@@ -60,7 +66,19 @@ function changeBordersIfScrollbar(elem) {
       elem.classList.remove('scrollbar');
     }
   }, 250);
-} //end sections
+} // function initializePanels() {
+//   if (notDoneYet) {
+//     sections[initialSection].classList.add('shown')
+//     asides.forEach(aside => {
+//       aside.classList.add('shown')
+//     })
+//     asides[initialSection].classList.remove('shown')
+//     articles[initialSection].classList.add('shown')
+//     changeBordersIfScrollbar(sections[initialSection])        
+//     notDoneYet = false
+//   }
+// }
+//end sections
 /// form
 
 
@@ -74,17 +92,18 @@ var emailInput = $id('#email');
 emailInput.addEventListener('click', function (e) {
   console.log(e.target);
 }); //end form
+/// widf
 /// width detection!
 
 var delay = 150;
 var range = 'XXX';
 var timeout = false;
-var w = $id('#width');
+var wDisplay = $id('#width');
 var r = $id('#range');
 
 function getDimensions() {
   var width = window.innerWidth;
-  w.innerHTML = 'width: ' + width;
+  wDisplay.innerHTML = 'width: ' + width;
 
   if (width > 1500) {
     range = '1500+';
