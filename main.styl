@@ -1,447 +1,442 @@
 /// colours
 
-$dru-blue = #6cadc9
-$dru-blue-back = #795778 
-$dru-orange = #d69c19
-$dru-orange-back = #a62923
+  $dru-blue = #6cadc9
+  $dru-blue-back = #795778 
+  $dru-orange = #d69c19
+  $dru-orange-back = #a62923
 
-$background = alpha($dru-blue, 0.34)
-$contentBack = alpha($dru-blue, 0.68)
+  $background = alpha($dru-blue, 0.34)
+  $contentBack = alpha($dru-blue, 0.68)
 
-$text = black
-// $text = white
+  $text = black
+  // $text = white
 
 
 //end colours
 
 /// section images
 
-section:nth-child(1)
-  background-image url(imgs/yoga-class.jpg)
+  section:nth-child(1)
+    background-image url(imgs/yoga-class.jpg)
 
-section:nth-child(2)
-  background-image url(imgs/yoga2.jpg)
+  section:nth-child(2)
+    background-image url(imgs/yoga2.jpg)
 
-section:nth-child(3)
-  background-image url(imgs/meditate.jpg)
-  
-section:nth-child(4)
-  background-image url(imgs/lotus.jpg)
+  section:nth-child(3)
+    background-image url(imgs/meditate.jpg)
+    
+  section:nth-child(4)
+    background-image url(imgs/lotus.jpg)
 
 //end section images
 
 /// layout
 
-*
-  margin 0
-  padding 0
-  box-sizing border-box
-  scrollbar-width thin
-  scrollbar-color $dru-blue $dru-blue-back
-  
-*::-webkit-scrollbar
-  width 12px
+  *
+    margin 0
+    padding 0
+    box-sizing border-box
+    scrollbar-width thin
+    scrollbar-color $dru-blue $dru-blue-back
+    
+  *::-webkit-scrollbar
+    width 12px
 
-*::-webkit-scrollbar-track
-  background $dru-orange
+  *::-webkit-scrollbar-track
+    background $dru-orange
 
-*::-webkit-scrollbar-thumb
-  background $dru-blue
+  *::-webkit-scrollbar-thumb
+    background $dru-blue
 
-body
-  color $text
-  padding 0.5rem
-  position relative
-  overflow-y hidden
-  background $background
-  font-family 'Josefin Sans', sans-serif
+  body
+    color $text
+    padding 0.5rem
+    position relative
+    overflow-y hidden
+    background $background
 
-#bigheader
-  display flex
-  margin-bottom 1rem
-  align-items flex-end
-  justify-content center
-  & img
-    width 110px
-    height 110px
-    margin-right 1rem
-    border-radius 1rem
+  header
+    display flex
+    margin-bottom 1rem
+    align-items flex-end
+    justify-content center
+    & img
+      width 110px
+      height 110px
+      margin-right 1rem
+      border-radius 1rem
 
-#headtitle 
-  display flex
-  flex-direction column
-  justify-content space-between
+  #headtitle 
+    display flex
+    flex-direction column
+    justify-content space-between
 
-main
-  display flex
-  margin 0 auto
+  main
+    display flex
+    margin 0 auto
 
-section
-  flex 1
-  height 82vh
-  margin 0.5rem
-  cursor pointer
-  overflow-y auto
-  overflow-x hidden
-  position relative
-  border-radius 2rem
-  background-size cover
-  transition flex 0.7s ease
-  background-position center
-  background-repeat no-repeat
-  &.shown
-    flex 5
-    cursor default
-section.scrollbar
-  border-radius 2rem 0 0 2rem
-  // background blue
-  
-
-section header
-  top 0
-  display flex
-  position sticky
-  min-height 5rem
-  align-items center
-  background $dru-blue
-  justify-content center
-
-
-aside, article
-  display none
-  &.shown
-    display block
-    margin 1rem 1rem
+  section
+    flex 1
+    height 82vh
+    margin 0.5rem
+    cursor pointer
+    overflow-y auto
+    overflow-x hidden
+    position relative
     border-radius 2rem
-    background $contentBack
+    background-size cover
+    transition flex 0.7s ease
+    background-position center
+    background-repeat no-repeat
+    &.shown
+      flex 5
+      cursor default
+  section.scrollbar
+    border-radius 2rem 0 0 2rem
+    
 
-aside
-  &.shown
-    text-align center
-    padding 0.75rem 0.75rem 0.1rem 0.75rem
+  section header
+    top 0
+    display flex
+    position sticky
+    min-height 5rem
+    align-items center
+    background $dru-blue
+    justify-content center
 
-article
-  &.shown
-    padding 1.5rem 1rem
 
-.flexer
-  display flex
-  margin-bottom 2rem
+  aside, article
+    display none
+    &.shown
+      display block
+      margin 1rem 1rem
+      border-radius 2rem
+      background $contentBack
 
-.flexer img
-  width 200px
-  margin-right 2rem
-  border-radius 2rem
+  aside
+    &.shown
+      text-align center
+      padding 0.75rem 0.75rem 0.1rem 0.75rem
 
-#width-widget
-  top 1rem
-  right 1rem
-  font-size 1.5rem
-  text-align right
-  position absolute
+  article
+    &.shown
+      padding 1.5rem 1rem
+
+  .flexer
+    display flex
+    margin-bottom 2rem
+
+  .flexer img
+    width 200px
+    margin-right 2rem
+    border-radius 2rem
+
+  #width-widget
+    top 1rem
+    right 1rem
+    font-size 1.5rem
+    text-align right
+    position absolute
 
 
 //end layout
 
 /// typography
 
-h1, h2, h3
-  font-family 'Cardo', serif
-  
-h1 
-  font-size 3.5rem
-  margin-bottom -0.9rem
-  color $dru-orange-back
+  body
+    font-family 'Josefin Sans', sans-serif
 
-h1.imogen
-  color $dru-blue-back
-  margin-bottom -0.3rem
+  h1, h2, h3
+    font-family 'Cardo', serif
+    
+  h1 
+    font-size 3.5rem
+    margin-bottom -0.9rem
+    color $dru-orange-back
 
-h2, h3
-  font-size 2rem
+  h1.imogen
+    color $dru-blue-back
+    margin-bottom -0.3rem
 
-h2
-  margin 0 0.5rem
-  text-align center
-  line-height 99.5%
+  h2, h3
+    font-size 2rem
 
-h3
-  margin-bottom 0.5rem
-  border-top 2px solid $dru-blue
+  h2
+    margin 0 0.5rem
+    text-align center
+    line-height 99.5%
 
-p
-  font-size 1.75rem
-  margin-bottom 1rem
-  
-aside p
-  font-size 1.25rem
+  h3
+    margin-bottom 0.5rem
+    border-top 2px solid $dru-blue
 
-a
-  cursor pointer
-  font-size 2rem
-  padding 0.5rem
-  border-radius 1rem
-  display inline-block
-  background $dru-blue
-  text-decoration none
-  color black
+  p
+    font-size 1.75rem
+    margin-bottom 1rem
+    
+  aside p
+    font-size 1.25rem
 
-a:hover
-  transform scale(1.02)
-  background $dru-orange
+  a
+    cursor pointer
+    font-size 2rem
+    padding 0.5rem
+    border-radius 1rem
+    display inline-block
+    background $dru-blue
+    text-decoration none
+    color black
 
-a:active
-  transform scale(0.98)
+  a:hover
+    transform scale(1.02)
+    background $dru-orange
+
+  a:active
+    transform scale(0.98)
 
 //end typography
 
 /// testimonial
 
-blockquote
-  width 90%
-  position relative
-  border-radius 1rem
-  padding 0.25rem 1rem
-  margin 0 auto 1.5rem auto
-  background alpha($dru-orange, 0.6)
-  border-left 15px solid $dru-orange-back
+  blockquote
+    width 90%
+    position relative
+    border-radius 1rem
+    padding 0.25rem 1rem
+    margin 0 auto 1.5rem auto
+    background alpha($dru-orange, 0.6)
+    border-left 15px solid $dru-orange-back
 
-span.quote
-  left 1rem
-  top -0.5rem
-  font-size 7rem
-  position absolute
-  font-family sans-serif
+  span.quote
+    left 1rem
+    top -0.5rem
+    font-size 7rem
+    position absolute
+    font-family sans-serif
 
-.testimonial
-  margin-top 3rem
-  font-size 1.5rem
-  font-style italic
-  
-.punter
-  text-align right
-  font-size 1.25rem
+  .testimonial
+    margin-top 3rem
+    font-size 1.5rem
+    font-style italic
+    
+  .punter
+    text-align right
+    font-size 1.25rem
 
 //end testimonial
 
 /// form
 
-form
-  position relative
+  form
+    position relative
 
-// .field
-  // border 1px solid black
+  // .field
+    // border 1px solid black
 
-input, textarea
-  border 0
-  outline 0
-  width 100%
-  opacity 0.5
-  padding 1rem
-  display block
-  font-size 1.5rem
-  margin-bottom 2.5rem
-  background $contentBack
-  border-radius 1rem 1rem 0 0
-  border-bottom 2px $dru-blue-back solid
+  input, textarea
+    border 0
+    outline 0
+    width 100%
+    opacity 0.5
+    padding 1rem
+    display block
+    font-size 1.5rem
+    margin-bottom 2.5rem
+    background $contentBack
+    border-radius 1rem 1rem 0 0
+    border-bottom 2px $dru-blue-back solid
 
-input:focus,
-textarea:focus
-  border-bottom-color red
-  opacity 1
+  input:focus,
+  textarea:focus
+    border-bottom-color red
+    opacity 1
 
-input:valid,
-textarea:valid
-  border-bottom-color blue
+  input:valid,
+  textarea:valid
+    border-bottom-color blue
 
-input:valid + label span,
-textarea:valid + label span
-  color blue
-
-
-label
-  top 1rem
-  right 2rem
-  position absolute
-  font-size 1.75rem
-
-label.msg
-  margin-top 6rem
-
-label span
-  min-width 5px
-  display inline-block
-  color white
-
-input:focus + label span,
-// input:valid + label span,
-textarea:focus + label span,
-textarea:valid + label span
-  // color $dru-blue-back
-  color $white
-  transform translateY(-3.25rem)
-  transition 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55)
+  input:valid + label span,
+  textarea:valid + label span
+    color blue
 
 
-span.email.ok
-  margin-left 10.5rem
-  color green
+  label
+    top 1rem
+    right 2rem
+    position absolute
+    font-size 1.75rem
 
-.btn
-  border 0
-  width 90%
-  display block
-  margin 0 auto
-  padding 1rem
-  cursor pointer
-  font-size 1.5rem
-  border-radius 1rem
-  background $dru-blue
-  &:hover
-    transform scale(1.02)
-    background $dru-orange
-  &:active
-    transform scale(0.98)
+  label.msg
+    margin-top 6rem
 
-.success
-  margin-top 2rem
-  text-align center
+  label span
+    min-width 5px
+    display inline-block
+    color white
+
+  input:focus + label span,
+  // input:valid + label span,
+  textarea:focus + label span,
+  textarea:valid + label span
+    // color $dru-blue-back
+    color $white
+    transform translateY(-3.25rem)
+    transition 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55)
+
+
+  span.email.ok
+    margin-left 10.5rem
+    color green
+
+  .btn
+    border 0
+    width 90%
+    display block
+    margin 0 auto
+    padding 1rem
+    cursor pointer
+    font-size 1.5rem
+    border-radius 1rem
+    background $dru-blue
+    &:hover
+      transform scale(1.02)
+      background $dru-orange
+    &:active
+      transform scale(0.98)
+
+  .success
+    margin-top 2rem
+    text-align center
 
 //end form
 
 /// meeja qs
 
-// reduce size of 'meditate'
-@media(max-width: 1500px)
-  h2
-    font-size 1.75rem
-  aside.shown p
-    margin -1rem -0.5rem 1rem -0.5rem
-  
+  // reduce size of 'meditate'
+  @media(max-width: 1500px)
+    h2
+      font-size 1.75rem
+    aside.shown p
+      margin -1rem -0.5rem 1rem -0.5rem
+    
 
-// reduce size of 'meditate' again
-@media(max-width: 1240px)
-  header
-    min-height 4rem
-  h2
+  // reduce size of 'meditate' again
+  @media(max-width: 1240px)
+    header
+      min-height 4rem
+    h2
+      font-size 1.5rem
+
+  // reduce size of 'meditate' again
+  @media(max-width: 1100px)
+    h2
+      font-size 1.35rem
+
+
+  //
+  // portrait setting
+  @media(max-width: 980px)
+    body
+      padding 0
+      overflow-y auto
+    main
+      flex-direction column
+    
+    h1
+      font-size 3rem
+      margin-bottom -0.75rem
+
+    h1.imogen
+      margin-bottom 0.5rem
+
+    p
     font-size 1.5rem
 
-// reduce size of 'meditate' again
-@media(max-width: 1100px)
-  h2
-    font-size 1.35rem
+    section
+      cursor default
+      padding-bottom 2rem
+    
+    header
+      min-height 4rem
 
-
-//
-// portrait setting
-@media(max-width: 980px)
-  body
-    padding 0
-    overflow-y auto
-  main
-    flex-direction column
+    h2
+      font-size 1.75rem
+    
+    article
+      display inline-block
   
-  h1
-    font-size 3rem
-    margin-bottom -0.75rem
+    aside
+      display block
+    aside.shown  
+      font-size 1.25rem
+      padding 1rem 0 2rem 0
 
-  h1.imogen
-    margin-bottom 0.5rem
-
-  p
-   font-size 1.5rem
-
-  section
-    cursor default
-    padding-bottom 2rem
-  
-  header
-    min-height 4rem
-
-  h2
-    font-size 1.75rem
-  
-  article
-    display inline-block
- 
-  aside
-    display block
-  aside.shown  
-    font-size 1.25rem
-    padding 1rem 0 2rem 0
-
-  .c2e
-    display none
+    .c2e
+      display none
 
 
-// ..and beyond, for baby screens
-@media(max-width: 880px)
-  main
-    padding 0
-  
-  h1
-    font-size 2.75rem
-    margin-bottom -0.5rem
+  // ..and beyond, for baby screens
+  @media(max-width: 880px)
+    main
+      padding 0
+    
+    h1
+      font-size 2.75rem
+      margin-bottom -0.5rem
 
-  h1.imogen
-    margin-bottom -0rem
+    h1.imogen
+      margin-bottom -0rem
 
-  .logo img
-    width 100px
-    height 100px
-    margin 0 0.5rem
-  
-  section
-    margin 0
-  
-  
-@media(max-width: 806px)
-  h1
-    font-size 2.5rem
-  .logo img
-    width 80px
-    height 80px
+    .logo img
+      width 100px
+      height 100px
+      margin 0 0.5rem
+    
+    section
+      margin 0
+    
+    
+  @media(max-width: 806px)
+    h1
+      font-size 2.5rem
+    .logo img
+      width 80px
+      height 80px
 
-@media(max-width: 686px)
-  h1
-    font-size 2rem
-  .logo img
-    width 70px
-    height 70px
-    margin 0 0.25rem
+  @media(max-width: 686px)
+    h1
+      font-size 2rem
+    .logo img
+      width 70px
+      height 70px
+      margin 0 0.25rem
 
-@media(max-width: 560px)
-  h1
-    font-size 1.5rem
-  
-@media(max-width: 460px)
-  h1
-    font-size 1.25rem
-  .logo img
-    width 60px
-    height 60px
-    margin 0 0.15rem
-  
-  // todo about me flex widths...
+  @media(max-width: 560px)
+    h1
+      font-size 1.5rem
+    
+  @media(max-width: 460px)
+    h1
+      font-size 1.25rem
+    .logo img
+      width 60px
+      height 60px
+      margin 0 0.15rem
+    
+    // todo about me flex widths...
 
-@media(max-width: 386px)
-  h1
-    font-size 1.2rem
-  .logo img
-    width 50px
-    height 50px
-    margin 0 0.05rem
+  @media(max-width: 386px)
+    h1
+      font-size 1.2rem
+    .logo img
+      width 50px
+      height 50px
+      margin 0 0.05rem
 
-@media(max-width: 359px)
-  h1
-    font-size 1rem
+  @media(max-width: 359px)
+    h1
+      font-size 1rem
 
 
 //end meeja
 
-/// sniffing
-@supports (not (-moz-appearance: none))
-  body
-    // background blue
-  section
-    // border-radius 0

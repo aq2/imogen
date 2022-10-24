@@ -32,15 +32,14 @@ body {
   position: relative;
   overflow-y: hidden;
   background: rgba(108,173,201,0.34);
-  font-family: 'Josefin Sans', sans-serif;
 }
-#bigheader {
+header {
   display: flex;
   margin-bottom: 1rem;
   align-items: flex-end;
   justify-content: center;
 }
-#bigheader img {
+header img {
   width: 110px;
   height: 110px;
   margin-right: 1rem;
@@ -118,6 +117,9 @@ article.shown {
   font-size: 1.5rem;
   text-align: right;
   position: absolute;
+}
+body {
+  font-family: 'Josefin Sans', sans-serif;
 }
 h1,
 h2,
@@ -307,9 +309,6 @@ span.email.ok {
   }
   h1.imogen {
     margin-bottom: 0.5rem;
-  }
-  p {
-    font-size: 1.5rem;
   }
   section {
     cursor: default;

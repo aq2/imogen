@@ -5,7 +5,7 @@ General:
   ☐ header alignments portrait
   ☐ cite, quote, q elements -> 'span.quote &ldquo;' looks hacky 🔨
   ☐ navicon -> simple yoga/meds icon, or capital I - or both, overlaid...
-  ✔ 💩 initiate: initial active/shown section? + need scrollbar borders @done(21-10-22 14:01)
+  ☐ round corners when scrollbar gone...
 
 .
 contact form:
@@ -20,9 +20,6 @@ meeja q's:
   ☐ 📁 too many breakpoints
 .
 l8rs:
-  ✔ edge scrollbars @done(21-10-22 13:22)
-    ✘ easy - square right borders all round?, only for edge @cancelled(21-10-22 13:22)
-    ✔ tricky - detect section scrollbar -> square right borders @done(21-10-22 13:22)
   ☐ position background images better
 
 .
@@ -44,7 +41,6 @@ meta:
 
 .  
 code colors 😎:
-  ✔ put syntax tokens in aq-blue -> objective simplify 🦅 @done(21-10-22 21:38)
   ☐ explorer file colors
   ☐ js keywords/functions too similar?
 
@@ -64,6 +60,11 @@ useful keyboard shortcuts:
 #
 
 Archive:
+  ✔ put syntax tokens in aq-blue -> objective simplify 🦅 @done(21-10-22 21:38) @project(code colors 😎)
+  ✔ 💩 initiate: initial active/shown section? + need scrollbar borders @done(21-10-22 14:01) @project(General)
+  ✔ edge scrollbars @done(21-10-22 13:22) @project(l8rs)
+  ✘ easy - square right borders all round?, only for edge @cancelled(21-10-22 13:22) @project(l8rs)
+  ✔ tricky - detect section scrollbar -> square right borders @done(21-10-22 13:22) @project(l8rs)
   ✘ sort out js tampering... @cancelled(21-10-22 00:38) @project(which compilation extension(s)?)
   ✔ intellisense/hover/ etc @done(21-10-22 00:12) @project(meta)
   ✔ emojis autocomplete on : filetypes @done(20-10-22 23:11) @project(meta)

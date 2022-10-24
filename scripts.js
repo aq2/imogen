@@ -1,68 +1,68 @@
 /// sections
 
-let initialSection = 0   // 0 -> 3
+  let initialSection = 0   // 0 -> 3
 
-let notDoneYet = true
-const sections = $all('section')
-const articles = $all('article')
-const asides = $all('aside')
-let oldID = initialSection
-let newID = initialSection
+  let notDoneYet = true
+  const sections = $all('section')
+  const articles = $all('article')
+  const asides = $all('aside')
+  let oldID = initialSection
+  let newID = initialSection
 
-initializePanels()
+  initializePanels()
 
-// add click listeners
-sections.forEach(section => {
-  if (window.innerWidth > 980) { 
-    section.addEventListener('click', (e) => {
-      let activeNow = section.classList.contains('shown')
-      if (!activeNow) {
-        newID = parseInt(section.dataset.idx)
-        switchActives(sections, oldID, newID)
-        switchActives(articles, oldID, newID)
-        switchActives(asides, newID, oldID)        
-        oldID = newID
-        changeBordersIfScrollbar(section)        
-      }
-    })
-  }
-})
-
-
-function switchActives(elements, oldID, newID) {
-  if (window.innerWidth > 980) {
-    elements[oldID].classList.remove('shown')
-    elements[newID].classList.add('shown')
-  }
-}
-
-
-function initializePanels() {
-  if (notDoneYet) {
-    sections[initialSection].classList.add('shown')
-    asides.forEach(aside => {
-      aside.classList.add('shown')
-    })
-    asides[initialSection].classList.remove('shown')
-    articles[initialSection].classList.add('shown')
-    changeBordersIfScrollbar(sections[initialSection])        
-    
-    notDoneYet = false
-  }
-}
-
-// there's always a quick initial scrollbar, so wait to settle
-function changeBordersIfScrollbar(elem) {
-  setTimeout(() => { 
-    const hasScrollbar = (elem.scrollHeight > elem.clientHeight)
- 
-    if (hasScrollbar) {
-      elem.classList.add('scrollbar')
-    } else {
-      elem.classList.remove('scrollbar')
+  // add click listeners
+  sections.forEach(section => {
+    if (window.innerWidth > 980) { 
+      section.addEventListener('click', (e) => {
+        let activeNow = section.classList.contains('shown')
+        if (!activeNow) {
+          newID = parseInt(section.dataset.idx)
+          switchActives(sections, oldID, newID)
+          switchActives(articles, oldID, newID)
+          switchActives(asides, newID, oldID)        
+          oldID = newID
+          changeBordersIfScrollbar(section)        
+        }
+      })
     }
-  }, 250)
-}
+  })
+
+
+  function switchActives(elements, oldID, newID) {
+    if (window.innerWidth > 980) {
+      elements[oldID].classList.remove('shown')
+      elements[newID].classList.add('shown')
+    }
+  }
+
+
+  function initializePanels() {
+    if (notDoneYet) {
+      sections[initialSection].classList.add('shown')
+      asides.forEach(aside => {
+        aside.classList.add('shown')
+      })
+      asides[initialSection].classList.remove('shown')
+      articles[initialSection].classList.add('shown')
+      changeBordersIfScrollbar(sections[initialSection])        
+      
+      notDoneYet = false
+    }
+  }
+
+  // there's always a quick initial scrollbar, so wait to settle
+  function changeBordersIfScrollbar(elem) {
+    setTimeout(() => { 
+      const hasScrollbar = (elem.scrollHeight > elem.clientHeight)
+  
+      if (hasScrollbar) {
+        elem.classList.add('scrollbar')
+      } else {
+        elem.classList.remove('scrollbar')
+      }
+    }, 250)
+  }
 
 
 //end sections
@@ -87,13 +87,12 @@ function changeBordersIfScrollbar(elem) {
 //end form
 
 /// width detection!
+  let delay = 150
+  let range = 'XXX'
+  let timeout = false
 
-let delay = 150
-let range = 'XXX'
-let timeout = false
-
-const w = $id('#width')
-const r = $id('#range')
+  const w = $id('#width')
+  const r = $id('#range')
 
 function getDimensions() {
   let width = window.innerWidth
