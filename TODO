@@ -6,6 +6,7 @@ General:
   ☐ cite, quote, q elements -> 'span.quote &ldquo;' looks hacky 🔨
   ☐ navicon -> simple yoga/meds icon, or capital I - or both, overlaid...
   ☐ round corners when scrollbar gone...
+  ☐ optimise section switch/show
 
 .
 contact form:
@@ -16,6 +17,7 @@ contact form:
 .
 meeja q's:
   ☐ repair havoc caused by semanticizing!
+  ☐ why no article/asides backgrounds??
   ☐ top/bottom margin between panels in small screen
   ☐ 📁 too many breakpoints
 .

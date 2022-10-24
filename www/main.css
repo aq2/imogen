@@ -152,8 +152,10 @@ p {
   font-size: 1.75rem;
   margin-bottom: 1rem;
 }
+aside div,
 aside p {
   font-size: 1.25rem;
+  margin-bottom: 1rem;
 }
 a {
   cursor: pointer;
@@ -279,7 +281,8 @@ span.email.ok {
     font-size: 1.75rem;
   }
   aside.shown p {
-    margin: -1rem -0.5rem 1rem -0.5rem;
+    color: #f00;
+    margin-bottom: 0.5rem;
   }
 }
 @media (max-width: 1240px) {

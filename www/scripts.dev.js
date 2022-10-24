@@ -9,6 +9,7 @@ var articles = $all('article');
 var asides = $all('aside');
 var oldID = initialSection;
 var newID = initialSection;
+console.log('panel code');
 initializePanels(); // add click listeners
 
 sections.forEach(function (section) {

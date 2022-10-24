@@ -9,6 +9,8 @@
   let oldID = initialSection
   let newID = initialSection
 
+  console.log('panel code')
+
   initializePanels()
 
   // add click listeners
@@ -94,41 +96,41 @@
   const w = $id('#width')
   const r = $id('#range')
 
-function getDimensions() {
-  let width = window.innerWidth
-  w.innerHTML = 'width: ' + width
-  
-  if (width > 1500) {
-    range = '1500+'
-  } else if (width > 1100) { 
-    range = '1100 - 1500'
-  } else if (width > 980) {
-    range = '980 -1100'
-  } else if (width > 880) {
-    range = '806 - 980'
-  } else if (width > 806) {
-    range = '686 - 806'
-  } else if (width > 686) {
-    range = '560 - 686'
-  } else if (width > 560) {
-    range = '460 - 560'
-  } else if (width > 460) {
-    range = '460 - 560'
-  } else if (width > 388) {
-    range = '388 - 460'
-  } else {
-    range = 'teeny'
+  function getDimensions() {
+    let width = window.innerWidth
+    w.innerHTML = 'width: ' + width
+    
+    if (width > 1500) {
+      range = '1500+'
+    } else if (width > 1100) { 
+      range = '1100 - 1500'
+    } else if (width > 980) {
+      range = '980 -1100'
+    } else if (width > 880) {
+      range = '806 - 980'
+    } else if (width > 806) {
+      range = '686 - 806'
+    } else if (width > 686) {
+      range = '560 - 686'
+    } else if (width > 560) {
+      range = '460 - 560'
+    } else if (width > 460) {
+      range = '460 - 560'
+    } else if (width > 388) {
+      range = '388 - 460'
+    } else {
+      range = 'teeny'
+    }
+    
+    r.innerHTML = 'range: ' + range
   }
-  
-  r.innerHTML = 'range: ' + range
-}
 
-window.addEventListener('resize', () => {
-  clearTimeout(timeout)
-  timeout = setTimeout(getDimensions, delay)
-})
+  window.addEventListener('resize', () => {
+    clearTimeout(timeout)
+    timeout = setTimeout(getDimensions, delay)
+  })
 
-getDimensions()
+  getDimensions()
 
 
 //end width detection
