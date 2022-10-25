@@ -1,50 +1,138 @@
 /// sections
 
   let initialSection = 0  // 0 -> 3
+  const breakpoint = 980
 
+  let oldID = initialSection
+  let newID = initialSection
   const sections = $all('section')
   const articles = $all('article')
   const asides = $all('aside')
-  let oldID = initialSection
-  let newID = initialSection
 
-  let sectionShown = true
+  // initialise
+  doNeeded(oldID, newID)
 
-  // init2
+  function doNeeded(oldID, newID) {
+    hideAll()
+    if (window.innerWidth > breakpoint) {
+      openSection(newID)
+      changeSingle(articles[newID], 'block')
+      changeAll(asides, 'block')
+      changeSingle(asides[newID], 'none')
+    } else {
+      changeAll(articles, 'block')
+      changeAll(asides, 'block')
+    }
+  }
+
+  // add click listeners
+  sections.forEach(section => {
+    if (window.innerWidth > breakpoint) { 
+      section.addEventListener('click', (e) => {
+        let clickedOn = parseInt(section.dataset.idx)
+        if (clickedOn !== newID) {
+          closeSection(oldID)
+          newID = clickedOn
+          doNeeded(oldID, newID)
+          oldID = newID
+          changeBordersIfScrollbar(section)        
+        }
+      })
+    }
+  })
+
+  // todo now we need a resize handler!
+
+  function changeAll(elements, shown) {
+    if (shown) {
+      elements.forEach(element => {
+        element.style.display = shown
+      })
+    }
+  }
+
+  function changeSingle(element, shown) {
+    if (shown) {
+      element.style.display = shown
+    }
+  }
+
+  function openSection(sectionID) {
+    sections[sectionID].style.flex = 5
+    sections[sectionID].style.cursor = 'default'
+  }
+
+  function closeSection(sectionID) {
+    sections[sectionID].style.flex = 1
+    sections[sectionID].style.cursor = 'pointer'
+  }
 
 
+  function showAll() {
+    // sections.forEach(section => {
+    //   section.style.display = 'block'
+    // })
+    asides.forEach(aside => {
+      // aside.style.display = 'block'
+      show(aside, 'block')
+    })
+    articles.forEach(article => {
+      // article.style.display = 'block'
+      show(article, 'block')
+    })
+  }
+
+  function show(element, witch) {
+    element.style.display = witch
+  }
+
+
+  function hideAll() {
+    // sections.forEach(section => {
+    //   section.style.display = 'none'
+    // })
+    asides.forEach(aside => {
+      // aside.style.display = 'none'
+      show(aside, 'none')
+    })
+    articles.forEach(article => {
+      // article.style.display = 'none'
+      show(article, 'none')
+    })
+
+  }
 
   // initializePanels()
-  sections[initialSection].classList.add('shown')
-  asides.forEach(aside => {
-    aside.classList.add('shown')
-  })
-  asides[initialSection].classList.remove('shown')
-  articles[initialSection].classList.add('shown')
-  changeBordersIfScrollbar(sections[initialSection])        
+    // sections[initialSection].classList.add('shown')
+    // asides.forEach(aside => {
+    //   aside.classList.add('shown')
+    // })
+    // asides[initialSection].classList.remove('shown')
+    // articles[initialSection].classList.add('shown')
+    // changeBordersIfScrollbar(sections[initialSection])        
 
 
   // articles[initialSection].style.color='red'
 
 
-  // add click listeners
-  sections.forEach(section => {
-    if (window.innerWidth > 980) { 
-      section.addEventListener('click', (e) => {
-        let activeNow = section.classList.contains('shown')
-        if (!activeNow) {
-          newID = parseInt(section.dataset.idx)
-          switchActives(sections, oldID, newID)
-          switchActives(articles, oldID, newID)
-          switchActives(asides, newID, oldID)        
-          oldID = newID
-          changeBordersIfScrollbar(section)        
-        }
-        console.log(window.innerWidth)
-        // let section.shown = 1
-      })
-    }
-  })
+  // // add click listeners
+  // sections.forEach(section => {
+  //   if (window.innerWidth > 980) { 
+  //     section.addEventListener('click', (e) => {
+  //       let activeNow = section.classList.contains('shown')
+  //       if (!activeNow) {
+  //         newID = parseInt(section.dataset.idx)
+  //         switchActives(sections, oldID, newID)
+  //         switchActives(articles, oldID, newID)
+  //         switchActives(asides, newID, oldID)        
+  //         oldID = newID
+  //         changeBordersIfScrollbar(section)        
+  //       }
+  //       console.log(window.innerWidth)
+  //       // let section.shown = 1
+  //     })
+  //   }
+  // })
 
   function switchActives(elements, oldID, newID) {
     if (window.innerWidth > 980) {
@@ -91,8 +179,13 @@
   //   }
   // }
 
- 
+ let landscape = function() {
+  return (window.innerWidth > breakpoint)
+ }
 
+  function scape() {
+    return (window.innerWidth > breakpoint)
+  }
 
 //end sections
 
@@ -173,4 +266,7 @@
     return document.querySelector(element)
   }
 
+  function $log(message) {
+    console.log(message)
+  }
 //end aQuery

@@ -3,41 +3,128 @@
 /// sections
 var initialSection = 0; // 0 -> 3
 
-var sections = $all('section');
-var articles = $all('article');
-var asides = $all('aside');
+var breakpoint = 980;
 var oldID = initialSection;
 var newID = initialSection;
-var sectionShown = true; // init2
-// initializePanels()
+var sections = $all('section');
+var articles = $all('article');
+var asides = $all('aside'); // initialise
 
-sections[initialSection].classList.add('shown');
-asides.forEach(function (aside) {
-  aside.classList.add('shown');
-});
-asides[initialSection].classList.remove('shown');
-articles[initialSection].classList.add('shown');
-changeBordersIfScrollbar(sections[initialSection]); // articles[initialSection].style.color='red'
-// add click listeners
+doNeeded(oldID, newID);
+
+function doNeeded(oldID, newID) {
+  hideAll();
+
+  if (window.innerWidth > breakpoint) {
+    openSection(newID);
+    changeSingle(articles[newID], 'block');
+    changeAll(asides, 'block');
+    changeSingle(asides[newID], 'none');
+  } else {
+    changeAll(articles, 'block');
+    changeAll(asides, 'block');
+  }
+} // add click listeners
+
 
 sections.forEach(function (section) {
-  if (window.innerWidth > 980) {
+  if (window.innerWidth > breakpoint) {
     section.addEventListener('click', function (e) {
-      var activeNow = section.classList.contains('shown');
+      var clickedOn = parseInt(section.dataset.idx);
 
-      if (!activeNow) {
-        newID = parseInt(section.dataset.idx);
-        switchActives(sections, oldID, newID);
-        switchActives(articles, oldID, newID);
-        switchActives(asides, newID, oldID);
+      if (clickedOn !== newID) {
+        closeSection(oldID);
+        newID = clickedOn;
+        doNeeded(oldID, newID);
         oldID = newID;
         changeBordersIfScrollbar(section);
       }
-
-      console.log(window.innerWidth); // let section.shown = 1
     });
   }
-});
+}); // todo now we need a resize handler!
+
+function changeAll(elements, shown) {
+  if (shown) {
+    elements.forEach(function (element) {
+      element.style.display = shown;
+    });
+  }
+}
+
+function changeSingle(element, shown) {
+  if (shown) {
+    element.style.display = shown;
+  }
+}
+
+function openSection(sectionID) {
+  sections[sectionID].style.flex = 5;
+  sections[sectionID].style.cursor = 'default';
+}
+
+function closeSection(sectionID) {
+  sections[sectionID].style.flex = 1;
+  sections[sectionID].style.cursor = 'pointer';
+}
+
+function showAll() {
+  // sections.forEach(section => {
+  //   section.style.display = 'block'
+  // })
+  asides.forEach(function (aside) {
+    // aside.style.display = 'block'
+    show(aside, 'block');
+  });
+  articles.forEach(function (article) {
+    // article.style.display = 'block'
+    show(article, 'block');
+  });
+}
+
+function show(element, witch) {
+  element.style.display = witch;
+}
+
+function hideAll() {
+  // sections.forEach(section => {
+  //   section.style.display = 'none'
+  // })
+  asides.forEach(function (aside) {
+    // aside.style.display = 'none'
+    show(aside, 'none');
+  });
+  articles.forEach(function (article) {
+    // article.style.display = 'none'
+    show(article, 'none');
+  });
+} // initializePanels()
+// sections[initialSection].classList.add('shown')
+// asides.forEach(aside => {
+//   aside.classList.add('shown')
+// })
+// asides[initialSection].classList.remove('shown')
+// articles[initialSection].classList.add('shown')
+// changeBordersIfScrollbar(sections[initialSection])        
+// articles[initialSection].style.color='red'
+// // add click listeners
+// sections.forEach(section => {
+//   if (window.innerWidth > 980) { 
+//     section.addEventListener('click', (e) => {
+//       let activeNow = section.classList.contains('shown')
+//       if (!activeNow) {
+//         newID = parseInt(section.dataset.idx)
+//         switchActives(sections, oldID, newID)
+//         switchActives(articles, oldID, newID)
+//         switchActives(asides, newID, oldID)        
+//         oldID = newID
+//         changeBordersIfScrollbar(section)        
+//       }
+//       console.log(window.innerWidth)
+//       // let section.shown = 1
+//     })
+//   }
+// })
+
 
 function switchActives(elements, oldID, newID) {
   if (window.innerWidth > 980) {
@@ -78,7 +165,15 @@ function changeBordersIfScrollbar(elem) {
 //     notDoneYet = false
 //   }
 // }
-//end sections
+
+
+var landscape = function landscape() {
+  return window.innerWidth > breakpoint;
+};
+
+function scape() {
+  return window.innerWidth > breakpoint;
+} //end sections
 /// form
 
 
@@ -143,4 +238,8 @@ function $all(elements) {
 
 function $id(element) {
   return document.querySelector(element);
+}
+
+function $log(message) {
+  console.log(message);
 } //end aQuery
