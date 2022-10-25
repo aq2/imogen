@@ -9,10 +9,12 @@ var newID = initialSection;
 var sections = $all('section');
 var articles = $all('article');
 var asides = $all('aside'); // initialise
+// initial state is everything shown
 
-doNeeded(oldID, newID);
+openPanels(oldID, newID);
 
-function doNeeded(oldID, newID) {
+function openPanels(oldID, newID) {
+  // todo start with show All - as per iniitial state
   hideAll();
 
   if (window.innerWidth > breakpoint) {
@@ -35,7 +37,7 @@ sections.forEach(function (section) {
       if (clickedOn !== newID) {
         closeSection(oldID);
         newID = clickedOn;
-        doNeeded(oldID, newID);
+        openPanels(oldID, newID);
         oldID = newID;
         changeBordersIfScrollbar(section);
       }
@@ -68,6 +70,7 @@ function closeSection(sectionID) {
 }
 
 function showAll() {
+  // todo sections use flex to open!
   // sections.forEach(section => {
   //   section.style.display = 'block'
   // })
@@ -79,10 +82,6 @@ function showAll() {
     // article.style.display = 'block'
     show(article, 'block');
   });
-}
-
-function show(element, witch) {
-  element.style.display = witch;
 }
 
 function hideAll() {
@@ -97,6 +96,18 @@ function hideAll() {
     // article.style.display = 'none'
     show(article, 'none');
   });
+}
+
+function show(element, witch) {
+  element.style.display = witch;
+}
+
+function hideElement(element) {
+  element.style.display = 'none'; // element.classList.remove('shown')
+}
+
+function considerElement(element, display) {
+  element.style.display = display;
 } // initializePanels()
 // sections[initialSection].classList.add('shown')
 // asides.forEach(aside => {
@@ -124,6 +135,7 @@ function hideAll() {
 //     })
 //   }
 // })
+//
 
 
 function switchActives(elements, oldID, newID) {
@@ -131,15 +143,6 @@ function switchActives(elements, oldID, newID) {
     elements[oldID].classList.remove('shown');
     elements[newID].classList.add('shown');
   }
-} // hideElement(asides[2])
-
-
-function hideElement(element) {
-  element.style.display = 'none'; // element.classList.remove('shown')
-}
-
-function considerElement(element, display) {
-  element.style.display = display;
 } // there's always a quick initial scrollbar, so wait to settle
 
 
@@ -153,42 +156,9 @@ function changeBordersIfScrollbar(elem) {
       elem.classList.remove('scrollbar');
     }
   }, 250);
-} // function initializePanels() {
-//   if (notDoneYet) {
-//     sections[initialSection].classList.add('shown')
-//     asides.forEach(aside => {
-//       aside.classList.add('shown')
-//     })
-//     asides[initialSection].classList.remove('shown')
-//     articles[initialSection].classList.add('shown')
-//     changeBordersIfScrollbar(sections[initialSection])        
-//     notDoneYet = false
-//   }
-// }
-
-
-var landscape = function landscape() {
-  return window.innerWidth > breakpoint;
-};
-
-function scape() {
-  return window.innerWidth > breakpoint;
 } //end sections
-/// form
-
-
-var labels = $all('label');
-labels.forEach(function (label) {
-  label.innerHTML = label.innerText.split('').map(function (letter, idx) {
-    return "<span style='transition-delay:".concat(idx * 20, "ms'>").concat(letter, "</span>");
-  }).join('');
-});
-var emailInput = $id('#email');
-emailInput.addEventListener('click', function (e) {
-  console.log(e.target);
-}); //end form
-/// widf
 /// width detection!
+
 
 var delay = 150;
 var range = 'XXX';
@@ -230,6 +200,18 @@ window.addEventListener('resize', function () {
   timeout = setTimeout(getDimensions, delay);
 });
 getDimensions(); //end width detection
+/// form
+
+var labels = $all('label');
+labels.forEach(function (label) {
+  label.innerHTML = label.innerText.split('').map(function (letter, idx) {
+    return "<span style='transition-delay:".concat(idx * 20, "ms'>").concat(letter, "</span>");
+  }).join('');
+});
+var emailInput = $id('#email');
+emailInput.addEventListener('click', function (e) {
+  console.log(e.target);
+}); //end form
 /// aQuery
 
 function $all(elements) {

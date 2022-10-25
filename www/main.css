@@ -186,6 +186,9 @@ span.quote {
   position: absolute;
   font-family: sans-serif;
 }
+q {
+  border: 1px solid #f00;
+}
 .testimonial {
   margin-top: 3rem;
   font-size: 1.5rem;
